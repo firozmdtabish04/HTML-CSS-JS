@@ -126,14 +126,38 @@
 // console.log(randomNum);
 
 // Generate random num
-const myButton = document.getElementById("myButton")
-const myLabel = document.getElementById("myLabel")
-const min = 1;
-const max = 6;
-let randomNum;
+// const myButton = document.getElementById("myButton")
+// const myLabel = document.getElementById("myLabel")
+// const min = 1;
+// const max = 6;
+// let randomNum;
 
-myButton.onclick = function ()
-{
-    randomNum = Math.floor(Math.random() * max) + min;
-    myLabel.textContent = randomNum;
-} 
+// myButton.onclick = function ()
+// {
+//     randomNum = Math.floor(Math.random() * max) + min;
+//     myLabel.textContent = randomNum;
+// }
+
+
+// ForLoop
+// for (let i = 1; i < 11; i++)
+// {
+//     console.log(i)
+// }
+// console.log("Happy New Year :)")
+
+// for (let i = 1; i < 11; i++)
+// {
+//     if (i == 5)
+//     {
+//         console.log("i == 5")
+//         continue
+//     }
+//     else
+//     {
+//         console.log(i)
+//     }
+// }
+// console.log("Happy New Year :)")
+
+
