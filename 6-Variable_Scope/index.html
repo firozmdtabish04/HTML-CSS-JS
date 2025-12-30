@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/6-Variable_Scope/style.css">
+    <title>Variable Scope</title>
+</head>
+<body>
+    <h1>Local variables have higher priority than global variables</h1>
+    <pre>
+        <b>Variable Scope:</b>
+        Determines the accessibility and visibility of variables in different parts of the code(local vs global) Scope
+        
+        Local variables exist only within the function or block where they're defined, with a short lifespan (created when
+        the block starts, destroyed when it ends).
+
+        <b>
+            function function1()
+            {
+                // Here x is local Scope bcz it is dedfine inside the function..
+            let x = 1;
+            console.log(y);
+            }
+        </b>
+    </pre>
+
+    <pre>
+        Global Scope are declared outside functions, accessible from anywhere in the program, and live for the program's
+        entire duration.
+
+        <b>
+            here x and y is global scope 
+            let y = 3;
+            let x = 8;
+            function1()
+            function2()
+            function function1()
+            {
+            console.log(y);
+            }
+            
+            function function2()
+            {
+            console.log(x);
+            }
+        </b>
+    </pre>
+
+    <script src="/6-Variable_Scope/script.js"> </script>
+</body>
+</html>
