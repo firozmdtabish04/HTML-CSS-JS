@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/8-Array/style.css">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>ARRAY </h1>
+
+    <pre>
+        JavaScript provides a rich set of built-in array methods to efficiently store, access, iterate, and manipulate
+        collections of data. 
+        These methods can be broadly categorized into several groups based on their function and whether
+        they mutate (change) the original array or return a new one.
+        Common JavaScript array methods include those that modify the original array, such as <b> push(), pop(), shift(), unshift(),
+        splice(), sort(), reverse(), and fill()</b>.
+        Methods for accessing and iterating include at(), forEach(), indexOf(), includes(), find(), and findIndex().
+        Non-mutating methods that return a new array include map(), filter(), slice(), concat(), and join().
+        Aggregation methods like reduce(), every(), and some() perform operations across elements to produce a single result or
+        check conditions.
+        For comprehensive documentation, refer to MDN Web Docs or W3Schools. A list of JavaScript array methods can be found on
+        Medium.
+    </pre>
+    <pre>
+        The concat() method creates a new array by merging (concatenating) existing arrays:
+        
+        Example (Merging Two Arrays)
+        const myGirls = ["Cecilie", "Lone"];
+        const myBoys = ["Emil", "Tobias", "Linus"];
+        
+        
+        Example (Merging Three Arrays)
+        const arr1 = ["Cecilie", "Lone"];
+        const arr2 = ["Emil", "Tobias", "Linus"];
+        const arr3 = ["Robin", "Morgan"];
+        const myChildren = arr1.concat(arr2, arr3);
+    </pre>
+    <pre>
+        In JavaScript, the primary difference between Array.prototype.slice() and Array.
+        Prototype splice() is that slice() creates a new array without modifying the original array, while splice() changes the contents of the original array in
+        place.
+
+        Array.prototype.slice()
+        slice() extracts a section of an array or string to create a new array or string, leaving the original data untouched.
+        
+        This makes it a non-mutating method.
+        Syntax: array.slice(startIndex, endIndex)
+        
+        Parameters: startIndex (inclusive) and an optional endIndex (exclusive). Negative indices count from the end.
+        Return Value: A new array with the extracted elements.
+        Example:
+        javascript
+        const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        const citrus = fruits.slice(1, 3);
+        console.log(citrus); // Output: ["Orange", "Lemon"]
+        console.log(fruits); // Output: ["Banana", "Orange", "Lemon", "Apple", "Mango"] (original array is unchanged).
+        
+        
+        Array.prototype.splice()
+        splice() is used to add, remove, or replace elements within an array. It modifies the original array directly.
+        
+        Syntax: array.splice(startIndex, deleteCount, item1, item2, ...)
+        
+        Parameters: startIndex, an optional deleteCount (number of elements to remove), and optional items to add. Negative
+        
+        indices count from the end.
+        Return Value: An array of the deleted elements.
+        Example:
+        javascript
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        const removedItems = fruits.splice(2, 1, "Lemon", "Kiwi"); // Remove 'Apple', add 'Lemon', 'Kiwi'
+        console.log(removedItems); // Output: ["Apple"]
+        console.log(fruits);
+    </pre>
+
+    <pre>
+        <b>
+            Array Search Methods:
+
+            Array indexOf()
+            Array lastIndexOf()
+            Array includes()
+            Array find()
+            Array findIndex()
+            Array findLast()
+            Array findLastIndex()
+        </b>
+        <b>
+            Basic Array Methods:
+
+            Array length
+            Array toString()
+            Array at()
+            Array join()
+            Array pop()
+            Array push()
+            Array shift()
+            Array unshift()
+            Array isArray()
+            Array delete()
+            Array concat()
+            Array copyWithin()
+            Array flat()
+            Array slice()
+            Array splice()
+            Array toSpliced()
+        </b>
+        <b>
+            Alphabetic Sort:
+            
+            Array sort()
+            Array reverse()
+            Array toSorted()
+            Array toReversed()
+            Sorting Objects
+            Numeric Sort
+            Numeric Sort
+            Random Sort
+            Math.min()
+            Math.max()
+            Home made Min()
+            Home made Max()
+        </b>
+        <b>
+            Array forEach:
+
+            Array map()
+            Array flatMap()
+            Array filter()
+            Array reduce()
+            Array reduceRight()
+            Array every()
+            Array some()
+            Array from()
+            Array keys()
+            Array entries()
+            Array with()
+            Array Spread (...)
+            Array Rest (...)
+        </b>
+    </pre>
+    <script src="/8-Array/script.js"></script>
+</body>
+
+</html>
