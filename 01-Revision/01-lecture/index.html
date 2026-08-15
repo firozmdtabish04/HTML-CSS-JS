@@ -680,6 +680,7 @@
           </figure>
         </div>
 
+        <!-- Gallery -->
         <div>
           <h1>Image Gallery</h1>
 
@@ -696,6 +697,860 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- List (ol, ul) -->
+    <section style="border: 3px solid red; padding: 10px; border-radius: 12px">
+      <div>
+        <h1><u>Lists</u></h1>
+
+        <p>HTML lists are used to organize and display related items.</p>
+
+        <h3>1. Ordered List</h3>
+
+        <p>
+          The <code>&lt;ol&gt;</code> element creates a numbered list. Each item
+          is written using <code>&lt;li&gt;</code>.
+        </p>
+
+        <code>
+          &lt;ol&gt; &lt;li&gt;HTML&lt;/li&gt; &lt;li&gt;CSS&lt;/li&gt;
+          &lt;li&gt;JavaScript&lt;/li&gt; &lt;/ol&gt;
+        </code>
+
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ol>
+
+        <h3>2. Unordered List</h3>
+
+        <p>The <code>&lt;ul&gt;</code> element creates a bullet list.</p>
+
+        <code>
+          &lt;ul&gt; &lt;li&gt;HTML&lt;/li&gt; &lt;li&gt;CSS&lt;/li&gt;
+          &lt;li&gt;JavaScript&lt;/li&gt; &lt;/ul&gt;
+        </code>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <h3>3. Description List</h3>
+
+        <p>
+          The <code>&lt;dl&gt;</code> element creates a description list.
+          <code>&lt;dt&gt;</code> defines the term and
+          <code>&lt;dd&gt;</code> provides its description.
+        </p>
+
+        <code>
+          &lt;dl&gt; &lt;dt&gt;HTML&lt;/dt&gt; &lt;dd&gt;Structure of a
+          webpage&lt;/dd&gt; &lt;dt&gt;CSS&lt;/dt&gt; &lt;dd&gt;Styles a
+          webpage&lt;/dd&gt; &lt;/dl&gt;
+        </code>
+
+        <dl>
+          <dt><strong>HTML</strong></dt>
+          <dd>Structure of a webpage</dd>
+
+          <dt><strong>CSS</strong></dt>
+          <dd>Styles a webpage</dd>
+        </dl>
+
+        <h3>4. Nested Lists</h3>
+
+        <p>A nested list is a list placed inside another list.</p>
+
+        <code>
+          &lt;ul&gt; &lt;li&gt;Frontend &lt;ul&gt; &lt;li&gt;HTML&lt;/li&gt;
+          &lt;li&gt;CSS&lt;/li&gt; &lt;li&gt;JavaScript&lt;/li&gt; &lt;/ul&gt;
+          &lt;/li&gt; &lt;/ul&gt;
+        </code>
+
+        <ul>
+          <li>
+            Frontend
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
+
+          <li>
+            Backend
+            <ul>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+            </ul>
+          </li>
+        </ul>
+
+        <hr />
+
+        <h2>Practice</h2>
+
+        <h3>1. Skills List</h3>
+
+        <p>Create a list of your technical skills.</p>
+
+        <ul>
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>React</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>MySQL</li>
+        </ul>
+
+        <h3>2. Nested Menu</h3>
+
+        <p>Create a navigation menu using nested lists.</p>
+
+        <ul>
+          <li>Home</li>
+
+          <li>
+            About
+            <ul>
+              <li>Company</li>
+              <li>Team</li>
+              <li>Mission</li>
+            </ul>
+          </li>
+
+          <li>
+            Services
+            <ul>
+              <li>Web Development</li>
+              <li>App Development</li>
+              <li>Cloud Services</li>
+            </ul>
+          </li>
+
+          <li>
+            Contact
+            <ul>
+              <li>Email</li>
+              <li>Phone</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Table  -->
+    <section style="border: 3px solid red; padding: 10px; border-radius: 12px">
+      <h1><u>Tables</u></h1>
+
+      <p>
+        HTML tables are used to organize and display data in rows and columns.
+      </p>
+
+      <h3>1. &lt;table&gt;</h3>
+
+      <p>
+        The <code>&lt;table&gt;</code> element is used to create an HTML table.
+      </p>
+
+      <h3>2. &lt;tr&gt;</h3>
+
+      <p>The <code>&lt;tr&gt;</code> element defines a table row.</p>
+
+      <h3>3. &lt;th&gt;</h3>
+
+      <p>
+        The <code>&lt;th&gt;</code> element defines a table header cell. By
+        default, header text is bold and centered.
+      </p>
+
+      <h3>4. &lt;td&gt;</h3>
+
+      <p>
+        The <code>&lt;td&gt;</code> element defines a normal table data cell.
+      </p>
+
+      <h3>5. &lt;thead&gt;</h3>
+
+      <p>
+        The <code>&lt;thead&gt;</code> element groups the header rows of a
+        table.
+      </p>
+
+      <h3>6. &lt;tbody&gt;</h3>
+
+      <p>The <code>&lt;tbody&gt;</code> element groups the main data rows.</p>
+
+      <h3>7. &lt;tfoot&gt;</h3>
+
+      <p>
+        The <code>&lt;tfoot&gt;</code> element groups the footer rows of a
+        table.
+      </p>
+
+      <h3>8. rowspan</h3>
+
+      <p>
+        The <code>rowspan</code> attribute allows a cell to span multiple rows.
+      </p>
+
+      <code> &lt;td rowspan="2"&gt;Total&lt;/td&gt; </code>
+
+      <h3>9. colspan</h3>
+
+      <p>
+        The <code>colspan</code> attribute allows a cell to span multiple
+        columns.
+      </p>
+
+      <code> &lt;th colspan="3"&gt;Student Details&lt;/th&gt; </code>
+
+      <hr />
+
+      <h2>Basic Table Example</h2>
+
+      <table border="1" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Rahul</td>
+            <td>21</td>
+            <td>CSE</td>
+          </tr>
+
+          <tr>
+            <td>Aman</td>
+            <td>22</td>
+            <td>IT</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="3">Total Students: 2</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!-- Practice example -->
+      <div style="border: 3px solid green; border-radius: 12px">
+        <div class="table-container">
+          <h2>Student Marks Table</h2>
+
+          <table border="1" cellpadding="10">
+            <thead>
+              <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JavaScript</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>85</td>
+                <td>80</td>
+                <td>90</td>
+                <td>255</td>
+              </tr>
+
+              <tr>
+                <td>102</td>
+                <td>Aman</td>
+                <td>90</td>
+                <td>85</td>
+                <td>88</td>
+                <td>263</td>
+              </tr>
+
+              <tr>
+                <td>103</td>
+                <td>Priya</td>
+                <td>92</td>
+                <td>89</td>
+                <td>95</td>
+                <td>276</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th colspan="5">Highest Total</th>
+                <th>276</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Practice 2 -->
+        <div class="table-container">
+          <h2>Product Table</h2>
+
+          <table border="1" cellpadding="10">
+            <thead>
+              <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Stock</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>P101</td>
+                <td>Laptop</td>
+                <td>Electronics</td>
+                <td>₹60,000</td>
+                <td>10</td>
+              </tr>
+
+              <tr>
+                <td>P102</td>
+                <td>Keyboard</td>
+                <td>Accessories</td>
+                <td>₹1,500</td>
+                <td>25</td>
+              </tr>
+
+              <tr>
+                <td>P103</td>
+                <td>Mouse</td>
+                <td>Accessories</td>
+                <td>₹800</td>
+                <td>40</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th colspan="4">Total Products</th>
+                <th>75</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="table-container">
+          <table border="1" cellpadding="10">
+            <thead>
+              <tr>
+                <th colspan="4">Student Report</th>
+              </tr>
+
+              <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td rowspan="2">Rahul</td>
+                <td>HTML</td>
+                <td>90</td>
+                <td>A+</td>
+              </tr>
+
+              <tr>
+                <td>CSS</td>
+                <td>85</td>
+                <td>A</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th colspan="2">Average</th>
+                <th>87.5</th>
+                <th>A</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+
+    <section style="border: 3px solid red; padding: 10px; border-radius: 12px">
+      <div>
+        <h1><u>Forms</u></h1>
+
+        <p>
+          HTML forms are used to collect information from users and send that
+          information to a server.
+        </p>
+
+        <h3>1. &lt;form&gt;</h3>
+
+        <p>
+          The <code>&lt;form&gt;</code> element is used to create an HTML form.
+        </p>
+
+        <code> &lt;form&gt; ... &lt;/form&gt; </code>
+
+        <h3>2. &lt;input&gt;</h3>
+
+        <p>
+          The <code>&lt;input&gt;</code> element is used to create different
+          types of input fields.
+        </p>
+
+        <code> &lt;input type="text"&gt; </code>
+
+        <h3>3. Text Input</h3>
+
+        <p>
+          <code>type="text"</code> creates a field for entering normal text.
+        </p>
+
+        <code> &lt;input type="text" name="username"&gt; </code>
+
+        <h3>4. Email Input</h3>
+
+        <p>
+          <code>type="email"</code> is used to collect an email address. The
+          browser can check whether the entered value has a valid email format.
+        </p>
+
+        <code> &lt;input type="email" name="email"&gt; </code>
+
+        <h3>5. Password Input</h3>
+
+        <p>
+          <code>type="password"</code> hides the characters entered by the user.
+        </p>
+
+        <code> &lt;input type="password" name="password"&gt; </code>
+
+        <h3>6. Number Input</h3>
+
+        <p><code>type="number"</code> is used to enter numeric values.</p>
+
+        <code> &lt;input type="number" name="age"&gt; </code>
+
+        <h3>7. Date Input</h3>
+
+        <p><code>type="date"</code> allows the user to select a date.</p>
+
+        <code> &lt;input type="date" name="dob"&gt; </code>
+
+        <h3>8. Radio Button</h3>
+
+        <p>
+          <code>type="radio"</code> allows the user to select one option from a
+          group of related options.
+        </p>
+
+        <code>
+          &lt;input type="radio" name="gender" value="male"&gt; Male
+        </code>
+
+        <p>
+          Radio buttons that belong to the same group should have the same
+          <code>name</code>.
+        </p>
+
+        <h3>9. Checkbox</h3>
+
+        <p>
+          <code>type="checkbox"</code> allows the user to select one or more
+          options.
+        </p>
+
+        <code>
+          &lt;input type="checkbox" name="skills" value="html"&gt; HTML
+        </code>
+
+        <h3>10. File Input</h3>
+
+        <p>
+          <code>type="file"</code> allows the user to select a file from their
+          device.
+        </p>
+
+        <code> &lt;input type="file" name="resume"&gt; </code>
+
+        <h3>11. Submit Button</h3>
+
+        <p>
+          <code>type="submit"</code> creates a button used to submit the form.
+        </p>
+
+        <code> &lt;input type="submit" value="Submit"&gt; </code>
+
+        <h3>12. &lt;textarea&gt;</h3>
+
+        <p>
+          The <code>&lt;textarea&gt;</code> element is used for entering
+          multiple lines of text.
+        </p>
+
+        <code> &lt;textarea name="message"&gt;&lt;/textarea&gt; </code>
+
+        <h3>13. &lt;select&gt;</h3>
+
+        <p>The <code>&lt;select&gt;</code> element creates a dropdown list.</p>
+
+        <code> &lt;select name="course"&gt; ... &lt;/select&gt; </code>
+
+        <h3>14. &lt;option&gt;</h3>
+
+        <p>
+          The <code>&lt;option&gt;</code> element defines an option inside a
+          <code>&lt;select&gt;</code> dropdown.
+        </p>
+
+        <code> &lt;option value="cse"&gt;Computer Science&lt;/option&gt; </code>
+
+        <h3>15. &lt;label&gt;</h3>
+
+        <p>
+          The <code>&lt;label&gt;</code> element provides a description for an
+          input field.
+        </p>
+
+        <code> &lt;label for="username"&gt;Username&lt;/label&gt; </code>
+
+        <p>
+          The <code>for</code> attribute of the label should match the
+          <code>id</code> of the input.
+        </p>
+
+        <h3>16. placeholder</h3>
+
+        <p>
+          The <code>placeholder</code> attribute displays a temporary hint
+          inside an input field.
+        </p>
+
+        <code> &lt;input type="text" placeholder="Enter your name"&gt; </code>
+
+        <h3>17. required</h3>
+
+        <p>
+          The <code>required</code> attribute makes an input field mandatory.
+          The form cannot be submitted until the required field is completed.
+        </p>
+
+        <code> &lt;input type="email" required&gt; </code>
+
+        <h3>18. name</h3>
+
+        <p>
+          The <code>name</code> attribute identifies the form field when form
+          data is submitted.
+        </p>
+
+        <code> &lt;input type="text" name="username"&gt; </code>
+
+        <h3>19. value</h3>
+
+        <p>
+          The <code>value</code> attribute specifies the value associated with
+          an input.
+        </p>
+
+        <code> &lt;input type="radio" name="gender" value="male"&gt; </code>
+
+        <h3>20. HTML Form Validation</h3>
+
+        <p>
+          HTML provides built-in validation attributes that help check user
+          input before submitting the form.
+        </p>
+
+        <ul>
+          <li><code>required</code> → field must be filled</li>
+          <li><code>type="email"</code> → checks email format</li>
+          <li><code>min</code> → specifies minimum numeric value</li>
+          <li><code>max</code> → specifies maximum numeric value</li>
+          <li><code>minlength</code> → specifies minimum text length</li>
+          <li><code>maxlength</code> → specifies maximum text length</li>
+          <li>
+            <code>pattern</code> → validates input using a regular expression
+          </li>
+        </ul>
+
+        <code>
+          &lt;input type="text" name="username" minlength="3" maxlength="20"
+          required &gt;
+        </code>
+      </div>
+
+      <hr />
+
+      <h2>Basic Form Example</h2>
+
+      <div style="border: 3px solid green; padding: 15px; border-radius: 12px">
+        <form>
+          <p>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="18"
+              max="60"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+          </p>
+
+          <p>
+            <strong>Gender:</strong>
+
+            <label>
+              <input type="radio" name="gender" value="male" />
+              Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" value="female" />
+              Female
+            </label>
+          </p>
+
+          <p>
+            <strong>Skills:</strong>
+
+            <label>
+              <input type="checkbox" name="skills" value="html" />
+              HTML
+            </label>
+
+            <label>
+              <input type="checkbox" name="skills" value="css" />
+              CSS
+            </label>
+
+            <label>
+              <input type="checkbox" name="skills" value="javascript" />
+              JavaScript
+            </label>
+          </p>
+
+          <p>
+            <label for="course">Course:</label>
+
+            <select id="course" name="course" required>
+              <option value="">Select Course</option>
+              <option value="cse">Computer Science</option>
+              <option value="it">Information Technology</option>
+              <option value="ece">Electronics</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message">Message:</label>
+            <br />
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Enter your message"
+            ></textarea>
+          </p>
+
+          <p>
+            <label for="resume">Upload Resume:</label>
+
+            <input type="file" id="resume" name="resume" />
+          </p>
+
+          <input type="submit" value="Submit Form" />
+        </form>
+      </div>
+
+      <hr />
+
+      <h2>Form Validation Example</h2>
+
+      <div style="border: 3px solid blue; padding: 15px; border-radius: 12px">
+        <form>
+          <p>
+            <label for="username"> Username: </label>
+
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter username"
+              minlength="3"
+              maxlength="20"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="useremail"> Email: </label>
+
+            <input
+              type="email"
+              id="useremail"
+              name="useremail"
+              placeholder="example@gmail.com"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="userage"> Age: </label>
+
+            <input
+              type="number"
+              id="userage"
+              name="userage"
+              min="18"
+              max="60"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="phone"> Phone: </label>
+
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="10 digit number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </p>
+
+          <input type="submit" value="Validate Form" />
+        </form>
+      </div>
+
+      <hr />
+
+      <h2>Form Attributes Quick Reference</h2>
+
+      <table border="1" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            <th>Purpose</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><code>placeholder</code></td>
+            <td>Displays a hint inside an input</td>
+            <td><code>placeholder="Enter name"</code></td>
+          </tr>
+
+          <tr>
+            <td><code>required</code></td>
+            <td>Makes a field mandatory</td>
+            <td><code>required</code></td>
+          </tr>
+
+          <tr>
+            <td><code>name</code></td>
+            <td>Identifies form data</td>
+            <td><code>name="email"</code></td>
+          </tr>
+
+          <tr>
+            <td><code>value</code></td>
+            <td>Defines the input value</td>
+            <td><code>value="Male"</code></td>
+          </tr>
+
+          <tr>
+            <td><code>min</code></td>
+            <td>Sets minimum number</td>
+            <td><code>min="18"</code></td>
+          </tr>
+
+          <tr>
+            <td><code>max</code></td>
+            <td>Sets maximum number</td>
+            <td><code>max="60"</code></td>
+          </tr>
+
+          <tr>
+            <td><code>minlength</code></td>
+            <td>Sets minimum text length</td>
+            <td><code>minlength="3"</code></td>
+          </tr>
+
+          <tr>
+            <td><code>maxlength</code></td>
+            <td>Sets maximum text length</td>
+            <td><code>maxlength="20"</code></td>
+          </tr>
+
+          <tr>
+            <td><code>pattern</code></td>
+            <td>Validates using a pattern</td>
+            <td><code>pattern="[0-9]{10}"</code></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <script src="/01-Revision/01-lecture/script.js"></script>

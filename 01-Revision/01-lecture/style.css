@@ -408,3 +408,137 @@ body {
     padding: 6px 8px;
   }
 }
+
+/* =========================
+   Responsive Tables
+========================= */
+
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+}
+
+.table-container table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .table-container table {
+    min-width: 600px;
+  }
+
+  .table-container th,
+  .table-container td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   Form Responsive
+========================= */
+
+form {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+form input,
+form select,
+form textarea {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form input[type="file"],
+form select,
+form textarea {
+  width: 100%;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+/* =========================
+   Table Responsive
+========================= */
+
+.table-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.table-container table {
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.table-container th,
+.table-container td {
+  white-space: nowrap;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+  section {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  form input,
+  form select,
+  form textarea {
+    max-width: 100%;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-container table {
+    min-width: 600px;
+  }
+}
+form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
