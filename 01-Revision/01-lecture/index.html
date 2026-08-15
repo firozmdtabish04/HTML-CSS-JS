@@ -203,6 +203,7 @@
 
     <!-- Links -->
     <section
+      class="links-section"
       style="
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -211,15 +212,19 @@
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
+        border: 3px solid red;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 8px;
       "
     >
       <div
         style="
-          border: 3px solid red;
+          border: 3px solid rgb(0, 34, 255);
           padding: 10px;
           margin-top: 20px;
           border-radius: 10px;
-          grid-row: span 2;
+          grid-row: span 4;
         "
       >
         <h1><u>Links</u></h1>
@@ -230,7 +235,9 @@
 
         <p>
           Basic Example:
-          <code> &lt;a href="https://www.google.com"&gt;Google&lt;/a&gt; </code>
+          <code>
+            &lt;a href="https://www.google.com"&gt; Google &lt;/a&gt;
+          </code>
         </p>
 
         <ul>
@@ -247,7 +254,7 @@
 
         <p>An absolute URL contains the complete web address.</p>
 
-        <code> &lt;a href="https://www.google.com"&gt;Google&lt;/a&gt; </code>
+        <code> &lt;a href="https://www.yt.com"&gt;yt &lt;/a&gt; </code>
 
         <h3>2. Relative URL</h3>
 
@@ -333,7 +340,7 @@
       <!-- Button Links -->
       <div
         style="
-          border: 3px solid red;
+          border: 3px solid rebeccapurple;
           padding: 10px;
           margin-top: 20px;
           border-radius: 10px;
@@ -374,7 +381,7 @@
       <!-- Navbar  -->
       <div
         style="
-          border: 3px solid red;
+          border: 3px solid green;
           padding: 10px;
           margin-top: 20px;
           border-radius: 10px;
@@ -393,11 +400,300 @@
           "
         >
           <ol class="navbar-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="/01-Revision/01-lecture/pages/home.html " target="_blank"
+                >Home</a
+              >
+            </li>
+            <li><a href="#about" target="_self">About</a></li>
+            <li>
+              <a
+                href="/01-Revision/01-lecture/pages/Services.html"
+                target="_parent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="/01-Revision/01-lecture/pages/contact.html" target="_top"
+                >Contact</a
+              >
+            </li>
           </ol>
+        </div>
+      </div>
+
+      <!-- Attributes Section -->
+      <div
+        class="atr-section"
+        style="
+          text-align: center;
+          margin-top: 10px;
+          border-radius: 10px;
+          padding: 10px;
+          border: 3px solid rgb(204, 31, 239);
+        "
+      >
+        <h1>Attributes</h1>
+        <ol>
+          <li><mark>target="_blank"</mark> open in new tab</li>
+          <li><mark>target="_self"</mark> open in same tab</li>
+          <li><mark>target="_parent"</mark> open in parent frame</li>
+          <li><mark>target="_top"</mark> open in topmost frame</li>
+        </ol>
+        <ul>
+          <li>
+            <mark>rel="noopener noreferrer"</mark> for security when using
+            target="_blank"
+          </li>
+        </ul>
+
+        <ol>
+          <li>
+            Email Link: <a href="mailto:mdtabish04@gmail.com">Send Email</a>
+          </li>
+          <li>Phone: <a href="tel:8102946894">8102946894</a></li>
+          <li>Integral Link: <a href="#about">View Integral</a></li>
+        </ol>
+      </div>
+
+      <!-- Notes Section -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 10px;
+          border-radius: 10px;
+          padding: 10px;
+          border: 3px solid rgb(46, 2, 2);
+        "
+      >
+        <h1>Notes</h1>
+        <p>
+          <strong>Note:</strong> The above links are examples of different
+          target attributes.
+        </p>
+        <p>
+          <strong>Note:</strong> The rel attribute is used for security when
+          using target="_blank".
+        </p>
+        <p>
+          <strong>Note:</strong> The href attribute is used to specify the URL
+          of the page the link goes to.
+        </p>
+        <p>
+          <strong>Note:</strong> The mailto: and tel: links are used to create
+          email and phone links respectively.
+        </p>
+        <p>
+          <strong>Note:</strong> The anchor link is used to navigate to a
+          specific section of the same page.
+        </p>
+        <p>
+          <strong>Note:</strong> The button links are used to create buttons
+          that link to other pages or websites.
+        </p>
+      </div>
+    </section>
+
+    <!-- Images Section -->
+    <section
+      class="image-section"
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+
+        grid-column: 1 / -1;
+
+        width: 100%;
+        max-width: 1400px;
+        box-sizing: border-box;
+
+        margin: 20px auto;
+        padding: 20px;
+
+        border: 3px solid red;
+        border-radius: 12px;
+      "
+    >
+      <div
+        class="image-content"
+        style="
+          display: grid;
+          grid-template-columns: 1.5fr 1fr;
+          gap: 20px;
+
+          grid-column: 1 / -1;
+
+          width: 100%;
+          box-sizing: border-box;
+          min-width: 0;
+        "
+      >
+        <!-- Theory -->
+        <div style="border: 3px solid red; padding: 10px; border-radius: 10px">
+          <h1>Images</h1>
+          <p>
+            <mark> <code>&lt;img&gt;</code> Tag </mark>
+            is used to display images on a web page.
+          </p>
+
+          <p>
+            Basic Example:
+            <code> &lt;img src="image.jpg" alt="My Image"&gt; </code>
+          </p>
+
+          <ul>
+            <li><code>&lt;img&gt;</code> → displays an image</li>
+            <li><code>src</code> → specifies the image path or URL</li>
+            <li><code>alt</code> → provides alternative text for the image</li>
+            <li><code>width</code> → specifies the image width</li>
+            <li><code>height</code> → specifies the image height</li>
+          </ul>
+
+          <h3>1. src Attribute</h3>
+
+          <p>
+            The <code>src</code> attribute specifies the location of the image.
+          </p>
+
+          <code> &lt;img src="image.jpg" alt="My Image"&gt; </code>
+
+          <h3>2. alt Attribute</h3>
+
+          <p>
+            The <code>alt</code> attribute provides alternative text if the
+            image cannot be displayed.
+          </p>
+
+          <code> &lt;img src="image.jpg" alt="Beautiful Mountain"&gt; </code>
+
+          <h3>3. width Attribute</h3>
+
+          <p>
+            The <code>width</code> attribute specifies the width of the image.
+          </p>
+
+          <code> &lt;img src="image.jpg" alt="Mountain" width="500"&gt; </code>
+
+          <h3>4. height Attribute</h3>
+
+          <p>
+            The <code>height</code> attribute specifies the height of the image.
+          </p>
+
+          <code> &lt;img src="image.jpg" alt="Mountain" height="300"&gt; </code>
+
+          <h3>5. Image Paths</h3>
+
+          <p>Images can be loaded using absolute or relative paths.</p>
+
+          <p><strong>Relative path:</strong></p>
+
+          <code> &lt;img src="images/photo.jpg" alt="Photo"&gt; </code>
+
+          <p><strong>Absolute URL:</strong></p>
+
+          <code>
+            &lt;img src="https://example.com/photo.jp" alt="Photo"&gt;
+          </code>
+
+          <h3>6. Responsive Images</h3>
+
+          <p>
+            A responsive image automatically adjusts its size according to the
+            available screen width.
+          </p>
+
+          <code>
+            &lt;img src="image.jpg" alt="Responsive Image" style="max-width:
+            100%; height: auto;" &gt;
+          </code>
+
+          <h3>7. &lt;figure&gt; Element</h3>
+
+          <p>
+            The <code>&lt;figure&gt;</code> element is used to group an image
+            with related content such as a caption.
+          </p>
+
+          <code>
+            &lt;figure&gt; &lt;img src="mountain.jpg" alt="Mountain"&gt;
+            &lt;figcaption&gt;Beautiful Mountain&lt;/figcaption&gt;
+            &lt;/figure&gt;
+          </code>
+
+          <h3>8. &lt;figcaption&gt; Element</h3>
+
+          <p>
+            The <code>&lt;figcaption&gt;</code> element provides a caption or
+            description for the content inside a <code>&lt;figure&gt;</code>.
+          </p>
+
+          <figure>
+            <img
+              src="/01-Revision/assets/image.png"
+              alt="Beautiful Mountain"
+              width="400"
+            />
+            <figcaption>Beautiful Mountain Landscape</figcaption>
+          </figure>
+        </div>
+
+        <!-- Examples -->
+
+        <div
+          style="
+            border: 3px solid blue;
+            padding: 10px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            min-width: 0;
+          "
+        >
+          <h1>Image Examples</h1>
+
+          <h3>1. Basic Image</h3>
+
+          <img
+            src="mountain.jpg"
+            alt="Beautiful Mountain"
+            style="max-width: 100%; height: auto; display: block"
+          />
+
+          <h3>2. Figure Example</h3>
+
+          <figure style="margin: 10px 0; max-width: 100%">
+            <img
+              src="/01-Revision/assets/image copy.png"
+              alt="Beautiful astronaut"
+              style="
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                display: block;
+                object-fit: contain;
+              "
+            />
+
+            <figcaption>Beautiful Astronaut</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h1>Image Gallery</h1>
+
+          <p>
+            An image gallery is used to display multiple images in an organized
+            layout.
+          </p>
+
+          <div class="image-gallery">
+            <img src="/01-Revision/assets/image.png" alt="Image 1" />
+            <img src="/01-Revision/assets/image copy.png" alt="Image 2" />
+            <img src="/01-Revision/assets/image.png" alt="Image 3" />
+            <img src="/01-Revision/assets/image copy.png" alt="Image 4" />
+          </div>
         </div>
       </div>
     </section>
