@@ -1,10 +1,9 @@
 /* =========================
-   Global
+   GLOBAL
 ========================= */
 
 * {
   box-sizing: border-box;
-  margin: 8px;
 }
 
 html {
@@ -14,12 +13,13 @@ html {
 body {
   background-color: bisque;
   font-size: larger;
-  margin: 0;
+  margin: 5px;
+  padding: 0;
   overflow-x: hidden;
 }
 
 /* =========================
-   Buttons
+   BUTTONS
 ========================= */
 
 #btn1,
@@ -66,13 +66,14 @@ body {
 #btn4:hover,
 #btn5:hover {
   transform: translateY(-2px);
+
   box-shadow:
     inset 0 0 5px black,
     0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* =========================
-   Modern Navbar
+   NAVBAR
 ========================= */
 
 .navbar-links {
@@ -86,6 +87,11 @@ body {
 
   padding: 0;
   margin: 0;
+}
+
+.navbar-links li {
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-links li a {
@@ -111,6 +117,8 @@ body {
     transform 0.3s ease-in-out;
 }
 
+/* Navbar Hover */
+
 .navbar-links li a:hover {
   color: #111827;
 
@@ -125,7 +133,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Navbar underline */
+/* Animated Underline */
 
 .navbar-links li a::after {
   content: "";
@@ -152,12 +160,14 @@ body {
 }
 
 /* =========================
-   Links Section
+   LINKS SECTION
 ========================= */
 
 .links-section {
   width: calc(100% - 16px);
   max-width: 1400px;
+
+  margin: 8px auto;
 
   box-sizing: border-box;
 }
@@ -168,7 +178,7 @@ body {
 }
 
 /* =========================
-   Image Section
+   IMAGE SECTION
 ========================= */
 
 .image-section {
@@ -193,6 +203,8 @@ body {
   box-sizing: border-box;
 }
 
+/* Images */
+
 .image-content img {
   display: block;
 
@@ -202,7 +214,7 @@ body {
 }
 
 /* =========================
-   Image Gallery
+   IMAGE GALLERY
 ========================= */
 
 .image-gallery {
@@ -256,7 +268,7 @@ body {
 }
 
 /* =========================
-   TABLET / MOBILE
+   TABLET
    <= 768px
 ========================= */
 
@@ -267,7 +279,7 @@ body {
     width: calc(100% - 16px) !important;
 
     padding: 10px !important;
-    margin: 8px !important;
+    margin: 8px auto !important;
   }
 
   .links-section > div {
@@ -301,7 +313,9 @@ body {
     font-size: 16px;
   }
 
-  /* Navbar */
+  /* =====================
+     NAVBAR
+  ===================== */
 
   .navbar-links {
     width: 100%;
@@ -329,7 +343,9 @@ body {
     bottom: 2px;
   }
 
-  /* Image section */
+  /* =====================
+     IMAGE SECTION
+  ===================== */
 
   .image-section {
     display: block !important;
@@ -368,7 +384,7 @@ body {
     font-size: 0.95rem;
   }
 
-  /* Long code examples */
+  /* Long code */
 
   .image-content code {
     overflow-wrap: anywhere;
@@ -410,63 +426,86 @@ body {
 }
 
 /* =========================
-   Responsive Tables
+   RESPONSIVE TABLE
 ========================= */
 
-.table-container {
+.table-container,
+.table-responsive {
   width: 100%;
   max-width: 100%;
+
   overflow-x: auto;
+
+  box-sizing: border-box;
+
   -webkit-overflow-scrolling: touch;
-  border-radius: 8px;
 }
 
-.table-container table {
-  width: 100%;
-  min-width: 600px;
+/* Table */
+
+.table-container table,
+.table-responsive table {
   border-collapse: collapse;
+
+  width: 100%;
+
+  min-width: 600px;
 }
+
+/* Table Cells */
 
 .table-container th,
-.table-container td {
+.table-container td,
+.table-responsive th,
+.table-responsive td {
   padding: 10px;
+
   text-align: center;
+
   white-space: nowrap;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .table-container {
-    overflow-x: auto;
-  }
+/* Code inside table */
 
-  .table-container table {
-    min-width: 600px;
-  }
-
-  .table-container th,
-  .table-container td {
-    padding: 8px;
-    font-size: 14px;
-  }
+.table-responsive code {
+  white-space: nowrap;
 }
 
 /* =========================
-   Form Responsive
+   FORM
 ========================= */
+
+.form-section {
+  width: calc(100% - 16px);
+  max-width: 1400px;
+
+  margin: 8px auto;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+}
+
+/* Form */
 
 form {
   width: 100%;
   max-width: 100%;
+
   box-sizing: border-box;
 }
+
+/* Inputs */
 
 form input,
 form select,
 form textarea {
   max-width: 100%;
+
   box-sizing: border-box;
 }
+
+/* Text Inputs */
 
 form input[type="text"],
 form input[type="email"],
@@ -479,40 +518,42 @@ form textarea {
   width: 100%;
 }
 
+/* Textarea */
+
 form textarea {
   resize: vertical;
+
+  width: 100%;
+  max-width: 100%;
 }
 
 /* =========================
-   Table Responsive
+   FORM ATTRIBUTE TABLE
 ========================= */
 
-.table-container {
+.form-table-container {
   width: 100%;
   max-width: 100%;
-  overflow-x: auto;
+
   box-sizing: border-box;
 }
 
-.table-container table {
-  border-collapse: collapse;
-  min-width: 600px;
-}
-
-.table-container th,
-.table-container td {
-  white-space: nowrap;
+.form-table-container h2 {
+  margin: 10px 0;
 }
 
 /* =========================
-   Mobile
+   MOBILE TABLE
 ========================= */
 
 @media (max-width: 600px) {
-  section {
-    max-width: 100%;
-    overflow: hidden;
+  .form-section {
+    width: calc(100% - 16px);
+
+    padding: 8px;
   }
+
+  /* Form */
 
   form {
     width: 100%;
@@ -521,24 +562,295 @@ form textarea {
   form input,
   form select,
   form textarea {
+    width: 100%;
     max-width: 100%;
   }
 
-  form textarea {
-    width: 100%;
-  }
+  /* Tables */
 
-  .table-container {
+  .table-container,
+  .table-responsive {
+    width: 100%;
+
     overflow-x: auto;
+
     -webkit-overflow-scrolling: touch;
   }
 
-  .table-container table {
+  .table-container table,
+  .table-responsive table {
     min-width: 600px;
   }
+
+  .table-container th,
+  .table-container td,
+  .table-responsive th,
+  .table-responsive td {
+    padding: 8px;
+
+    font-size: 14px;
+  }
+
+  /* Form table heading */
+
+  .form-table-container h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Prevent section from creating horizontal overflow */
+
+  .form-section {
+    overflow: hidden;
+  }
 }
-form textarea {
-  width: 100%;
-  max-width: 100%;
+
+/* =========================
+   Multimedia Section
+========================= */
+
+.multimedia-section {
+  min-width: 0;
+}
+
+.multimedia-section > div {
+  min-width: 0;
   box-sizing: border-box;
+}
+
+.multimedia-section audio,
+.multimedia-section video,
+.multimedia-section iframe {
+  max-width: 100%;
+}
+
+/* Responsive iframe */
+
+.multimedia-section iframe {
+  display: block;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .multimedia-section {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .multimedia-section {
+    width: calc(100% - 16px) !important;
+    margin: 8px !important;
+    padding: 8px !important;
+  }
+
+  .multimedia-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .multimedia-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .multimedia-section p,
+  .multimedia-section li {
+    font-size: 0.95rem;
+  }
+
+  .multimedia-section code {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .multimedia-section audio {
+    width: 100%;
+  }
+
+  .multimedia-section video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* =========================
+   Advanced HTML
+========================= */
+
+.advanced-html-section {
+  min-width: 0;
+}
+
+.advanced-html-section > div {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.advanced-html-section img,
+.advanced-html-section video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Details */
+
+.advanced-html-section summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Dialog */
+
+.advanced-html-section dialog {
+  max-width: 90%;
+  border: 3px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.advanced-html-section dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Progress / Meter */
+
+.advanced-html-section progress,
+.advanced-html-section meter {
+  max-width: 100%;
+}
+
+/* Canvas */
+
+.advanced-html-section canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* SVG */
+
+.advanced-html-section svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Keyboard focus */
+
+.advanced-html-section button:focus-visible,
+.advanced-html-section summary:focus-visible {
+  outline: 3px solid #ff6d2f;
+  outline-offset: 3px;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+  .advanced-html-section {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+  .advanced-html-section {
+    width: calc(100% - 16px) !important;
+    margin: 8px !important;
+    padding: 8px !important;
+  }
+
+  .advanced-html-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .advanced-html-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .advanced-html-section p,
+  .advanced-html-section li {
+    font-size: 0.95rem;
+  }
+
+  .advanced-html-section code {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .advanced-html-section dialog {
+    width: 85%;
+    padding: 15px;
+  }
+
+  .advanced-html-section button {
+    max-width: 100%;
+  }
+}
+
+/* =========================
+   HTML Development Section
+========================= */
+
+.development-html-section {
+  min-width: 0;
+}
+
+.development-html-section > div {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.development-html-section code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.development-html-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+  .development-html-section {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+  .development-html-section {
+    width: calc(100% - 16px) !important;
+    margin: 8px !important;
+    padding: 8px !important;
+  }
+
+  .development-html-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .development-html-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .development-html-section p,
+  .development-html-section li {
+    font-size: 0.95rem;
+  }
+
+  .development-html-section input,
+  .development-html-section button {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }

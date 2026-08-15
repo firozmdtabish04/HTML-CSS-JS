@@ -1092,7 +1092,10 @@
 
     <!-- Form -->
 
-    <section style="border: 3px solid red; padding: 10px; border-radius: 12px">
+    <section
+      class="form-section"
+      style="border: 3px solid red; padding: 10px; border-radius: 12px"
+    >
       <div>
         <h1><u>Forms</u></h1>
 
@@ -1484,73 +1487,1873 @@
 
       <hr />
 
-      <h2>Form Attributes Quick Reference</h2>
+      <div class="form-table-container">
+        <h2>Form Attributes Quick Reference</h2>
 
-      <table border="1" cellpadding="10">
-        <thead>
-          <tr>
-            <th>Attribute</th>
-            <th>Purpose</th>
-            <th>Example</th>
-          </tr>
-        </thead>
+        <div class="table-responsive">
+          <table border="1" cellpadding="10">
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Purpose</th>
+                <th>Example</th>
+              </tr>
+            </thead>
 
-        <tbody>
-          <tr>
-            <td><code>placeholder</code></td>
-            <td>Displays a hint inside an input</td>
-            <td><code>placeholder="Enter name"</code></td>
-          </tr>
+            <tbody>
+              <tr>
+                <td><code>placeholder</code></td>
+                <td>Displays a hint inside an input</td>
+                <td><code>placeholder="Enter name"</code></td>
+              </tr>
 
-          <tr>
-            <td><code>required</code></td>
-            <td>Makes a field mandatory</td>
-            <td><code>required</code></td>
-          </tr>
+              <tr>
+                <td><code>required</code></td>
+                <td>Makes a field mandatory</td>
+                <td><code>required</code></td>
+              </tr>
 
-          <tr>
-            <td><code>name</code></td>
-            <td>Identifies form data</td>
-            <td><code>name="email"</code></td>
-          </tr>
+              <tr>
+                <td><code>name</code></td>
+                <td>Identifies form data</td>
+                <td><code>name="email"</code></td>
+              </tr>
 
-          <tr>
-            <td><code>value</code></td>
-            <td>Defines the input value</td>
-            <td><code>value="Male"</code></td>
-          </tr>
+              <tr>
+                <td><code>value</code></td>
+                <td>Defines the input value</td>
+                <td><code>value="Male"</code></td>
+              </tr>
 
-          <tr>
-            <td><code>min</code></td>
-            <td>Sets minimum number</td>
-            <td><code>min="18"</code></td>
-          </tr>
+              <tr>
+                <td><code>min</code></td>
+                <td>Sets minimum number</td>
+                <td><code>min="18"</code></td>
+              </tr>
 
-          <tr>
-            <td><code>max</code></td>
-            <td>Sets maximum number</td>
-            <td><code>max="60"</code></td>
-          </tr>
+              <tr>
+                <td><code>max</code></td>
+                <td>Sets maximum number</td>
+                <td><code>max="60"</code></td>
+              </tr>
 
-          <tr>
-            <td><code>minlength</code></td>
-            <td>Sets minimum text length</td>
-            <td><code>minlength="3"</code></td>
-          </tr>
+              <tr>
+                <td><code>minlength</code></td>
+                <td>Sets minimum text length</td>
+                <td><code>minlength="3"</code></td>
+              </tr>
 
-          <tr>
-            <td><code>maxlength</code></td>
-            <td>Sets maximum text length</td>
-            <td><code>maxlength="20"</code></td>
-          </tr>
+              <tr>
+                <td><code>maxlength</code></td>
+                <td>Sets maximum text length</td>
+                <td><code>maxlength="20"</code></td>
+              </tr>
 
-          <tr>
-            <td><code>pattern</code></td>
-            <td>Validates using a pattern</td>
-            <td><code>pattern="[0-9]{10}"</code></td>
-          </tr>
-        </tbody>
-      </table>
+              <tr>
+                <td><code>pattern</code></td>
+                <td>Validates using a pattern</td>
+                <td><code>pattern="[0-9]{10}"</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Semantic HTML -->
+    <section
+      class="semantic-section"
+      style="
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+        align-items: start;
+        width: calc(100% - 16px);
+        max-width: 1400px;
+        margin: 8px auto;
+        padding: 10px;
+        border: 3px solid red;
+        border-radius: 12px;
+        box-sizing: border-box;
+      "
+    >
+      <!-- ========================= -->
+      <!-- Semantic HTML Theory -->
+      <!-- ========================= -->
+
+      <div
+        style="
+          border: 3px solid red;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1><u>Semantic HTML</u></h1>
+
+        <p>
+          <strong>Semantic HTML</strong> means using HTML elements that clearly
+          describe the meaning and purpose of their content.
+        </p>
+
+        <p>
+          Semantic elements make websites easier to understand for
+          <strong
+            >developers, browsers, search engines, and screen readers.</strong
+          >
+        </p>
+
+        <h3>1. What is Semantic HTML?</h3>
+
+        <p>
+          Semantic HTML uses meaningful HTML elements instead of generic
+          elements such as <code>&lt;div&gt;</code>.
+        </p>
+
+        <code> &lt;header&gt;Website Header&lt;/header&gt; </code>
+
+        <p>
+          The <code>&lt;header&gt;</code> element clearly tells us that the
+          content represents a header.
+        </p>
+
+        <h3>2. &lt;header&gt;</h3>
+
+        <p>
+          The <code>&lt;header&gt;</code> element represents introductory
+          content or a header for a page or section.
+        </p>
+
+        <code>
+          &lt;header&gt; &lt;h1&gt;My Website&lt;/h1&gt; &lt;/header&gt;
+        </code>
+
+        <h3>3. &lt;nav&gt;</h3>
+
+        <p>The <code>&lt;nav&gt;</code> element contains navigation links.</p>
+
+        <code>
+          &lt;nav&gt; &lt;a href="home.html"&gt;Home&lt;/a&gt; &lt;/nav&gt;
+        </code>
+
+        <h3>4. &lt;main&gt;</h3>
+
+        <p>
+          The <code>&lt;main&gt;</code> element contains the main content of the
+          webpage.
+        </p>
+
+        <p>A page should normally have only one main content area.</p>
+
+        <code> &lt;main&gt; Main Website Content &lt;/main&gt; </code>
+
+        <h3>5. &lt;section&gt;</h3>
+
+        <p>
+          The <code>&lt;section&gt;</code> element represents a thematic section
+          of content.
+        </p>
+
+        <code>
+          &lt;section&gt; &lt;h2&gt;Services&lt;/h2&gt; &lt;/section&gt;
+        </code>
+
+        <h3>6. &lt;article&gt;</h3>
+
+        <p>
+          The <code>&lt;article&gt;</code> element represents independent,
+          self-contained content.
+        </p>
+
+        <p>Examples include:</p>
+
+        <ul>
+          <li>Blog posts</li>
+          <li>News articles</li>
+          <li>Forum posts</li>
+          <li>Product reviews</li>
+        </ul>
+
+        <code>
+          &lt;article&gt; &lt;h2&gt;HTML Tutorial&lt;/h2&gt; &lt;p&gt;Learn
+          HTML...&lt;/p&gt; &lt;/article&gt;
+        </code>
+
+        <h3>7. &lt;aside&gt;</h3>
+
+        <p>
+          The <code>&lt;aside&gt;</code> element contains content that is
+          related to the main content but not part of its primary flow.
+        </p>
+
+        <p>Examples:</p>
+
+        <ul>
+          <li>Sidebars</li>
+          <li>Related articles</li>
+          <li>Advertisements</li>
+          <li>Additional information</li>
+        </ul>
+
+        <code> &lt;aside&gt; Related Articles &lt;/aside&gt; </code>
+
+        <h3>8. &lt;footer&gt;</h3>
+
+        <p>
+          The <code>&lt;footer&gt;</code> element represents footer information
+          for a page or section.
+        </p>
+
+        <code>
+          &lt;footer&gt; &lt;p&gt;Copyright 2026&lt;/p&gt; &lt;/footer&gt;
+        </code>
+
+        <h3>9. &lt;figure&gt;</h3>
+
+        <p>
+          The <code>&lt;figure&gt;</code> element represents self-contained
+          content such as an image, diagram, chart, or illustration.
+        </p>
+
+        <code>
+          &lt;figure&gt; &lt;img src="image.jpg" alt="Mountain"&gt;
+          &lt;figcaption&gt;Mountain Landscape&lt;/figcaption&gt;
+          &lt;/figure&gt;
+        </code>
+
+        <h3>10. &lt;time&gt;</h3>
+
+        <p>
+          The <code>&lt;time&gt;</code> element represents a specific date,
+          time, or duration.
+        </p>
+
+        <code>
+          &lt;time datetime="2026-08-15"&gt; August 15, 2026 &lt;/time&gt;
+        </code>
+
+        <h3>11. Semantic vs Non-Semantic HTML</h3>
+
+        <p>
+          <strong>Semantic elements</strong> clearly describe their purpose.
+        </p>
+
+        <ul>
+          <li><code>&lt;header&gt;</code> → Header content</li>
+          <li><code>&lt;nav&gt;</code> → Navigation</li>
+          <li><code>&lt;main&gt;</code> → Main content</li>
+          <li><code>&lt;article&gt;</code> → Independent content</li>
+          <li><code>&lt;footer&gt;</code> → Footer content</li>
+        </ul>
+
+        <p>
+          <strong>Non-semantic elements</strong> do not describe their purpose.
+        </p>
+
+        <ul>
+          <li><code>&lt;div&gt;</code></li>
+          <li><code>&lt;span&gt;</code></li>
+        </ul>
+
+        <h3>Benefits of Semantic HTML</h3>
+
+        <ul>
+          <li>Improves code readability</li>
+          <li>Improves accessibility</li>
+          <li>Helps search engines understand the page</li>
+          <li>Makes website structure easier to maintain</li>
+          <li>Provides meaningful document structure</li>
+        </ul>
+      </div>
+
+      <!-- ========================= -->
+      <!-- Semantic HTML Example -->
+      <!-- ========================= -->
+
+      <div
+        style="
+          border: 3px solid blue;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1>Semantic HTML Example</h1>
+
+        <header
+          style="border: 2px solid orange; padding: 10px; border-radius: 8px"
+        >
+          <h2>My Website</h2>
+          <p>Welcome to my HTML website</p>
+        </header>
+
+        <nav
+          style="
+            border: 2px solid purple;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+          "
+        >
+          <strong>Navigation</strong>
+
+          <p>
+            <a href="#home">Home</a> | <a href="#about">About</a> |
+            <a href="#services">Services</a> |
+            <a href="#contact">Contact</a>
+          </p>
+        </nav>
+
+        <main
+          style="
+            border: 2px solid green;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+          "
+        >
+          <h2>Main Content</h2>
+
+          <section
+            style="border: 2px solid red; padding: 10px; border-radius: 8px"
+          >
+            <h3>About HTML</h3>
+
+            <p>HTML is used to create the structure of web pages.</p>
+          </section>
+
+          <article
+            style="
+              border: 2px solid brown;
+              padding: 10px;
+              margin-top: 10px;
+              border-radius: 8px;
+            "
+          >
+            <h3>HTML Article</h3>
+
+            <p>
+              Semantic HTML makes webpages easier to understand and maintain.
+            </p>
+
+            <p>
+              Published on:
+              <time datetime="2026-08-15">August 15, 2026</time>
+            </p>
+          </article>
+
+          <figure
+            style="
+              border: 2px solid darkblue;
+              padding: 10px;
+              margin: 10px 0;
+              border-radius: 8px;
+            "
+          >
+            <img
+              src="/01-Revision/assets/image.png"
+              alt="Example image"
+              style="
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                display: block;
+              "
+            />
+
+            <figcaption>Example image using the figure element.</figcaption>
+          </figure>
+        </main>
+
+        <aside
+          style="
+            border: 2px solid teal;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+          "
+        >
+          <h3>Related Information</h3>
+
+          <ul>
+            <li>HTML Elements</li>
+            <li>HTML Attributes</li>
+            <li>HTML Forms</li>
+            <li>HTML Images</li>
+          </ul>
+        </aside>
+
+        <footer
+          style="
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            text-align: center;
+          "
+        >
+          <p>&copy; 2026 My Website</p>
+
+          <p>All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Accessibility -->
+    <!-- ========================= -->
+
+    <section
+      class="accessibility-section"
+      style="
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+        align-items: start;
+        width: calc(100% - 16px);
+        max-width: 1400px;
+        margin: 8px auto;
+        padding: 10px;
+        border: 3px solid red;
+        border-radius: 12px;
+        box-sizing: border-box;
+      "
+    >
+      <!-- ========================= -->
+      <!-- Accessibility Theory -->
+      <!-- ========================= -->
+
+      <div
+        style="
+          border: 3px solid red;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1><u>Accessibility</u></h1>
+
+        <p>
+          <strong>Web accessibility</strong> means designing websites so that
+          people with different abilities can use, understand, and navigate
+          them.
+        </p>
+
+        <p>
+          Accessible websites are easier to use with
+          <strong
+            >screen readers, keyboards, and other assistive
+            technologies.</strong
+          >
+        </p>
+
+        <h3>1. <code>alt</code> Attributes</h3>
+
+        <p>
+          The <code>alt</code> attribute provides alternative text for an image.
+          Screen readers can read this text to users who cannot see the image.
+        </p>
+
+        <code> &lt;img src="profile.jpg" alt="Profile photograph"&gt; </code>
+
+        <p>
+          Always provide meaningful <code>alt</code> text when an image contains
+          useful information.
+        </p>
+
+        <p>
+          For decorative images, an empty <code>alt</code> attribute can be
+          used:
+        </p>
+
+        <code> &lt;img src="decoration.png" alt=""&gt; </code>
+
+        <h3>2. Proper Heading Hierarchy</h3>
+
+        <p>
+          Headings should follow a logical hierarchy using
+          <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.
+        </p>
+
+        <code>
+          &lt;h1&gt;Website Title&lt;/h1&gt; &lt;h2&gt;About Us&lt;/h2&gt;
+          &lt;h3&gt;Our Team&lt;/h3&gt;
+        </code>
+
+        <p>
+          Avoid choosing headings only because of their visual size. Headings
+          should describe the structure of the content.
+        </p>
+
+        <h3>3. Labels for Forms</h3>
+
+        <p>
+          Every form input should have a meaningful
+          <code>&lt;label&gt;</code>.
+        </p>
+
+        <code>
+          &lt;label for="email"&gt;Email&lt;/label&gt; &lt;input type="email"
+          id="email" name="email"&gt;
+        </code>
+
+        <p>
+          The label's <code>for</code> attribute should match the input's
+          <code>id</code>.
+        </p>
+
+        <h3>4. Keyboard Accessibility</h3>
+
+        <p>
+          A website should be usable without a mouse. Users should be able to
+          navigate interactive elements using the keyboard.
+        </p>
+
+        <p>Common keyboard keys include:</p>
+
+        <ul>
+          <li><strong>Tab</strong> → move to the next interactive element</li>
+          <li><strong>Shift + Tab</strong> → move to the previous element</li>
+          <li><strong>Enter</strong> → activate links and buttons</li>
+          <li><strong>Space</strong> → activate buttons and controls</li>
+        </ul>
+
+        <h3>5. ARIA Basics</h3>
+
+        <p>
+          ARIA stands for
+          <strong>Accessible Rich Internet Applications</strong>.
+        </p>
+
+        <p>
+          ARIA attributes provide additional information to assistive
+          technologies when normal HTML semantics are not sufficient.
+        </p>
+
+        <code> &lt;button aria-label="Close menu"&gt; X &lt;/button&gt; </code>
+
+        <p>Common ARIA attributes include:</p>
+
+        <ul>
+          <li><code>aria-label</code> → provides an accessible name</li>
+          <li>
+            <code>aria-labelledby</code> → references another element for a name
+          </li>
+          <li>
+            <code>aria-describedby</code> → references descriptive information
+          </li>
+          <li>
+            <code>aria-hidden</code> → hides content from assistive technology
+          </li>
+          <li>
+            <code>aria-expanded</code> → indicates whether a control is expanded
+          </li>
+        </ul>
+
+        <h3>6. Accessible Buttons</h3>
+
+        <p>Use the native <code>&lt;button&gt;</code> element for actions.</p>
+
+        <code> &lt;button type="button"&gt;Submit&lt;/button&gt; </code>
+
+        <p>
+          Buttons are keyboard accessible by default and provide semantic
+          meaning to browsers and assistive technologies.
+        </p>
+
+        <h3>7. Accessible Links</h3>
+
+        <p>
+          Use the <code>&lt;a&gt;</code> element when the user is navigating to
+          another page or location.
+        </p>
+
+        <code> &lt;a href="about.html"&gt;About Us&lt;/a&gt; </code>
+
+        <p>Link text should clearly describe where the link goes.</p>
+
+        <p><strong>Good:</strong></p>
+
+        <code> &lt;a href="resume.pdf"&gt;Download my resume&lt;/a&gt; </code>
+
+        <p><strong>Avoid:</strong></p>
+
+        <code> &lt;a href="resume.pdf"&gt;Click here&lt;/a&gt; </code>
+
+        <h3>8. Semantic HTML and Accessibility</h3>
+
+        <p>
+          Semantic HTML automatically provides useful information to assistive
+          technologies.
+        </p>
+
+        <ul>
+          <li><code>&lt;nav&gt;</code> → navigation</li>
+          <li><code>&lt;main&gt;</code> → main content</li>
+          <li><code>&lt;button&gt;</code> → interactive action</li>
+          <li><code>&lt;form&gt;</code> → form area</li>
+          <li><code>&lt;header&gt;</code> → introductory content</li>
+          <li><code>&lt;footer&gt;</code> → footer content</li>
+        </ul>
+
+        <h3>Accessibility Best Practices</h3>
+
+        <ul>
+          <li>Use meaningful <code>alt</code> text</li>
+          <li>Use headings in logical order</li>
+          <li>Use labels with form controls</li>
+          <li>Make interactive elements keyboard accessible</li>
+          <li>Use semantic HTML</li>
+          <li>Use ARIA only when necessary</li>
+          <li>Use clear link and button text</li>
+          <li>Maintain sufficient color contrast</li>
+        </ul>
+      </div>
+
+      <!-- ========================= -->
+      <!-- Accessibility Examples -->
+      <!-- ========================= -->
+
+      <div
+        style="
+          border: 3px solid blue;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1>Accessibility Examples</h1>
+
+        <!-- Alt Example -->
+
+        <h3>1. Accessible Image</h3>
+
+        <img
+          src="/01-Revision/assets/image.png"
+          alt="Example mountain landscape"
+          style="
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+          "
+        />
+
+        <br />
+
+        <!-- Heading Example -->
+
+        <h3>2. Heading Hierarchy</h3>
+
+        <article>
+          <h2>HTML Tutorial</h2>
+
+          <h3>HTML Elements</h3>
+
+          <p>HTML elements define the structure of a webpage.</p>
+
+          <h3>HTML Attributes</h3>
+
+          <p>Attributes provide additional information about elements.</p>
+        </article>
+
+        <!-- Keyboard Example -->
+
+        <h3>3. Keyboard Accessible Button</h3>
+
+        <button
+          type="button"
+          style="
+            padding: 8px 15px;
+            border-radius: 8px;
+            border: 2px solid black;
+            cursor: pointer;
+          "
+        >
+          Submit
+        </button>
+
+        <p>
+          Press <kbd>Tab</kbd> to reach the button and <kbd>Enter</kbd> or
+          <kbd>Space</kbd> to activate it.
+        </p>
+
+        <!-- ARIA Example -->
+
+        <h3>4. ARIA Example</h3>
+
+        <button
+          type="button"
+          aria-label="Close notification"
+          style="padding: 8px 15px; border-radius: 8px; border: 2px solid black"
+        >
+          X
+        </button>
+
+        <p>
+          The <code>aria-label</code> tells a screen reader that this button
+          closes the notification.
+        </p>
+
+        <!-- Accessible Link -->
+
+        <h3>5. Accessible Link</h3>
+
+        <a href="/01-Revision/01-lecture/pages/home.html"> Go to Home Page </a>
+
+        <!-- Accessible Form -->
+
+        <h3>6. Accessible Form</h3>
+
+        <form
+          style="border: 2px solid green; padding: 15px; border-radius: 8px"
+        >
+          <p>
+            <label for="access-name"> Full Name: </label>
+
+            <br />
+
+            <input
+              type="text"
+              id="access-name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="access-email"> Email: </label>
+
+            <br />
+
+            <input
+              type="email"
+              id="access-email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="access-password"> Password: </label>
+
+            <br />
+
+            <input
+              type="password"
+              id="access-password"
+              name="password"
+              required
+            />
+          </p>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </section>
+    <!-- ========================= -->
+    <!-- Multimedia -->
+    <!-- ========================= -->
+
+    <section
+      class="multimedia-section"
+      style="
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+        align-items: start;
+        width: calc(100% - 16px);
+        max-width: 1400px;
+        margin: 8px auto;
+        padding: 10px;
+        border: 3px solid red;
+        border-radius: 12px;
+        box-sizing: border-box;
+      "
+    >
+      <!-- ========================= -->
+      <!-- Multimedia Theory -->
+      <!-- ========================= -->
+
+      <div
+        style="
+          border: 3px solid red;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1><u>Multimedia</u></h1>
+
+        <p>
+          HTML provides several elements for adding multimedia content such as
+          <strong>audio, video, and external content</strong> to a webpage.
+        </p>
+
+        <h3>1. &lt;audio&gt;</h3>
+
+        <p>
+          The <code>&lt;audio&gt;</code> element is used to embed audio content
+          in an HTML page.
+        </p>
+
+        <code>
+          &lt;audio controls&gt; &lt;source src="song.mp3" type="audio/mpeg"&gt;
+          &lt;/audio&gt;
+        </code>
+
+        <h3>2. &lt;video&gt;</h3>
+
+        <p>
+          The <code>&lt;video&gt;</code> element is used to embed video content
+          in a webpage.
+        </p>
+
+        <code>
+          &lt;video controls width="500"&gt; &lt;source src="video.mp4"
+          type="video/mp4"&gt; &lt;/video&gt;
+        </code>
+
+        <h3>3. &lt;source&gt;</h3>
+
+        <p>
+          The <code>&lt;source&gt;</code> element specifies the media file and
+          its MIME type.
+        </p>
+
+        <p>
+          It allows you to provide multiple formats so the browser can choose a
+          format it supports.
+        </p>
+
+        <code>
+          &lt;video controls&gt; &lt;source src="video.mp4" type="video/mp4"&gt;
+          &lt;source src="video.webm" type="video/webm"&gt; &lt;/video&gt;
+        </code>
+
+        <h3>4. controls</h3>
+
+        <p>
+          The <code>controls</code> attribute displays the browser's built-in
+          media controls.
+        </p>
+
+        <p>For example:</p>
+
+        <ul>
+          <li>Play / Pause</li>
+          <li>Volume</li>
+          <li>Progress bar</li>
+          <li>Fullscreen for video</li>
+        </ul>
+
+        <code> &lt;video controls&gt; ... &lt;/video&gt; </code>
+
+        <h3>5. autoplay</h3>
+
+        <p>
+          The <code>autoplay</code> attribute tells the browser to start playing
+          the media automatically when possible.
+        </p>
+
+        <code> &lt;video autoplay&gt; ... &lt;/video&gt; </code>
+
+        <p>
+          Browsers commonly restrict autoplay when the media has sound.
+          Combining <code>autoplay</code> with <code>muted</code> is commonly
+          used for automatically playing videos.
+        </p>
+
+        <h3>6. muted</h3>
+
+        <p>
+          The <code>muted</code> attribute starts audio or video without sound.
+        </p>
+
+        <code> &lt;video autoplay muted&gt; ... &lt;/video&gt; </code>
+
+        <h3>7. loop</h3>
+
+        <p>
+          The <code>loop</code> attribute makes the media automatically start
+          again after it finishes.
+        </p>
+
+        <code>
+          &lt;audio controls loop&gt; &lt;source src="music.mp3"
+          type="audio/mpeg"&gt; &lt;/audio&gt;
+        </code>
+
+        <h3>8. &lt;iframe&gt;</h3>
+
+        <p>
+          The <code>&lt;iframe&gt;</code> element embeds another webpage or
+          external content inside the current webpage.
+        </p>
+
+        <code>
+          &lt;iframe src="https://example.com" width="600" height="400"&gt;
+          &lt;/iframe&gt;
+        </code>
+
+        <h3>9. Embedding YouTube Videos</h3>
+
+        <p>
+          YouTube videos can be embedded using an
+          <code>&lt;iframe&gt;</code>.
+        </p>
+
+        <p>You can get the embed code from YouTube using:</p>
+
+        <ol>
+          <li>Open a YouTube video.</li>
+          <li>Click <strong>Share</strong>.</li>
+          <li>Select <strong>Embed</strong>.</li>
+          <li>Copy the generated iframe code.</li>
+        </ol>
+
+        <code>
+          &lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube
+          video" allowfullscreen&gt; &lt;/iframe&gt;
+        </code>
+
+        <h3>Multimedia Attributes Summary</h3>
+
+        <ul>
+          <li><code>controls</code> → displays media controls</li>
+          <li>
+            <code>autoplay</code> → starts media automatically when allowed
+          </li>
+          <li><code>muted</code> → starts media without sound</li>
+          <li><code>loop</code> → repeats the media</li>
+          <li><code>src</code> → specifies the media source</li>
+          <li><code>type</code> → specifies the media MIME type</li>
+        </ul>
+      </div>
+
+      <!-- ========================= -->
+      <!-- Multimedia Examples -->
+      <!-- ========================= -->
+
+      <div
+        style="
+          border: 3px solid blue;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1>Multimedia Examples</h1>
+
+        <!-- Audio -->
+
+        <h3>1. Audio</h3>
+
+        <audio controls style="width: 100%">
+          <source src="/01-Revision/assets/audio.mp3" type="audio/mpeg" />
+
+          Your browser does not support the audio element.
+        </audio>
+
+        <br />
+
+        <!-- Video -->
+
+        <h3>2. Video</h3>
+
+        <video
+          controls
+          style="
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+          "
+        >
+          <source src="/01-Revision/assets/video.mp4" type="video/mp4" />
+
+          Your browser does not support the video element.
+        </video>
+
+        <!-- Multiple Sources -->
+
+        <h3>3. Multiple Video Sources</h3>
+
+        <video controls style="width: 100%; max-width: 600px; height: auto">
+          <source src="/01-Revision/assets/video.mp4" type="video/mp4" />
+          <source src="/01-Revision/assets/video.webm" type="video/webm" />
+
+          Your browser does not support the video element.
+        </video>
+
+        <!-- Autoplay -->
+
+        <h3>4. Autoplay + Muted + Loop</h3>
+
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          style="
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+          "
+        >
+          <source src="/01-Revision/assets/video.mp4" type="video/mp4" />
+        </video>
+
+        <p>
+          <code>autoplay</code> starts the video automatically,
+          <code>muted</code> disables sound, and <code>loop</code> repeats the
+          video.
+        </p>
+
+        <!-- YouTube -->
+
+        <h3>5. YouTube Video</h3>
+
+        <div style="position: relative; width: 100%; aspect-ratio: 16 / 9">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="YouTube video player"
+            style="width: 100%; height: 100%; border: 0; border-radius: 8px"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Advanced HTML -->
+    <!-- ========================= -->
+
+    <section
+      class="advanced-html-section"
+      style="
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+        align-items: start;
+        width: calc(100% - 16px);
+        max-width: 1400px;
+        margin: 8px auto;
+        padding: 10px;
+        border: 3px solid red;
+        border-radius: 12px;
+        box-sizing: border-box;
+      "
+    >
+      <!-- ========================= -->
+      <!-- Theory -->
+      <!-- ========================= -->
+
+      <div
+        style="
+          border: 3px solid red;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1><u>Advanced HTML</u></h1>
+
+        <p>
+          Advanced HTML elements provide additional functionality for creating
+          interactive, visual, and responsive webpages.
+        </p>
+
+        <!-- 1 -->
+
+        <h3>1. &lt;details&gt;</h3>
+
+        <p>
+          The <code>&lt;details&gt;</code> element creates a disclosure widget
+          that the user can open and close.
+        </p>
+
+        <code> &lt;details&gt; ... &lt;/details&gt; </code>
+
+        <!-- 2 -->
+
+        <h3>2. &lt;summary&gt;</h3>
+
+        <p>
+          The <code>&lt;summary&gt;</code> element provides the visible heading
+          that the user clicks to open or close the
+          <code>&lt;details&gt;</code> element.
+        </p>
+
+        <code>
+          &lt;details&gt; &lt;summary&gt;What is HTML?&lt;/summary&gt;
+          &lt;p&gt;HTML creates webpage structure.&lt;/p&gt; &lt;/details&gt;
+        </code>
+
+        <!-- 3 -->
+
+        <h3>3. &lt;dialog&gt;</h3>
+
+        <p>
+          The <code>&lt;dialog&gt;</code> element represents a dialog box or
+          modal window.
+        </p>
+
+        <code> &lt;dialog&gt; Hello! &lt;/dialog&gt; </code>
+
+        <p>
+          JavaScript methods such as <code>showModal()</code> and
+          <code>close()</code> can be used to control a dialog.
+        </p>
+
+        <!-- 4 -->
+
+        <h3>4. &lt;progress&gt;</h3>
+
+        <p>
+          The <code>&lt;progress&gt;</code> element represents the completion
+          progress of a task.
+        </p>
+
+        <code> &lt;progress value="70" max="100"&gt; &lt;/progress&gt; </code>
+
+        <p>In this example, the progress is <strong>70%</strong>.</p>
+
+        <!-- 5 -->
+
+        <h3>5. &lt;meter&gt;</h3>
+
+        <p>
+          The <code>&lt;meter&gt;</code> element represents a scalar measurement
+          within a known range.
+        </p>
+
+        <p>Examples include:</p>
+
+        <ul>
+          <li>Disk usage</li>
+          <li>Battery level</li>
+          <li>Score</li>
+          <li>Temperature</li>
+        </ul>
+
+        <code>
+          &lt;meter min="0" max="100" value="75"&gt; 75% &lt;/meter&gt;
+        </code>
+
+        <!-- 6 -->
+
+        <h3>6. &lt;canvas&gt;</h3>
+
+        <p>
+          The <code>&lt;canvas&gt;</code> element provides a drawing area that
+          JavaScript can use to draw graphics.
+        </p>
+
+        <code>
+          &lt;canvas id="myCanvas" width="300" height="150"&gt; &lt;/canvas&gt;
+        </code>
+
+        <p>Canvas can be used for:</p>
+
+        <ul>
+          <li>Charts</li>
+          <li>Games</li>
+          <li>Animations</li>
+          <li>Graphics</li>
+        </ul>
+
+        <!-- 7 -->
+
+        <h3>7. &lt;svg&gt;</h3>
+
+        <p>
+          SVG stands for <strong>Scalable Vector Graphics</strong>. It is used
+          to create vector-based graphics directly in HTML.
+        </p>
+
+        <code>
+          &lt;svg width="100" height="100"&gt; &lt;circle cx="50" cy="50" r="40"
+          /&gt; &lt;/svg&gt;
+        </code>
+
+        <p>SVG graphics can scale without losing quality.</p>
+
+        <!-- 8 -->
+
+        <h3>8. &lt;picture&gt;</h3>
+
+        <p>
+          The <code>&lt;picture&gt;</code> element allows different images to be
+          provided for different screen sizes or formats.
+        </p>
+
+        <code>
+          &lt;picture&gt; &lt;source media="(max-width: 600px)"
+          srcset="mobile.jpg"&gt; &lt;img src="desktop.jpg" alt="Example"&gt;
+          &lt;/picture&gt;
+        </code>
+
+        <!-- 9 -->
+
+        <h3>9. &lt;source&gt;</h3>
+
+        <p>
+          The <code>&lt;source&gt;</code> element specifies alternative media
+          resources.
+        </p>
+
+        <p>
+          It can be used inside elements such as
+          <code>&lt;picture&gt;</code>, <code>&lt;audio&gt;</code>, and
+          <code>&lt;video&gt;</code>.
+        </p>
+
+        <code>
+          &lt;picture&gt; &lt;source srcset="image.webp" type="image/webp"&gt;
+          &lt;img src="image.jpg" alt="Image"&gt; &lt;/picture&gt;
+        </code>
+
+        <!-- 10 -->
+
+        <h3>10. data-* Attributes</h3>
+
+        <p>
+          <code>data-*</code> attributes allow developers to store custom data
+          on HTML elements.
+        </p>
+
+        <code>
+          &lt;button data-product-id="101" data-category="laptop"&gt; Buy
+          &lt;/button&gt;
+        </code>
+
+        <p>
+          JavaScript can access this information using the
+          <code>dataset</code> property.
+        </p>
+
+        <code> element.dataset.productId </code>
+
+        <h3>Advanced HTML Summary</h3>
+
+        <ul>
+          <li><code>&lt;details&gt;</code> → expandable content</li>
+          <li><code>&lt;summary&gt;</code> → heading for details</li>
+          <li><code>&lt;dialog&gt;</code> → dialog/modal</li>
+          <li><code>&lt;progress&gt;</code> → task progress</li>
+          <li><code>&lt;meter&gt;</code> → measurement within a range</li>
+          <li><code>&lt;canvas&gt;</code> → JavaScript drawing area</li>
+          <li><code>&lt;svg&gt;</code> → vector graphics</li>
+          <li><code>&lt;picture&gt;</code> → responsive image sources</li>
+          <li><code>&lt;source&gt;</code> → alternative media source</li>
+          <li><code>data-*</code> → custom element data</li>
+        </ul>
+      </div>
+
+      <!-- ========================= -->
+      <!-- Examples -->
+      <!-- ========================= -->
+
+      <div
+        style="
+          border: 3px solid blue;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1>Advanced HTML Examples</h1>
+
+        <!-- Details -->
+
+        <h3>1. Details & Summary</h3>
+
+        <details
+          style="border: 2px solid orange; padding: 10px; border-radius: 8px"
+        >
+          <summary>What is HTML?</summary>
+
+          <p>HTML is used to create the structure of webpages.</p>
+          <p>HTML is used to create the structure of webpages.</p>
+        </details>
+
+        <br />
+
+        <!-- Dialog -->
+
+        <h3>2. Dialog</h3>
+
+        <button
+          type="button"
+          onclick="document.getElementById('myDialog').showModal()"
+        >
+          Open Dialog
+        </button>
+
+        <dialog id="myDialog">
+          <h2>Hello!</h2>
+
+          <p>This is an HTML dialog box.</p>
+
+          <button
+            type="button"
+            onclick="document.getElementById('myDialog').close()"
+          >
+            Close
+          </button>
+        </dialog>
+
+        <!-- Progress -->
+
+        <h3>3. Progress</h3>
+
+        <label for="course-progress"> HTML Course Progress: </label>
+
+        <progress id="course-progress" value="75" max="100" style="width: 100%">
+          75%
+        </progress>
+
+        <p>75% completed</p>
+
+        <!-- Meter -->
+
+        <h3>4. Meter</h3>
+
+        <label for="storage"> Storage Usage: </label>
+
+        <meter id="storage" min="0" max="100" value="70" style="width: 100%">
+          70%
+        </meter>
+
+        <p>70% storage used</p>
+
+        <!-- Canvas -->
+
+        <h3>5. Canvas</h3>
+
+        <canvas
+          id="myCanvas"
+          width="300"
+          height="150"
+          style="
+            width: 100%;
+            max-width: 300px;
+            border: 2px solid black;
+            border-radius: 8px;
+          "
+        >
+          Your browser does not support canvas.
+        </canvas>
+
+        <script>
+          const canvas = document.getElementById("myCanvas");
+          const ctx = canvas.getContext("2d");
+
+          ctx.fillStyle = "blue";
+          ctx.fillRect(30, 30, 100, 70);
+
+          ctx.fillStyle = "red";
+          ctx.beginPath();
+          ctx.arc(210, 65, 35, 0, Math.PI * 2);
+          ctx.fill();
+        </script>
+
+        <!-- SVG -->
+
+        <h3>6. SVG</h3>
+
+        <svg
+          width="200"
+          height="150"
+          viewBox="0 0 200 150"
+          style="max-width: 100%; border: 2px solid black; border-radius: 8px"
+        >
+          <circle cx="70" cy="75" r="45" fill="blue" />
+
+          <rect x="120" y="40" width="50" height="70" fill="red" />
+        </svg>
+
+        <!-- Picture -->
+
+        <h3>7. Picture</h3>
+
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/01-Revision/assets/image copy.png"
+          />
+
+          <img
+            src="/01-Revision/assets/image.png"
+            alt="Responsive example"
+            style="
+              width: 100%;
+              max-width: 400px;
+              height: auto;
+              display: block;
+              border-radius: 8px;
+            "
+          />
+        </picture>
+
+        <p>
+          Resize the browser window to see the responsive image source change.
+        </p>
+
+        <!-- Source -->
+
+        <h3>8. Source</h3>
+
+        <video controls style="width: 100%; max-width: 400px; height: auto">
+          <source src="/01-Revision/assets/video.mp4" type="video/mp4" />
+
+          <source src="/01-Revision/assets/video.webm" type="video/webm" />
+
+          Your browser does not support the video element.
+        </video>
+
+        <!-- data-* -->
+
+        <h3>9. data-* Attribute</h3>
+
+        <button
+          type="button"
+          data-product-id="101"
+          data-category="laptop"
+          onclick="
+            alert(
+              'Product ID: ' +
+                this.dataset.productId +
+                '\nCategory: ' +
+                this.dataset.category,
+            )
+          "
+        >
+          Product 101
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- 1.10 HTML for Development -->
+    <!-- ============================= -->
+
+    <section
+      class="development-html-section"
+      style="
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+        align-items: start;
+        width: calc(100% - 16px);
+        max-width: 1400px;
+        margin: 8px auto;
+        padding: 10px;
+        border: 3px solid red;
+        border-radius: 12px;
+        box-sizing: border-box;
+      "
+    >
+      <!-- ============================= -->
+      <!-- THEORY -->
+      <!-- ============================= -->
+
+      <div
+        style="
+          border: 3px solid red;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1><u>HTML for Development</u></h1>
+
+        <p>
+          HTML for development focuses on creating webpages that are
+          <strong
+            >well-structured, responsive, accessible, SEO-friendly,</strong
+          >
+          and easy to maintain.
+        </p>
+
+        <!-- 1 -->
+
+        <h3>1. &lt;meta charset="UTF-8"&gt;</h3>
+
+        <p>
+          The <code>charset</code> meta tag specifies the character encoding
+          used by the webpage.
+        </p>
+
+        <p>
+          UTF-8 supports a large number of characters, symbols, and languages.
+        </p>
+
+        <code> &lt;meta charset="UTF-8"&gt; </code>
+
+        <!-- 2 -->
+
+        <h3>2. Viewport Meta Tag</h3>
+
+        <p>
+          The viewport meta tag makes a webpage responsive on mobile devices.
+        </p>
+
+        <code>
+          &lt;meta name="viewport" content="width=device-width,
+          initial-scale=1.0" &gt;
+        </code>
+
+        <ul>
+          <li>
+            <code>width=device-width</code>
+            → uses the device's screen width
+          </li>
+
+          <li>
+            <code>initial-scale=1.0</code>
+            → sets the initial zoom level
+          </li>
+        </ul>
+
+        <!-- 3 -->
+
+        <h3>3. &lt;meta name="description"&gt;</h3>
+
+        <p>
+          The description meta tag provides a short description of the webpage.
+          Search engines may use this description in search results.
+        </p>
+
+        <code>
+          &lt;meta name="description" content="Learn HTML, CSS and JavaScript
+          development." &gt;
+        </code>
+
+        <!-- 4 -->
+
+        <h3>4. &lt;meta name="author"&gt;</h3>
+
+        <p>
+          The author meta tag specifies the author or creator of the webpage.
+        </p>
+
+        <code> &lt;meta name="author" content="Tabish Firoz" &gt; </code>
+
+        <!-- 5 -->
+
+        <h3>5. Favicon</h3>
+
+        <p>
+          A favicon is the small icon displayed in the browser tab next to the
+          webpage title.
+        </p>
+
+        <code>
+          &lt;link rel="icon" type="image/png" href="favicon.png" &gt;
+        </code>
+
+        <!-- 6 -->
+
+        <h3>6. Open Graph Basics</h3>
+
+        <p>
+          Open Graph meta tags control how a webpage appears when its URL is
+          shared on social media platforms.
+        </p>
+
+        <code>
+          &lt;meta property="og:title" content="HTML Development Course"&gt;
+        </code>
+
+        <code>
+          &lt;meta property="og:description" content="Learn complete HTML
+          development." &gt;
+        </code>
+
+        <code> &lt;meta property="og:image" content="preview.png" &gt; </code>
+
+        <code>
+          &lt;meta property="og:url" content="https://example.com" &gt;
+        </code>
+
+        <p>Common Open Graph properties include:</p>
+
+        <ul>
+          <li><code>og:title</code></li>
+          <li><code>og:description</code></li>
+          <li><code>og:image</code></li>
+          <li><code>og:url</code></li>
+          <li><code>og:type</code></li>
+        </ul>
+
+        <!-- 7 -->
+
+        <h3>7. SEO-Friendly HTML</h3>
+
+        <p>
+          SEO-friendly HTML helps search engines understand the content and
+          structure of a webpage.
+        </p>
+
+        <ul>
+          <li>Use meaningful page titles</li>
+          <li>Use proper heading hierarchy</li>
+          <li>Use semantic HTML</li>
+          <li>Use descriptive links</li>
+          <li>Add meaningful image alt text</li>
+          <li>Use a useful meta description</li>
+          <li>Avoid unnecessary HTML elements</li>
+        </ul>
+
+        <code> &lt;h1&gt;Complete HTML Development Course&lt;/h1&gt; </code>
+
+        <!-- 8 -->
+
+        <h3>8. Accessibility Basics</h3>
+
+        <p>
+          Accessibility means making webpages usable by people with different
+          abilities and assistive technologies.
+        </p>
+
+        <ul>
+          <li>Use <code>alt</code> for meaningful images</li>
+          <li>Use labels for form inputs</li>
+          <li>Use semantic HTML</li>
+          <li>Maintain proper heading hierarchy</li>
+          <li>Make interactive elements keyboard accessible</li>
+          <li>Use ARIA when necessary</li>
+        </ul>
+
+        <code>
+          &lt;label for="email"&gt;Email&lt;/label&gt; &lt;input id="email"
+          type="email"&gt;
+        </code>
+
+        <!-- 9 -->
+
+        <h3>9. HTML Validation</h3>
+
+        <p>
+          HTML validation checks whether your HTML follows the HTML standard and
+          helps detect structural errors.
+        </p>
+
+        <p>Validation can help identify:</p>
+
+        <ul>
+          <li>Missing closing tags</li>
+          <li>Invalid attributes</li>
+          <li>Incorrect nesting</li>
+          <li>Duplicate IDs</li>
+          <li>Invalid HTML structure</li>
+        </ul>
+
+        <code> &lt;img src="image.jpg" alt="Mountain"&gt; </code>
+
+        <p>A good development workflow is:</p>
+
+        <code> Write HTML → Validate → Fix errors → Test → Deploy </code>
+
+        <!-- 10 -->
+
+        <h3>10. Clean HTML Structure</h3>
+
+        <p>
+          Clean HTML means writing organized, readable, semantic, and
+          maintainable markup.
+        </p>
+
+        <ul>
+          <li>Use proper indentation</li>
+          <li>Use semantic elements</li>
+          <li>Use meaningful class names</li>
+          <li>Avoid unnecessary nested elements</li>
+          <li>Keep HTML readable</li>
+          <li>Use comments where useful</li>
+          <li>Avoid duplicate IDs</li>
+        </ul>
+
+        <code>
+          &lt;header&gt; &lt;nav&gt;...&lt;/nav&gt; &lt;/header&gt; &lt;main&gt;
+          &lt;section&gt; ... &lt;/section&gt; &lt;/main&gt; &lt;footer&gt; ...
+          &lt;/footer&gt;
+        </code>
+      </div>
+
+      <!-- ============================= -->
+      <!-- EXAMPLES -->
+      <!-- ============================= -->
+
+      <div
+        style="
+          border: 3px solid blue;
+          padding: 15px;
+          border-radius: 10px;
+          min-width: 0;
+        "
+      >
+        <h1>Development Examples</h1>
+
+        <!-- Meta -->
+
+        <h3>1. Meta Tags</h3>
+
+        <div style="border: 2px solid green; padding: 10px; border-radius: 8px">
+          <code> &lt;meta charset="UTF-8"&gt; </code>
+
+          <br /><br />
+
+          <code>
+            &lt;meta name="viewport" content="width=device-width,
+            initial-scale=1.0" &gt;
+          </code>
+
+          <br /><br />
+
+          <code>
+            &lt;meta name="description" content="Learn HTML development." &gt;
+          </code>
+
+          <br /><br />
+
+          <code> &lt;meta name="author" content="Tabish Firoz" &gt; </code>
+        </div>
+
+        <!-- Favicon -->
+
+        <h3>2. Favicon</h3>
+
+        <code>
+          &lt;link rel="icon" type="image/png" href="favicon.png" &gt;
+        </code>
+
+        <p>Add this inside the <code>&lt;head&gt;</code>.</p>
+
+        <!-- Open Graph -->
+
+        <h3>3. Open Graph</h3>
+
+        <div
+          style="border: 2px solid purple; padding: 10px; border-radius: 8px"
+        >
+          <code>
+            &lt;meta property="og:title" content="HTML Development Course"&gt;
+          </code>
+
+          <br /><br />
+
+          <code>
+            &lt;meta property="og:description" content="Learn HTML
+            development."&gt;
+          </code>
+
+          <br /><br />
+
+          <code> &lt;meta property="og:image" content="preview.png"&gt; </code>
+        </div>
+
+        <!-- SEO -->
+
+        <h3>4. SEO-Friendly Page</h3>
+
+        <article
+          style="border: 2px solid orange; padding: 12px; border-radius: 8px"
+        >
+          <h2>HTML Development Course</h2>
+
+          <p>
+            Learn HTML from beginner concepts to advanced development
+            techniques.
+          </p>
+
+          <a href="#html-course"> Learn HTML Development </a>
+        </article>
+
+        <!-- Accessibility -->
+
+        <h3>5. Accessible Form</h3>
+
+        <form
+          style="border: 2px solid brown; padding: 12px; border-radius: 8px"
+        >
+          <p>
+            <label for="dev-name"> Name: </label>
+
+            <input
+              type="text"
+              id="dev-name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="dev-email"> Email: </label>
+
+            <input
+              type="email"
+              id="dev-email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </p>
+
+          <button type="submit">Register</button>
+        </form>
+
+        <!-- Clean Structure -->
+
+        <h3>6. Clean Semantic Structure</h3>
+
+        <div style="border: 2px solid teal; padding: 12px; border-radius: 8px">
+          <code>
+            &lt;header&gt;
+            <br />
+            &nbsp;&nbsp;&lt;nav&gt;...&lt;/nav&gt;
+            <br />
+            &lt;/header&gt;
+            <br /><br />
+
+            &lt;main&gt;
+            <br />
+            &nbsp;&nbsp;&lt;section&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;HTML Course&lt;/h1&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Learn HTML.&lt;/p&gt;
+            <br />
+            &nbsp;&nbsp;&lt;/section&gt;
+            <br />
+            &lt;/main&gt;
+            <br /><br />
+
+            &lt;footer&gt;
+            <br />
+            &nbsp;&nbsp;Copyright 2026
+            <br />
+            &lt;/footer&gt;
+          </code>
+        </div>
+      </div>
     </section>
 
     <script src="/01-Revision/01-lecture/script.js"></script>
