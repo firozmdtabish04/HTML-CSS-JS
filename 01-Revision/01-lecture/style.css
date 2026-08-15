@@ -1,0 +1,55 @@
+body {
+  background-color: bisque;
+  font-size: larger;
+}
+
+#btn1 {
+  background-color: blue;
+  color: aliceblue;
+  padding: 6px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: larger;
+  box-shadow: inset 0px 0px 5px black;
+  
+}
+
+#btn2 {
+  background-color: red;
+  color: aliceblue;
+  padding: 6px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: larger;
+  box-shadow: inset 0px 0px 5px black;
+}
+
+#btn3 {
+  background-color: orange;
+  color: aliceblue;
+  padding: 6px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: larger;
+  box-shadow: inset 0px 0px 5px black;
+}
+
+#btn4 {
+  background-color: purple;
+  color: aliceblue;
+  padding: 6px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: larger;
+  box-shadow: inset 0px 0px 5px black;
+}
+
+#btn5 {
+  background-color: green;
+  color: aliceblue;
+  padding: 6px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: larger;
+  box-shadow: inset 0px 0px 5px black;
+}
