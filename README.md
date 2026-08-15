@@ -6,205 +6,187 @@ A **topic-by-topic, beginner-to-advanced learning roadmap** for mastering **HTML
 
 Use the checkboxes to track your progress.
 **Rule:** Don't mark a topic complete until you can explain it and build something with it.
-
----
-
-##  Course Progress
-
-- [x] HTML — Complete
-- [ ] CSS — Complete
-- [ ] JavaScript — Complete
-- [ ] DOM & Browser APIs — Complete
-- [ ] Async JavaScript & APIs — Complete
-- [ ] Modern JavaScript — Complete
-- [ ] Projects — Complete
-- [ ] Final Project — Complete
-
----
-
-# 1.  HTML
+# 1. HTML
 
 ## 1.1 HTML Fundamentals
 
-- [ ] What is HTML?
-- [ ] HTML document structure
-- [ ] `<!DOCTYPE html>`
-- [ ] `<html>`
-- [ ] `<head>`
-- [ ] `<body>`
-- [ ] HTML comments
-- [ ] HTML tags
-- [ ] HTML elements
-- [ ] HTML attributes
-- [ ] Opening and closing tags
-- [ ] Nested elements
-- [ ] Block-level elements
-- [ ] Inline elements
+- [x] What is HTML?
+- [x] HTML document structure
+- [x] `<!DOCTYPE html>`
+- [x] `<html>`
+- [x] `<head>`
+- [x] `<body>`
+- [x] HTML comments
+- [x] HTML tags
+- [x] HTML elements
+- [x] HTML attributes
+- [x] Opening and closing tags
+- [x] Nested elements
+- [x] Block-level elements
+- [x] Inline elements
 
 ### Practice
 
-- [ ] Create your first HTML page
-- [ ] Create a personal introduction page
+- [x] Create your first HTML page
+- [x] Create a personal introduction page
 
 ---
 
 ## 1.2 Text Elements
 
-- [ ] `<h1>` to `<h6>`
-- [ ] `<p>`
-- [ ] `<br>`
-- [ ] `<hr>`
-- [ ] `<strong>`
-- [ ] `<b>`
-- [ ] `<em>`
-- [ ] `<i>`
-- [ ] `<u>`
-- [ ] `<mark>`
-- [ ] `<small>`
-- [ ] `<del>`
-- [ ] `<ins>`
-- [ ] `<sub>`
-- [ ] `<sup>`
+- [x] `<h1>` to `<h6>`
+- [x] `<p>`
+- [x] `<br>`
+- [x] `<hr>`
+- [x] `<strong>`
+- [x] `<b>`
+- [x] `<em>`
+- [x] `<i>`
+- [x] `<u>`
+- [x] `<mark>`
+- [x] `<small>`
+- [x] `<del>`
+- [x] `<ins>`
+- [x] `<sub>`
+- [x] `<sup>`
 
 ### Practice
 
-- [ ] Create an article page
-- [ ] Create a formatted resume page
+- [x] Create an article page
+- [x] Create a formatted resume page
 
 ---
 
 ## 1.3 Links
 
-- [ ] `<a>` tag
-- [ ] `href`
-- [ ] Absolute URLs
-- [ ] Relative URLs
-- [ ] `target`
-- [ ] `rel`
-- [ ] Email links
-- [ ] Telephone links
-- [ ] Internal page links
-- [ ] Anchor links
+- [x] `<a>` tag
+- [x] `href`
+- [x] Absolute URLs
+- [x] Relative URLs
+- [x] `target`
+- [x] `rel`
+- [x] Email links
+- [x] Telephone links
+- [x] Internal page links
+- [x] Anchor links
 
 ### Practice
 
-- [ ] Create a multi-page website
-- [ ] Create a navigation menu
+- [x] Create a multi-page website
+- [x] Create a navigation menu
 
 ---
 
 ## 1.4 Images
 
-- [ ] `<img>`
-- [ ] `src`
-- [ ] `alt`
-- [ ] `width`
-- [ ] `height`
-- [ ] Image paths
-- [ ] Responsive images
-- [ ] `<figure>`
-- [ ] `<figcaption>`
+- [x] `<img>`
+- [x] `src`
+- [x] `alt`
+- [x] `width`
+- [x] `height`
+- [x] Image paths
+- [x] Responsive images
+- [x] `<figure>`
+- [x] `<figcaption>`
 
 ### Practice
 
-- [ ] Create an image gallery
+- [x] Create an image gallery
 
 ---
 
 ## 1.5 Lists
 
-- [ ] Ordered lists
-- [ ] Unordered lists
-- [ ] Description lists
-- [ ] Nested lists
+- [x] Ordered lists
+- [x] Unordered lists
+- [x] Description lists
+- [x] Nested lists
 
 ### Practice
 
-- [ ] Create a skills list
-- [ ] Create a nested menu
+- [x] Create a skills list
+- [x] Create a nested menu
 
 ---
 
 ## 1.6 Tables
 
-- [ ] `<table>`
-- [ ] `<tr>`
-- [ ] `<th>`
-- [ ] `<td>`
-- [ ] `<thead>`
-- [ ] `<tbody>`
-- [ ] `<tfoot>`
-- [ ] `rowspan`
-- [ ] `colspan`
+- [x] `<table>`
+- [x] `<tr>`
+- [x] `<th>`
+- [x] `<td>`
+- [x] `<thead>`
+- [x] `<tbody>`
+- [x] `<tfoot>`
+- [x] `rowspan`
+- [x] `colspan`
 
 ### Practice
 
-- [ ] Create a student marks table
-- [ ] Create a product table
+- [x] Create a student marks table
+- [x] Create a product table
 
 ---
 
 ## 1.7 Forms
 
-- [ ] `<form>`
-- [ ] `<input>`
-- [ ] `text`
-- [ ] `email`
-- [ ] `password`
-- [ ] `number`
-- [ ] `date`
-- [ ] `radio`
-- [ ] `checkbox`
-- [ ] `file`
-- [ ] `submit`
-- [ ] `<textarea>`
-- [ ] `<select>`
-- [ ] `<option>`
-- [ ] `<label>`
-- [ ] `placeholder`
-- [ ] `required`
-- [ ] `name`
-- [ ] `value`
-- [ ] HTML form validation
+- [x] `<form>`
+- [x] `<input>`
+- [x] `text`
+- [x] `email`
+- [x] `password`
+- [x] `number`
+- [x] `date`
+- [x] `radio`
+- [x] `checkbox`
+- [x] `file`
+- [x] `submit`
+- [x] `<textarea>`
+- [x] `<select>`
+- [x] `<option>`
+- [x] `<label>`
+- [x] `placeholder`
+- [x] `required`
+- [x] `name`
+- [x] `value`
+- [x] HTML form validation
 
 ### Practice
 
-- [ ] Registration form
-- [ ] Login form
-- [ ] Contact form
-- [ ] Job application form
+- [x] Registration form
+- [x] Login form
+- [x] Contact form
+- [x] Job application form
 
 ---
 
-# 2.  Semantic HTML
+# 2. Semantic HTML
 
-- [ ] What is semantic HTML?
-- [ ] `<header>`
-- [ ] `<nav>`
-- [ ] `<main>`
-- [ ] `<section>`
-- [ ] `<article>`
-- [ ] `<aside>`
-- [ ] `<footer>`
-- [ ] `<figure>`
-- [ ] `<time>`
-- [ ] Semantic vs non-semantic HTML
+- [x] What is semantic HTML?
+- [x] `<header>`
+- [x] `<nav>`
+- [x] `<main>`
+- [x] `<section>`
+- [x] `<article>`
+- [x] `<aside>`
+- [x] `<footer>`
+- [x] `<figure>`
+- [x] `<time>`
+- [x] Semantic vs non-semantic HTML
 
 ### Accessibility
 
-- [ ] `alt` attributes
-- [ ] Proper heading hierarchy
-- [ ] Labels for forms
-- [ ] Keyboard accessibility
-- [ ] ARIA basics
-- [ ] Accessible buttons and links
+- [x] `alt` attributes
+- [x] Proper heading hierarchy
+- [x] Labels for forms
+- [x] Keyboard accessibility
+- [x] ARIA basics
+- [x] Accessible buttons and links
 
 ### Practice
 
-- [ ] Build a semantic blog page
-- [ ] Build an accessible registration form
-
----
+- [x] Build a semantic blog page
+- [x] Build an accessible registration form
 
 # 3. 🎨 CSS
 
