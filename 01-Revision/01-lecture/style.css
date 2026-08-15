@@ -19,6 +19,410 @@ body {
 }
 
 /* =========================
+   Education Navbar
+========================= */
+
+.education-navbar {
+  width: calc(100% - 16px);
+  max-width: 1400px;
+
+  margin: 8px auto;
+  padding: 12px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  background-color: white;
+
+  border: 3px solid red;
+  border-radius: 14px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   Logo
+========================= */
+
+.education-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  color: red;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+.education-nav-links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* =========================
+   Navigation Link
+========================= */
+
+.education-nav-links li a {
+  position: relative;
+
+  display: inline-block;
+
+  padding: 8px 16px;
+
+  color: black;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border: 1px solid transparent;
+  border-radius: 9px;
+
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+/* =========================
+   Hover
+========================= */
+
+.education-nav-links li a:hover {
+  color: red;
+
+  background-color: rgba(255, 109, 47, 0.08);
+
+  border-color: rgba(255, 109, 47, 0.4);
+
+  box-shadow:
+    inset 0 0 6px rgba(255, 109, 47, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Animated Underline
+========================= */
+
+.education-nav-links li a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 3px;
+
+  width: 0;
+  height: 2px;
+
+  background-color: red;
+
+  border-radius: 10px;
+
+  transform: translateX(-50%);
+
+  transition: width 0.35s ease-in-out;
+}
+
+.education-nav-links li a:hover::after {
+  width: 55%;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 800px) {
+  .education-navbar {
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 12px;
+  }
+
+  .education-logo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 500px) {
+  .education-navbar {
+    width: calc(100% - 16px);
+
+    padding: 10px;
+  }
+
+  .education-logo {
+    width: 100%;
+
+    font-size: 1.2rem;
+
+    white-space: normal;
+
+    text-align: center;
+  }
+
+  .education-nav-links {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 5px;
+  }
+
+  .education-nav-links li {
+    width: 100%;
+  }
+
+  .education-nav-links li a {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+
+    padding: 8px 4px;
+  }
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.education-logo {
+  position: relative;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  color: red;
+
+  padding: 8px 12px;
+
+  border: 2px solid red;
+  border-radius: 10px;
+
+  text-decoration: underline;
+
+  white-space: nowrap;
+
+  animation: glowBorder 3.5s linear infinite alternate;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.education-nav-links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation Link */
+
+.education-nav-links li a {
+  position: relative;
+
+  display: inline-block;
+
+  padding: 9px 13px;
+
+  color: black;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border: 1px solid transparent;
+  border-radius: 9px;
+
+  transition:
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+/* Hover */
+
+.education-nav-links li a:hover {
+  color: red;
+
+  background-color: rgba(255, 109, 47, 0.08);
+
+  border-color: rgba(255, 109, 47, 0.4);
+
+  box-shadow:
+    inset 0 0 6px rgba(255, 109, 47, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.08);
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   ANIMATED UNDERLINE
+========================= */
+
+.education-nav-links li a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 3px;
+
+  width: 0;
+  height: 2px;
+
+  background-color: red;
+
+  border-radius: 10px;
+
+  transform: translateX(-50%);
+
+  transition: width 0.35s ease-in-out;
+}
+
+.education-nav-links li a:hover::after {
+  width: 60%;
+}
+
+/* =========================
+   BORDER GLOW
+========================= */
+
+@keyframes glowBorder {
+  0% {
+    border-color: red;
+    box-shadow: 0 0 5px red;
+  }
+
+  50% {
+    border-color: orange;
+    box-shadow: 0 0 15px orange;
+  }
+
+  100% {
+    border-color: blue;
+    box-shadow: 0 0 15px blue;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .education-navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .education-logo {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .education-nav-links {
+    flex-wrap: wrap;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .education-navbar {
+    width: calc(100% - 16px);
+
+    padding: 10px;
+
+    gap: 12px;
+  }
+
+  .education-logo {
+    width: 100%;
+
+    font-size: 1.25rem;
+
+    padding: 8px;
+
+    white-space: normal;
+
+    text-align: center;
+
+    box-sizing: border-box;
+  }
+
+  .education-nav-links {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 5px;
+  }
+
+  .education-nav-links li {
+    width: 100%;
+  }
+
+  .education-nav-links li a {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+
+    padding: 8px 4px;
+  }
+}
+/* =========================
    BUTTONS
 ========================= */
 
@@ -852,5 +1256,214 @@ form textarea {
   .development-html-section button {
     max-width: 100%;
     box-sizing: border-box;
+  }
+}
+
+/* =========================
+   EDUCATION FOOTER
+========================= */
+
+.education-footer {
+  width: 100%;
+
+  margin-top: 40px;
+
+  background-color: #111827;
+
+  color: white;
+
+  border-top: 4px solid red;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   FOOTER CONTAINER
+========================= */
+
+.footer-container {
+  width: calc(100% - 32px);
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px;
+
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1fr;
+
+  gap: 40px;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  color: #ff6d2f;
+
+  font-size: 1.6rem;
+}
+
+.footer-brand p {
+  max-width: 450px;
+
+  color: #d1d5db;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   FOOTER COLUMNS
+========================= */
+
+.footer-column h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  color: white;
+
+  font-size: 1.2rem;
+}
+
+.footer-column ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 9px;
+}
+
+.footer-column a {
+  position: relative;
+
+  color: #d1d5db;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease-in-out,
+    padding-left 0.3s ease-in-out;
+}
+
+.footer-column a:hover {
+  color: #ff6d2f;
+
+  padding-left: 6px;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+  width: calc(100% - 32px);
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  padding: 18px 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  color: #9ca3af;
+
+  font-size: 0.9rem;
+
+  box-sizing: border-box;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom strong {
+  color: #ff6d2f;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .education-footer {
+    margin-top: 25px;
+  }
+
+  .footer-container {
+    width: calc(100% - 16px);
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding: 30px 10px;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.3rem;
+  }
+
+  .footer-brand p {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 0.95rem;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-bottom {
+    width: calc(100% - 16px);
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 15px 5px;
+
+    gap: 8px;
   }
 }
