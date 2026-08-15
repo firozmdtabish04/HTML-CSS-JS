@@ -6,6 +6,8 @@ A **topic-by-topic, beginner-to-advanced learning roadmap** for mastering **HTML
 
 Use the checkboxes to track your progress.
 **Rule:** Don't mark a topic complete until you can explain it and build something with it.
+## index.html: index.html is usually the main/starting HTML file of a website. the web server normally looks for a default page, commonly:
+
 # 1. HTML
 
 ## 1.1 HTML Fundamentals
