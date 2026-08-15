@@ -190,203 +190,325 @@ Use the checkboxes to track your progress.
 - [x] Build a semantic blog page
 - [x] Build an accessible registration form
 
+
+
 # 3. 🎨 CSS
 
 ## 3.1 CSS Fundamentals
 
-- [ ] What is CSS?
-- [ ] Inline CSS
-- [ ] Internal CSS
-- [ ] External CSS
-- [ ] CSS syntax
-- [ ] CSS comments
-- [ ] CSS selectors
-- [ ] CSS properties
-- [ ] CSS values
+- [x] What is CSS?
+- [x] Inline CSS
+- [x] Internal CSS
+- [x] External CSS
+- [x] CSS syntax
+- [x] CSS comments
+- [x] CSS selectors
+- [x] CSS properties
+- [x] CSS values
 
 ---
 
 ## 3.2 Selectors
 
-- [ ] Element selector
-- [ ] Class selector
-- [ ] ID selector
-- [ ] Universal selector
-- [ ] Attribute selector
-- [ ] Descendant selector
-- [ ] Child selector
-- [ ] Adjacent sibling selector
-- [ ] General sibling selector
-- [ ] Grouping selector
+- [x] Element selector
+- [x] Class selector
+- [x] ID selector
+- [x] Universal selector
+- [x] Attribute selector
+- [x] Descendant selector
+- [x] Child selector
+- [x] Adjacent sibling selector
+- [x] General sibling selector
+- [x] Grouping selector
 
 ---
 
 ## 3.3 Colors & Backgrounds
 
-- [ ] Named colors
-- [ ] HEX
-- [ ] RGB
-- [ ] RGBA
-- [ ] HSL
-- [ ] Background color
-- [ ] Background image
-- [ ] Background size
-- [ ] Background position
-- [ ] Background repeat
-- [ ] Gradients
+- [x] Named colors
+- [x] HEX
+- [x] RGB
+- [x] RGBA
+- [x] HSL
+- [x] Background color
+- [x] Background image
+- [x] Background size
+- [x] Background position
+- [x] Background repeat
+- [x] Gradients
 
 ### Practice
 
-- [ ] Create a gradient landing page
+- [x] Create a gradient landing page
 
 ---
 
 # 4. 📦 CSS Box Model
 
-- [ ] Content
-- [ ] Padding
-- [ ] Border
-- [ ] Margin
-- [ ] `box-sizing`
-- [ ] `width`
-- [ ] `height`
-- [ ] `min-width`
-- [ ] `max-width`
-- [ ] `min-height`
-- [ ] `max-height`
-- [ ] `overflow`
+- [x] Content
+- [x] Padding
+- [x] Border
+- [x] Margin
+- [x] `box-sizing`
+- [x] `width`
+- [x] `height`
+- [x] `min-width`
+- [x] `max-width`
+- [x] `min-height`
+- [x] `max-height`
+- [x] `overflow`
 
 ### Practice
 
-- [ ] Create reusable cards
-- [ ] Create a pricing card
+- [x] Create reusable cards
+- [x] Create a pricing card
 
 ---
 
-# 5.  CSS Typography
+# 5. CSS Typography
 
-- [ ] `font-family`
-- [ ] `font-size`
-- [ ] `font-weight`
-- [ ] `font-style`
-- [ ] `line-height`
-- [ ] `letter-spacing`
-- [ ] `word-spacing`
-- [ ] `text-align`
-- [ ] `text-decoration`
-- [ ] `text-transform`
-- [ ] Web fonts
-- [ ] Google Fonts
+- [x] `font-family`
+- [x] `font-size`
+- [x] `font-weight`
+- [x] `font-style`
+- [x] `line-height`
+- [x] `letter-spacing`
+- [x] `word-spacing`
+- [x] `text-align`
+- [x] `text-decoration`
+- [x] `text-transform`
+- [x] Web fonts
+- [x] Google Fonts
 
 ---
 
-# 6.  CSS Layout
+# 6. CSS Layout
 
 ## Flexbox
 
-- [ ] What is Flexbox?
-- [ ] `display: flex`
-- [ ] `flex-direction`
-- [ ] `justify-content`
-- [ ] `align-items`
-- [ ] `align-content`
-- [ ] `flex-wrap`
-- [ ] `gap`
-- [ ] `flex-grow`
-- [ ] `flex-shrink`
-- [ ] `flex-basis`
-- [ ] `align-self`
-- [ ] `order`
+- [x] What is Flexbox?
+- [x] `display: flex`
+- [x] `flex-direction`
+- [x] `justify-content`
+- [x] `align-items`
+- [x] `align-content`
+- [x] `flex-wrap`
+- [x] `gap`
+- [x] `flex-grow`
+- [x] `flex-shrink`
+- [x] `flex-basis`
+- [x] `align-self`
+- [x] `order`
 
 ### Practice
 
-- [ ] Navbar using Flexbox
-- [ ] Card layout using Flexbox
-- [ ] Responsive navigation
+- [x] Navbar using Flexbox
+- [x] Card layout using Flexbox
+- [x] Responsive navigation
 
 ---
 
 ## CSS Grid
 
-- [ ] What is CSS Grid?
-- [ ] `display: grid`
-- [ ] `grid-template-columns`
-- [ ] `grid-template-rows`
-- [ ] `gap`
-- [ ] `grid-column`
-- [ ] `grid-row`
-- [ ] `grid-area`
-- [ ] `repeat()`
-- [ ] `minmax()`
-- [ ] `auto-fit`
-- [ ] `auto-fill`
+- [x] What is CSS Grid?
+- [x] `display: grid`
+- [x] `grid-template-columns`
+- [x] `grid-template-rows`
+- [x] `gap`
+- [x] `grid-column`
+- [x] `grid-row`
+- [x] `grid-area`
+- [x] `repeat()`
+- [x] `minmax()`
+- [x] `auto-fit`
+- [x] `auto-fill`
 
 ### Practice
 
-- [ ] Photo gallery
-- [ ] Dashboard layout
-- [ ] Admin panel layout
+- [x] Photo gallery
+- [x] Dashboard layout
+- [x] Admin panel layout
 
 ---
 
 # 7. 📱 Responsive Design
 
-- [ ] What is responsive design?
-- [ ] Mobile-first design
-- [ ] Media queries
-- [ ] Breakpoints
-- [ ] Responsive units
-- [ ] `%`
-- [ ] `em`
-- [ ] `rem`
-- [ ] `vw`
-- [ ] `vh`
-- [ ] `clamp()`
-- [ ] Responsive images
-- [ ] Responsive typography
+- [x] What is responsive design?
+- [x] Mobile-first design
+- [x] Media queries
+- [x] Breakpoints
+- [x] Responsive units
+- [x] `%`
+- [x] `em`
+- [x] `rem`
+- [x] `vw`
+- [x] `vh`
+- [x] `clamp()`
+- [x] Responsive images
+- [x] Responsive typography
 
 ### Practice
 
-- [ ] Convert desktop website to mobile
-- [ ] Build responsive portfolio
-- [ ] Build responsive dashboard
+- [x] Convert desktop website to mobile
+- [x] Build responsive portfolio
+- [x] Build responsive dashboard
 
 ---
 
 # 8. ✨ Advanced CSS
 
-- [ ] CSS variables
-- [ ] `:hover`
-- [ ] `:focus`
-- [ ] `:active`
-- [ ] `:nth-child()`
-- [ ] `:not()`
-- [ ] Pseudo-elements
-- [ ] `::before`
-- [ ] `::after`
-- [ ] Positioning
-- [ ] `static`
-- [ ] `relative`
-- [ ] `absolute`
-- [ ] `fixed`
-- [ ] `sticky`
-- [ ] `z-index`
-- [ ] Shadows
-- [ ] Borders
-- [ ] Border radius
-- [ ] Opacity
-- [ ] CSS transitions
-- [ ] CSS transforms
-- [ ] CSS animations
-- [ ] `@keyframes`
-- [ ] CSS filters
+- [x] CSS variables
+- [x] `:hover`
+- [x] `:focus`
+- [x] `:active`
+- [x] `:nth-child()`
+- [x] `:not()`
+- [x] Pseudo-elements
+- [x] `::before`
+- [x] `::after`
+- [x] Positioning
+- [x] `static`
+- [x] `relative`
+- [x] `absolute`
+- [x] `fixed`
+- [x] `sticky`
+- [x] `z-index`
+- [x] Shadows
+- [x] Borders
+- [x] Border radius
+- [x] Opacity
+- [x] CSS transitions
+- [x] CSS transforms
+- [x] CSS animations
+- [x] `@keyframes`
+- [x] CSS filters
 
 ### Practice
 
-- [ ] Animated button
-- [ ] Animated card
-- [ ] Loading animation
-- [ ] Modern landing page
+- [x] Animated button
+- [x] Animated card
+- [x] Loading animation
+- [x] Modern landing page
+
+---
+
+# 9. 🎯 CSS Cascade & Specificity
+
+- [x] CSS cascade
+- [x] Specificity
+- [x] Inline specificity
+- [x] ID specificity
+- [x] Class specificity
+- [x] Element specificity
+- [x] Specificity calculation
+- [x] `!important`
+- [x] Inheritance
+- [x] CSS source order
+- [x] Shorthand vs longhand properties
+
+---
+
+# 10. 📐 Advanced Positioning
+
+- [x] Normal document flow
+- [x] Containing block
+- [x] `top`
+- [x] `right`
+- [x] `bottom`
+- [x] `left`
+- [x] Stacking context
+- [x] `z-index`
+
+---
+
+# 11. 🧮 CSS Functions
+
+- [x] `calc()`
+- [x] `min()`
+- [x] `max()`
+- [x] `clamp()`
+- [x] `var()`
+- [x] `rgb()`
+- [x] `hsl()`
+- [x] `url()`
+
+---
+
+# 12. 🚀 Modern CSS
+
+- [x] CSS nesting
+- [x] `aspect-ratio`
+- [x] `object-fit`
+- [x] `object-position`
+- [x] `scroll-behavior`
+- [x] `scroll-snap`
+- [x] `backdrop-filter`
+- [x] `accent-color`
+- [x] `appearance`
+- [x] `:is()`
+- [x] `:where()`
+- [x] `:has()`
+
+---
+
+# 13. ♿ CSS Accessibility
+
+- [x] `:focus`
+- [x] `:focus-visible`
+- [x] Color contrast
+- [x] `prefers-reduced-motion`
+- [x] Visible focus indicators
+- [x] Accessible hover states
+
+---
+
+# 14. 🏗️ CSS Architecture
+
+- [x] Reusable classes
+- [x] Component-based CSS
+- [x] Naming conventions
+- [x] BEM basics
+- [x] CSS organization
+- [x] CSS reset
+- [x] Normalize CSS
+- [x] Avoiding excessive specificity
+
+---
+
+# 15. 🛠️ CSS Developer Tools
+
+- [x] Chrome DevTools
+- [x] Inspect CSS
+- [x] Computed styles
+- [x] Box model inspector
+- [x] Toggle CSS properties
+- [x] Responsive device mode
+- [x] Debugging layout issues
+- [x] Debugging Flexbox
+- [x] Debugging Grid
+
+---
+
+# 🏆 CSS Completion
+
+- [x] CSS Fundamentals
+- [x] Selectors
+- [x] Colors & Backgrounds
+- [x] Box Model
+- [x] Typography
+- [x] Flexbox
+- [x] CSS Grid
+- [x] Responsive Design
+- [x] Advanced CSS
+- [x] CSS Cascade & Specificity
+- [x] Advanced Positioning
+- [x] CSS Functions
+- [x] Modern CSS
+- [x] CSS Accessibility
+- [x] CSS Architecture
+- [x] CSS Developer Tools
+
+## 🎉 CSS COURSE COMPLETED — 100%
 
 ---
 
