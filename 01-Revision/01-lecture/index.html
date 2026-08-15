@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/01-Revision/01-lecture/style.css" />
   </head>
   <body>
+    <!-- Main Title -->
     <div
       style="
         font-size: 50px;
@@ -52,6 +53,8 @@
         }
       }
     </style>
+
+    <!-- Introduction -->
     <div
       style="
         border: 2px solid orange;
@@ -75,6 +78,7 @@
       </h2>
     </div>
 
+    <!-- Tags and Elements -->
     <div
       style="
         border: 3px solid red;
@@ -139,6 +143,7 @@
       </ul>
     </div>
 
+    <!-- Text Elements -->
     <div
       style="
         border: 3px solid red;
@@ -196,13 +201,13 @@
       <p>X&lt;sup&gt;2&lt;/sup&gt; → X<sup>2</sup></p>
     </div>
 
+    <!-- Links -->
     <section
       style="
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
+        align-items: start;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
@@ -214,6 +219,7 @@
           padding: 10px;
           margin-top: 20px;
           border-radius: 10px;
+          grid-row: span 2;
         "
       >
         <h1><u>Links</u></h1>
@@ -323,6 +329,8 @@
           id="contact"&gt; Contact Us &lt;/h2&gt;
         </code>
       </div>
+
+      <!-- Button Links -->
       <div
         style="
           border: 3px solid red;
@@ -331,6 +339,9 @@
           border-radius: 10px;
         "
       >
+        <h1 style="color: red; text-decoration: underline; text-align: center">
+          Button <span style="color: blue">Links</span>
+        </h1>
         <div
           style="
             display: flex;
@@ -357,6 +368,36 @@
             title="Source Code"
             ><button id="btn5" title="Source Code">GitHub</button></a
           >
+        </div>
+      </div>
+
+      <!-- Navbar  -->
+      <div
+        style="
+          border: 3px solid red;
+          padding: 10px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h1 style="color: red; text-decoration: underline; text-align: center">
+          Navbar Link
+        </h1>
+        <div
+          style="
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+          "
+        >
+          <ol class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ol>
         </div>
       </div>
     </section>
