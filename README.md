@@ -11,7 +11,7 @@ Use the checkboxes to track your progress.
 
 ##  Course Progress
 
-- [ ] HTML — Complete
+- [x] HTML — Complete
 - [ ] CSS — Complete
 - [ ] JavaScript — Complete
 - [ ] DOM & Browser APIs — Complete
