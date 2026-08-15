@@ -1,8 +1,7 @@
-console.log("Hello, World!");
 const moveTopBtn = document.getElementById("moveTopBtn");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 50) {
     moveTopBtn.style.display = "block";
   } else {
     moveTopBtn.style.display = "none";

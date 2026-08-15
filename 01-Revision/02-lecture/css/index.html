@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
+    <link rel="stylesheet" href="/01-Revision/02-lecture/css/style.css" />
     <link rel="stylesheet" href="/01-Revision/01-lecture/style.css" />
   </head>
   <body>
@@ -26,8 +27,124 @@
         </li>
       </ul>
     </nav>
+
+    <!-- CSS Roadmap Navigation -->
+    <section
+      class="css-roadmap"
+      style="
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 25px;
+        border: 3px solid #2563eb;
+        border-radius: 16px;
+      "
+    >
+      <h1 style="text-align: center; color: #2563eb">
+        🎨 CSS Learning Roadmap
+      </h1>
+
+      <p style="text-align: center">
+        Click any topic to go directly to that section.
+      </p>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          gap: 15px;
+          margin-top: 25px;
+        "
+      >
+        <!-- 1 -->
+        <button onclick="goToSection('css-fundamentals')" class="roadmap-btn">
+          01. CSS Fundamentals
+        </button>
+
+        <button onclick="goToSection('selectors')" class="roadmap-btn">
+          02. Selectors
+        </button>
+
+        <button onclick="goToSection('colors-backgrounds')" class="roadmap-btn">
+          03. Colors &amp; Backgrounds
+        </button>
+
+        <button onclick="goToSection('box-model')" class="roadmap-btn">
+          04. Box Model
+        </button>
+
+        <button onclick="goToSection('typography')" class="roadmap-btn">
+          05. Typography
+        </button>
+
+        <button onclick="goToSection('flexbox')" class="roadmap-btn">
+          06. Flexbox
+        </button>
+
+        <button onclick="goToSection('css-grid')" class="roadmap-btn">
+          07. CSS Grid
+        </button>
+
+        <button onclick="goToSection('responsive-design')" class="roadmap-btn">
+          08. Responsive Design
+        </button>
+
+        <button onclick="goToSection('advanced-css')" class="roadmap-btn">
+          09. Advanced CSS
+        </button>
+
+        <button
+          onclick="goToSection('cascade-specificity')"
+          class="roadmap-btn"
+        >
+          10. Cascade &amp; Specificity
+        </button>
+
+        <button
+          onclick="goToSection('advanced-positioning')"
+          class="roadmap-btn"
+        >
+          11. Advanced Positioning
+        </button>
+
+        <button onclick="goToSection('css-functions')" class="roadmap-btn">
+          12. CSS Functions
+        </button>
+
+        <button onclick="goToSection('modern-css')" class="roadmap-btn">
+          13. Modern CSS
+        </button>
+
+        <button onclick="goToSection('css-accessibility')" class="roadmap-btn">
+          14. CSS Accessibility
+        </button>
+
+        <button onclick="goToSection('css-architecture')" class="roadmap-btn">
+          15. CSS Architecture
+        </button>
+
+        <button onclick="goToSection('css-devtools')" class="roadmap-btn">
+          16. CSS Developer Tools
+        </button>
+      </div>
+    </section>
+
+    <!-- CSS Sections -->
+
+    <script>
+      function goToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }
+    </script>
     <!-- CSS Fundamentals Section -->
     <section
+      id="css-fundamentals"
       class="css-fundamentals-section"
       style="
         border: 3px solid #2196f3;
@@ -620,6 +737,7 @@
     <!-- CSS Selectors Section -->
     <section
       class="css-selectors-section"
+      id="selectors"
       style="
         border: 3px solid #673ab7;
         padding: 20px;
@@ -1249,6 +1367,7 @@
     <!-- CSS Colors & Backgrounds Section -->
     <section
       class="css-colors-backgrounds-section"
+      id="colors-backgrounds"
       style="
         border: 3px solid #e91e63;
         padding: 20px;
@@ -1890,6 +2009,7 @@
     <!-- CSS Box Model Section -->
     <section
       class="css-box-model-section"
+      id="box-model"
       style="
         border: 3px solid #ff9800;
         padding: 20px;
@@ -2585,6 +2705,7 @@
     <!-- CSS Typography Section -->
     <section
       class="css-typography-section"
+      id="typography"
       style="
         border: 3px solid #673ab7;
         padding: 20px;
@@ -3242,6 +3363,7 @@
     <!-- CSS Layout - Flexbox Section -->
     <section
       class="css-flexbox-section"
+      id="flexbox"
       style="
         border: 3px solid #1565c0;
         padding: 20px;
@@ -3997,6 +4119,7 @@
     <!-- CSS Layout - Grid Section -->
     <section
       class="css-grid-section"
+      id="css-grid"
       style="
         border: 3px solid #8e24aa;
         padding: 20px;
@@ -4762,6 +4885,7 @@
     <!-- CSS Responsive Design Section -->
     <section
       class="css-responsive-design-section"
+      id="responsive-design"
       style="
         border: 3px solid #009688;
         padding: 20px;
@@ -6936,6 +7060,7 @@
     <!-- CSS Cascade & Specificity Section -->
     <section
       class="css-cascade-specificity-section"
+      id="cascade-specificity"
       style="
         border: 3px solid #d81b60;
         padding: 20px;
@@ -8962,6 +9087,7 @@
     <!-- CSS Functions + Modern CSS + CSS Accessibility -->
     <section
       class="css-modern-section"
+      id="modern-css"
       style="
         border: 3px solid #0d47a1;
         padding: 20px;
@@ -10350,5 +10476,8 @@
         </p>
       </div>
     </section>
+    <!-- Move to Top Button -->
+    <button id="moveTopBtn" onclick="moveToTop()" title="Move to Top">↑</button>
+    <script src="/01-Revision/02-lecture/css/script.js"></script>
   </body>
 </html>
