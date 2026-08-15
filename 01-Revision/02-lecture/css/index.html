@@ -3,9 +3,4811 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS</title>
+    <link rel="stylesheet" href="/01-Revision/01-lecture/style.css" />
   </head>
   <body>
-    <div>CSS</div>
+    <nav class="education-navbar">
+      <!-- Website Logo / Brand -->
+      <div class="education-logo">Complete Development Course</div>
+
+      <!-- Navigation Links -->
+      <ul class="education-nav-links">
+        <li>
+          <a href="/01-Revision/index.html">HTML</a>
+        </li>
+
+        <li>
+          <a href="#">CSS</a>
+        </li>
+
+        <li>
+          <a href="/01-Revision/02-lecture/js/index.html">JS</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- CSS Fundamentals Section -->
+    <section
+      class="css-fundamentals-section"
+      style="
+        border: 3px solid #2196f3;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 12px;
+        max-width: 1000px;
+      "
+    >
+      <h1
+        style="color: #2196f3; text-decoration: underline; text-align: center"
+      >
+        CSS Fundamentals
+      </h1>
+
+      <!-- 1. What is CSS -->
+      <div
+        style="
+          border: 3px solid #f44336;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>1. What is CSS?</h2>
+
+        <p>
+          <mark><strong>CSS</strong></mark> stands for
+          <strong>Cascading Style Sheets</strong>.
+        </p>
+
+        <p>CSS is used to style and design HTML elements on a web page.</p>
+
+        <p>
+          CSS controls the appearance, layout, colors, spacing, fonts,
+          responsiveness, and overall visual presentation of a website.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code> p { color: blue; } </code>
+
+        <ul>
+          <li>HTML → provides the structure</li>
+          <li>CSS → provides the style</li>
+          <li>JavaScript → provides behavior and interactivity</li>
+        </ul>
+
+        <h3>CSS is commonly used for:</h3>
+
+        <ul>
+          <li>Colors</li>
+          <li>Fonts</li>
+          <li>Spacing</li>
+          <li>Layouts</li>
+          <li>Borders</li>
+          <li>Animations</li>
+          <li>Responsive design</li>
+          <li>Positioning</li>
+          <li>Flexbox</li>
+          <li>Grid</li>
+        </ul>
+      </div>
+
+      <!-- 2. Inline CSS -->
+      <div
+        style="
+          border: 3px solid #ff9800;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>2. Inline CSS</h2>
+
+        <p>
+          Inline CSS is written directly inside the
+          <code>style</code> attribute of an HTML element.
+        </p>
+
+        <h3>Syntax:</h3>
+
+        <code> &lt;p style="color: red;"&gt;Hello World&lt;/p&gt; </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          &lt;h1 style="color: blue; font-size: 30px;"&gt;<br />
+          &nbsp;&nbsp;Hello World<br />
+          &lt;/h1&gt;
+        </code>
+
+        <h3>Advantages:</h3>
+
+        <ul>
+          <li>Quick to write</li>
+          <li>Useful for small changes</li>
+          <li>Useful for testing styles</li>
+        </ul>
+
+        <h3>Disadvantages:</h3>
+
+        <ul>
+          <li>Difficult to maintain</li>
+          <li>Creates repetitive code</li>
+          <li>Not suitable for large websites</li>
+        </ul>
+      </div>
+
+      <!-- 3. Internal CSS -->
+      <div
+        style="
+          border: 3px solid #9c27b0;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>3. Internal CSS</h2>
+
+        <p>
+          Internal CSS is written inside the
+          <code>&lt;style&gt;</code> element in the
+          <code>&lt;head&gt;</code> section of an HTML document.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          &lt;head&gt;<br />
+          &nbsp;&nbsp;&lt;style&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;p {<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+          &nbsp;&nbsp;&lt;/style&gt;<br />
+          &lt;/head&gt;
+        </code>
+
+        <h3>Advantages:</h3>
+
+        <ul>
+          <li>Easy to manage for a single page</li>
+          <li>Keeps CSS separate from individual HTML elements</li>
+          <li>Useful for page-specific styles</li>
+        </ul>
+
+        <h3>Disadvantages:</h3>
+
+        <ul>
+          <li>Cannot be easily reused across multiple pages</li>
+          <li>Can make HTML documents large</li>
+        </ul>
+      </div>
+
+      <!-- 4. External CSS -->
+      <div
+        style="
+          border: 3px solid #4caf50;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>4. External CSS</h2>
+
+        <p>
+          External CSS is written in a separate
+          <code>.css</code> file and connected to the HTML document.
+        </p>
+
+        <h3>HTML:</h3>
+
+        <code> &lt;link rel="stylesheet" href="style.css"&gt; </code>
+
+        <h3>CSS:</h3>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          &nbsp;&nbsp;font-size: 20px;<br />
+          }
+        </code>
+
+        <h3>Advantages:</h3>
+
+        <ul>
+          <li>Reusable across multiple HTML pages</li>
+          <li>Easy to maintain</li>
+          <li>Keeps HTML clean</li>
+          <li>Best approach for most real-world projects</li>
+        </ul>
+
+        <h3>Example Structure:</h3>
+
+        <code>
+          project/<br />
+          ├── index.html<br />
+          └── style.css
+        </code>
+      </div>
+
+      <!-- 5. CSS Syntax -->
+      <div
+        style="
+          border: 3px solid #00bcd4;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>5. CSS Syntax</h2>
+
+        <p>
+          CSS follows a specific syntax consisting of a
+          <strong>selector</strong>, <strong>property</strong>, and
+          <strong>value</strong>.
+        </p>
+
+        <h3>Basic Syntax:</h3>
+
+        <code>
+          selector {<br />
+          &nbsp;&nbsp;property: value;<br />
+          }
+        </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;color: red;<br />
+          &nbsp;&nbsp;font-size: 20px;<br />
+          }
+        </code>
+
+        <h3>Parts:</h3>
+
+        <ul>
+          <li><code>p</code> → selector</li>
+          <li><code>color</code> → property</li>
+          <li><code>red</code> → value</li>
+          <li><code>:</code> → separates property and value</li>
+          <li><code>;</code> → ends a declaration</li>
+          <li><code>{ }</code> → contains the CSS declarations</li>
+        </ul>
+
+        <h3>Multiple Properties:</h3>
+
+        <code>
+          h1 {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          &nbsp;&nbsp;font-size: 32px;<br />
+          &nbsp;&nbsp;text-align: center;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 6. CSS Comments -->
+      <div
+        style="
+          border: 3px solid #607d8b;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>6. CSS Comments</h2>
+
+        <p>CSS comments are used to write notes inside CSS code.</p>
+
+        <p>
+          CSS comments are ignored by the browser and are not displayed on the
+          webpage.
+        </p>
+
+        <h3>Syntax:</h3>
+
+        <code> /* This is a CSS comment */ </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          /* Heading styles */<br />
+          h1 {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          }
+        </code>
+
+        <h3>Multi-line Comment:</h3>
+
+        <code>
+          /*<br />
+          &nbsp;&nbsp;This is a<br />
+          &nbsp;&nbsp;multi-line CSS comment<br />
+          */
+        </code>
+      </div>
+
+      <!-- 7. CSS Selectors -->
+      <div
+        style="
+          border: 3px solid #673ab7;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>7. CSS Selectors</h2>
+
+        <p>
+          CSS selectors are used to select HTML elements that we want to style.
+        </p>
+
+        <h3>1. Element Selector</h3>
+
+        <p>Selects all elements of a particular HTML tag.</p>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          }
+        </code>
+
+        <p>This selects all <code>&lt;p&gt;</code> elements.</p>
+
+        <h3>2. Class Selector</h3>
+
+        <p>A class selector starts with <code>.</code>.</p>
+
+        <code>
+          .box {<br />
+          &nbsp;&nbsp;background-color: yellow;<br />
+          }
+        </code>
+
+        <p>HTML:</p>
+
+        <code> &lt;div class="box"&gt;Hello&lt;/div&gt; </code>
+
+        <h3>3. ID Selector</h3>
+
+        <p>An ID selector starts with <code>#</code>.</p>
+
+        <code>
+          #header {<br />
+          &nbsp;&nbsp;color: red;<br />
+          }
+        </code>
+
+        <p>HTML:</p>
+
+        <code> &lt;h1 id="header"&gt;Welcome&lt;/h1&gt; </code>
+
+        <h3>4. Universal Selector</h3>
+
+        <p>The universal selector <code>*</code> selects all elements.</p>
+
+        <code>
+          * {<br />
+          &nbsp;&nbsp;margin: 0;<br />
+          &nbsp;&nbsp;padding: 0;<br />
+          }
+        </code>
+
+        <h3>5. Group Selector</h3>
+
+        <p>Multiple selectors can be grouped using a comma.</p>
+
+        <code>
+          h1, h2, p {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 8. CSS Properties -->
+      <div
+        style="
+          border: 3px solid #e91e63;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>8. CSS Properties</h2>
+
+        <p>
+          CSS properties define what aspect of an HTML element we want to
+          change.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;color: red;<br />
+          &nbsp;&nbsp;font-size: 20px;<br />
+          }
+        </code>
+
+        <ul>
+          <li><code>color</code> → changes text color</li>
+          <li><code>font-size</code> → changes text size</li>
+        </ul>
+
+        <h3>Common CSS Properties:</h3>
+
+        <ul>
+          <li><code>color</code></li>
+          <li><code>background-color</code></li>
+          <li><code>font-size</code></li>
+          <li><code>font-family</code></li>
+          <li><code>font-weight</code></li>
+          <li><code>text-align</code></li>
+          <li><code>width</code></li>
+          <li><code>height</code></li>
+          <li><code>margin</code></li>
+          <li><code>padding</code></li>
+          <li><code>border</code></li>
+          <li><code>display</code></li>
+          <li><code>position</code></li>
+        </ul>
+      </div>
+
+      <!-- 9. CSS Values -->
+      <div
+        style="
+          border: 3px solid #795548;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>9. CSS Values</h2>
+
+        <p>CSS values specify the actual setting for a CSS property.</p>
+
+        <h3>Example:</h3>
+
+        <code> color: red; </code>
+
+        <ul>
+          <li><code>color</code> → property</li>
+          <li><code>red</code> → value</li>
+        </ul>
+
+        <h3>Common Types of CSS Values:</h3>
+
+        <h4>1. Color Values</h4>
+
+        <code>
+          color: red;<br />
+          color: #ff0000;<br />
+          color: rgb(255, 0, 0);
+        </code>
+
+        <h4>2. Length Values</h4>
+
+        <code>
+          width: 200px;<br />
+          width: 50%;<br />
+          width: 10rem;<br />
+          width: 5vw;
+        </code>
+
+        <h4>3. Number Values</h4>
+
+        <code>
+          opacity: 0.5;<br />
+          line-height: 1.5;
+        </code>
+
+        <h4>4. Keyword Values</h4>
+
+        <code>
+          display: block;<br />
+          position: relative;<br />
+          text-align: center;
+        </code>
+
+        <h4>5. Function Values</h4>
+
+        <code>
+          width: calc(100% - 20px);<br />
+          color: rgb(255, 0, 0);
+        </code>
+
+        <h3>Common Units:</h3>
+
+        <ul>
+          <li><code>px</code> → pixels</li>
+          <li><code>%</code> → percentage</li>
+          <li><code>em</code> → relative to parent/current font size</li>
+          <li><code>rem</code> → relative to root font size</li>
+          <li><code>vw</code> → viewport width</li>
+          <li><code>vh</code> → viewport height</li>
+        </ul>
+      </div>
+
+      <!-- CSS Syntax Example -->
+      <div
+        style="
+          border: 3px solid #009688;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>10. Complete CSS Example</h2>
+
+        <p>The following example combines selector, property, and value.</p>
+
+        <code>
+          .card {<br />
+          &nbsp;&nbsp;background-color: white;<br />
+          &nbsp;&nbsp;color: black;<br />
+          &nbsp;&nbsp;width: 300px;<br />
+          &nbsp;&nbsp;padding: 20px;<br />
+          &nbsp;&nbsp;border: 2px solid black;<br />
+          &nbsp;&nbsp;border-radius: 10px;<br />
+          }
+        </code>
+
+        <h3>Breakdown:</h3>
+
+        <ul>
+          <li><code>.card</code> → selector</li>
+          <li><code>background-color</code> → property</li>
+          <li><code>white</code> → value</li>
+          <li><code>color</code> → property</li>
+          <li><code>black</code> → value</li>
+          <li><code>width</code> → property</li>
+          <li><code>300px</code> → value</li>
+          <li><code>padding</code> → property</li>
+          <li><code>20px</code> → value</li>
+        </ul>
+      </div>
+
+      <!-- Notes -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 20px;
+          border-radius: 10px;
+          padding: 15px;
+          border: 3px solid #212121;
+        "
+      >
+        <h2>Notes</h2>
+
+        <p><strong>Note:</strong> CSS stands for Cascading Style Sheets.</p>
+
+        <p>
+          <strong>Note:</strong> Inline CSS is written inside the
+          <code>style</code> attribute.
+        </p>
+
+        <p>
+          <strong>Note:</strong> Internal CSS is written inside the
+          <code>&lt;style&gt;</code> tag.
+        </p>
+
+        <p>
+          <strong>Note:</strong> External CSS is written in a separate
+          <code>.css</code> file.
+        </p>
+
+        <p>
+          <strong>Note:</strong> A CSS rule consists of a selector and one or
+          more declarations.
+        </p>
+
+        <p>
+          <strong>Note:</strong> A declaration consists of a property and a
+          value.
+        </p>
+
+        <p>
+          <strong>Note:</strong> Selectors determine which HTML elements are
+          styled.
+        </p>
+
+        <p>
+          <strong>Note:</strong> Properties define what you want to change,
+          while values define how you want it changed.
+        </p>
+      </div>
+    </section>
+
+    <!-- CSS Selectors Section -->
+    <section
+      class="css-selectors-section"
+      style="
+        border: 3px solid #673ab7;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 12px;
+        max-width: 1000px;
+      "
+    >
+      <h1
+        style="color: #673ab7; text-decoration: underline; text-align: center"
+      >
+        CSS Selectors
+      </h1>
+
+      <!-- 1. Element Selector -->
+      <div
+        style="
+          border: 3px solid #f44336;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>1. Element Selector</h2>
+
+        <p>
+          The <strong>element selector</strong> selects all HTML elements with a
+          specific tag name.
+        </p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          }
+        </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          h1 {<br />
+          &nbsp;&nbsp;color: red;<br />
+          }<br /><br />
+
+          p {<br />
+          &nbsp;&nbsp;font-size: 20px;<br />
+          }
+        </code>
+
+        <p>
+          The above CSS applies to all <code>&lt;h1&gt;</code> and
+          <code>&lt;p&gt;</code> elements.
+        </p>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;h1&gt;Hello&lt;/h1&gt;<br />
+          &lt;h1&gt;Welcome&lt;/h1&gt;<br />
+          &lt;p&gt;First paragraph&lt;/p&gt;<br />
+          &lt;p&gt;Second paragraph&lt;/p&gt;
+        </code>
+
+        <h3>Use:</h3>
+
+        <p>
+          Use an element selector when you want to apply the same style to all
+          elements of a particular type.
+        </p>
+      </div>
+
+      <!-- 2. Class Selector -->
+      <div
+        style="
+          border: 3px solid #2196f3;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>2. Class Selector</h2>
+
+        <p>
+          The <strong>class selector</strong> selects HTML elements that have a
+          specific <code>class</code> attribute.
+        </p>
+
+        <p>A class selector starts with a <code>.</code> (dot).</p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          .box {<br />
+          &nbsp;&nbsp;color: red;<br />
+          }
+        </code>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;div class="box"&gt;Box 1&lt;/div&gt;<br />
+          &lt;div class="box"&gt;Box 2&lt;/div&gt;
+        </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          .box {<br />
+          &nbsp;&nbsp;background-color: yellow;<br />
+          &nbsp;&nbsp;padding: 20px;<br />
+          }
+        </code>
+
+        <p>
+          All elements having <code>class="box"</code> will receive the style.
+        </p>
+
+        <h3>Important:</h3>
+
+        <ul>
+          <li>A class can be used on multiple elements.</li>
+          <li>An element can have multiple classes.</li>
+          <li>Class selectors start with <code>.</code>.</li>
+        </ul>
+      </div>
+
+      <!-- 3. ID Selector -->
+      <div
+        style="
+          border: 3px solid #4caf50;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>3. ID Selector</h2>
+
+        <p>
+          The <strong>ID selector</strong> selects an HTML element using its
+          <code>id</code> attribute.
+        </p>
+
+        <p>An ID selector starts with <code>#</code>.</p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          #header {<br />
+          &nbsp;&nbsp;color: red;<br />
+          }
+        </code>
+
+        <h3>HTML:</h3>
+
+        <code> &lt;h1 id="header"&gt;My Website&lt;/h1&gt; </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          #header {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          &nbsp;&nbsp;text-align: center;<br />
+          }
+        </code>
+
+        <h3>Important:</h3>
+
+        <ul>
+          <li>ID should identify a specific element.</li>
+          <li>ID selectors start with <code>#</code>.</li>
+          <li>ID has higher specificity than a class selector.</li>
+        </ul>
+      </div>
+
+      <!-- 4. Universal Selector -->
+      <div
+        style="
+          border: 3px solid #ff9800;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>4. Universal Selector</h2>
+
+        <p>
+          The <strong>universal selector</strong> selects all HTML elements.
+        </p>
+
+        <p>It is represented using <code>*</code>.</p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          * {<br />
+          &nbsp;&nbsp;margin: 0;<br />
+          &nbsp;&nbsp;padding: 0;<br />
+          }
+        </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          * {<br />
+          &nbsp;&nbsp;box-sizing: border-box;<br />
+          }
+        </code>
+
+        <p>This rule applies to every element on the page.</p>
+
+        <h3>Common Use:</h3>
+
+        <code>
+          * {<br />
+          &nbsp;&nbsp;margin: 0;<br />
+          &nbsp;&nbsp;padding: 0;<br />
+          &nbsp;&nbsp;box-sizing: border-box;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 5. Attribute Selector -->
+      <div
+        style="
+          border: 3px solid #9c27b0;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>5. Attribute Selector</h2>
+
+        <p>
+          The <strong>attribute selector</strong> selects HTML elements based on
+          their attributes or attribute values.
+        </p>
+
+        <h3>1. Attribute Exists</h3>
+
+        <p>Selects elements that contain a particular attribute.</p>
+
+        <code>
+          input[type] {<br />
+          &nbsp;&nbsp;border: 2px solid blue;<br />
+          }
+        </code>
+
+        <h3>2. Exact Attribute Value</h3>
+
+        <code>
+          input[type="text"] {<br />
+          &nbsp;&nbsp;background-color: yellow;<br />
+          }
+        </code>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;input type="text"&gt;<br />
+          &lt;input type="email"&gt;
+        </code>
+
+        <p>
+          Only the input with <code>type="text"</code> will receive the style.
+        </p>
+
+        <h3>Common Attribute Selectors:</h3>
+
+        <ul>
+          <li><code>[attr]</code> → attribute exists</li>
+
+          <li><code>[attr="value"]</code> → exact value</li>
+
+          <li><code>[attr^="value"]</code> → starts with value</li>
+
+          <li><code>[attr$="value"]</code> → ends with value</li>
+
+          <li><code>[attr*="value"]</code> → contains value</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          a[href^="https"] {<br />
+          &nbsp;&nbsp;color: green;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 6. Descendant Selector -->
+      <div
+        style="
+          border: 3px solid #00bcd4;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>6. Descendant Selector</h2>
+
+        <p>
+          The <strong>descendant selector</strong> selects elements that are
+          inside another element at any nesting level.
+        </p>
+
+        <p>It is represented using a <strong>space</strong>.</p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          .container p {<br />
+          &nbsp;&nbsp;color: red;<br />
+          }
+        </code>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;div class="container"&gt;<br />
+          &nbsp;&nbsp;&lt;p&gt;Paragraph 1&lt;/p&gt;<br />
+          &nbsp;&nbsp;&lt;div&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Paragraph 2&lt;/p&gt;<br />
+          &nbsp;&nbsp;&lt;/div&gt;<br />
+          &lt;/div&gt;
+        </code>
+
+        <p>
+          Both paragraphs are descendants of
+          <code>.container</code>, so both will be selected.
+        </p>
+
+        <h3>Important:</h3>
+
+        <p>The descendant selector can select elements at any nesting level.</p>
+      </div>
+
+      <!-- 7. Child Selector -->
+      <div
+        style="
+          border: 3px solid #795548;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>7. Child Selector</h2>
+
+        <p>
+          The <strong>child selector</strong> selects only the direct children
+          of an element.
+        </p>
+
+        <p>It is represented using the <code>&gt;</code> symbol.</p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          .container &gt; p {<br />
+          &nbsp;&nbsp;color: red;<br />
+          }
+        </code>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;div class="container"&gt;<br />
+          &nbsp;&nbsp;&lt;p&gt;Direct Child&lt;/p&gt;<br />
+          &nbsp;&nbsp;&lt;div&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Nested Child&lt;/p&gt;<br />
+          &nbsp;&nbsp;&lt;/div&gt;<br />
+          &lt;/div&gt;
+        </code>
+
+        <p>Only <code>Direct Child</code> will be selected.</p>
+
+        <h3>Difference:</h3>
+
+        <ul>
+          <li><code>.container p</code> → selects all descendant paragraphs</li>
+
+          <li>
+            <code>.container &gt; p</code> → selects only direct child
+            paragraphs
+          </li>
+        </ul>
+      </div>
+
+      <!-- 8. Adjacent Sibling Selector -->
+      <div
+        style="
+          border: 3px solid #e91e63;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>8. Adjacent Sibling Selector</h2>
+
+        <p>
+          The <strong>adjacent sibling selector</strong> selects the element
+          that comes immediately after another element.
+        </p>
+
+        <p>It is represented using the <code>+</code> symbol.</p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          h2 + p {<br />
+          &nbsp;&nbsp;color: red;<br />
+          }
+        </code>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;h2&gt;Title&lt;/h2&gt;<br />
+          &lt;p&gt;This paragraph is selected.&lt;/p&gt;<br />
+          &lt;p&gt;This paragraph is not selected.&lt;/p&gt;
+        </code>
+
+        <p>
+          Only the first paragraph immediately following the
+          <code>&lt;h2&gt;</code> is selected.
+        </p>
+
+        <h3>Meaning:</h3>
+
+        <code> A + B </code>
+
+        <p>Selects <strong>B</strong> only when B comes immediately after A.</p>
+      </div>
+
+      <!-- 9. General Sibling Selector -->
+      <div
+        style="
+          border: 3px solid #3f51b5;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>9. General Sibling Selector</h2>
+
+        <p>
+          The <strong>general sibling selector</strong> selects all matching
+          siblings that appear after a specific element.
+        </p>
+
+        <p>It is represented using the <code>~</code> symbol.</p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          h2 ~ p {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          }
+        </code>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;h2&gt;Title&lt;/h2&gt;<br />
+          &lt;p&gt;Paragraph 1&lt;/p&gt;<br />
+          &lt;p&gt;Paragraph 2&lt;/p&gt;<br />
+          &lt;div&gt;Other content&lt;/div&gt;<br />
+          &lt;p&gt;Paragraph 3&lt;/p&gt;
+        </code>
+
+        <p>
+          All matching <code>&lt;p&gt;</code> siblings after the
+          <code>&lt;h2&gt;</code> are selected.
+        </p>
+
+        <h3>Meaning:</h3>
+
+        <code> A ~ B </code>
+
+        <p>
+          Selects all matching B elements that are siblings appearing after A.
+        </p>
+      </div>
+
+      <!-- 10. Grouping Selector -->
+      <div
+        style="
+          border: 3px solid #8bc34a;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>10. Grouping Selector</h2>
+
+        <p>
+          The <strong>grouping selector</strong> allows multiple selectors to
+          share the same CSS rules.
+        </p>
+
+        <p>Selectors are separated using a comma <code>,</code>.</p>
+
+        <h3>Syntax:</h3>
+
+        <code>
+          h1, h2, p {<br />
+          &nbsp;&nbsp;color: blue;<br />
+          }
+        </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          h1, h2, h3 {<br />
+          &nbsp;&nbsp;font-family: Arial;<br />
+          &nbsp;&nbsp;color: red;<br />
+          }
+        </code>
+
+        <p>
+          The same styles will be applied to
+          <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and
+          <code>&lt;h3&gt;</code>.
+        </p>
+
+        <h3>Why use grouping?</h3>
+
+        <ul>
+          <li>Reduces duplicate CSS</li>
+          <li>Makes CSS shorter</li>
+          <li>Improves maintainability</li>
+          <li>Allows multiple elements to share styles</li>
+        </ul>
+      </div>
+
+      <!-- Selector Comparison -->
+      <div
+        style="
+          border: 3px solid #ff5722;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>11. Selector Quick Reference</h2>
+
+        <ul>
+          <li><code>p</code> → Element selector</li>
+
+          <li><code>.box</code> → Class selector</li>
+
+          <li><code>#header</code> → ID selector</li>
+
+          <li><code>*</code> → Universal selector</li>
+
+          <li><code>[type="text"]</code> → Attribute selector</li>
+
+          <li><code>.container p</code> → Descendant selector</li>
+
+          <li><code>.container &gt; p</code> → Child selector</li>
+
+          <li><code>h2 + p</code> → Adjacent sibling selector</li>
+
+          <li><code>h2 ~ p</code> → General sibling selector</li>
+
+          <li><code>h1, h2, p</code> → Grouping selector</li>
+        </ul>
+      </div>
+
+      <!-- Notes -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 20px;
+          border-radius: 10px;
+          padding: 15px;
+          border: 3px solid #212121;
+        "
+      >
+        <h2>Notes</h2>
+
+        <p>
+          <strong>Note:</strong> Selectors determine which HTML elements CSS
+          will style.
+        </p>
+
+        <p>
+          <strong>Note:</strong> The <code>.</code> symbol is used for class
+          selectors.
+        </p>
+
+        <p>
+          <strong>Note:</strong> The <code>#</code> symbol is used for ID
+          selectors.
+        </p>
+
+        <p>
+          <strong>Note:</strong> The <code>*</code> symbol represents the
+          universal selector.
+        </p>
+
+        <p>
+          <strong>Note:</strong> A space represents a descendant relationship.
+        </p>
+
+        <p>
+          <strong>Note:</strong> The <code>&gt;</code> symbol selects only
+          direct children.
+        </p>
+
+        <p>
+          <strong>Note:</strong> The <code>+</code> symbol selects the
+          immediately following sibling.
+        </p>
+
+        <p>
+          <strong>Note:</strong> The <code>~</code> symbol selects matching
+          following siblings.
+        </p>
+
+        <p>
+          <strong>Note:</strong> Commas are used to group multiple selectors.
+        </p>
+      </div>
+    </section>
+
+    <!-- CSS Colors & Backgrounds Section -->
+    <section
+      class="css-colors-backgrounds-section"
+      style="
+        border: 3px solid #e91e63;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 12px;
+        max-width: 1000px;
+      "
+    >
+      <h1
+        style="color: #e91e63; text-decoration: underline; text-align: center"
+      >
+        CSS Colors &amp; Backgrounds
+      </h1>
+
+      <!-- 1. Named Colors -->
+      <div
+        style="
+          border: 3px solid #f44336;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>1. Named Colors</h2>
+
+        <p>
+          CSS provides predefined color names that can be used directly as
+          values.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          color: red;<br />
+          color: blue;<br />
+          color: green;<br />
+          background-color: yellow;
+        </code>
+
+        <h3>Common Named Colors:</h3>
+
+        <ul>
+          <li><code>red</code></li>
+          <li><code>blue</code></li>
+          <li><code>green</code></li>
+          <li><code>yellow</code></li>
+          <li><code>orange</code></li>
+          <li><code>purple</code></li>
+          <li><code>black</code></li>
+          <li><code>white</code></li>
+          <li><code>gray</code></li>
+          <li><code>pink</code></li>
+        </ul>
+
+        <h3>HTML + CSS:</h3>
+
+        <code> &lt;p style="color: red;"&gt;Red Text&lt;/p&gt; </code>
+      </div>
+
+      <!-- 2. HEX -->
+      <div
+        style="
+          border: 3px solid #2196f3;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>2. HEX Color</h2>
+
+        <p>
+          HEX stands for <strong>Hexadecimal</strong>. It represents colors
+          using six hexadecimal characters.
+        </p>
+
+        <p>A HEX color normally starts with <code>#</code>.</p>
+
+        <h3>Syntax:</h3>
+
+        <code> #RRGGBB </code>
+
+        <ul>
+          <li><code>RR</code> → Red</li>
+          <li><code>GG</code> → Green</li>
+          <li><code>BB</code> → Blue</li>
+        </ul>
+
+        <h3>Examples:</h3>
+
+        <code>
+          color: #ff0000; /* Red */<br />
+          color: #00ff00; /* Green */<br />
+          color: #0000ff; /* Blue */<br />
+          color: #000000; /* Black */<br />
+          color: #ffffff; /* White */
+        </code>
+
+        <h3>Short HEX:</h3>
+
+        <code>
+          #fff → White<br />
+          #000 → Black<br />
+          #f00 → Red
+        </code>
+      </div>
+
+      <!-- 3. RGB -->
+      <div
+        style="
+          border: 3px solid #4caf50;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>3. RGB Color</h2>
+
+        <p>RGB stands for <strong>Red, Green, Blue</strong>.</p>
+
+        <p>
+          Each value normally ranges from <code>0</code> to <code>255</code>.
+        </p>
+
+        <h3>Syntax:</h3>
+
+        <code> rgb(red, green, blue) </code>
+
+        <h3>Examples:</h3>
+
+        <code>
+          color: rgb(255, 0, 0); /* Red */<br />
+          color: rgb(0, 255, 0); /* Green */<br />
+          color: rgb(0, 0, 255); /* Blue */<br />
+          color: rgb(0, 0, 0); /* Black */<br />
+          color: rgb(255, 255, 255); /* White */
+        </code>
+
+        <h3>Example:</h3>
+
+        <code> background-color: rgb(30, 144, 255); </code>
+      </div>
+
+      <!-- 4. RGBA -->
+      <div
+        style="
+          border: 3px solid #9c27b0;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>4. RGBA Color</h2>
+
+        <p>
+          RGBA is RGB with an additional
+          <strong>Alpha</strong> channel.
+        </p>
+
+        <p>The alpha value controls transparency.</p>
+
+        <h3>Syntax:</h3>
+
+        <code> rgba(red, green, blue, alpha) </code>
+
+        <h3>Alpha Value:</h3>
+
+        <ul>
+          <li><code>0</code> → completely transparent</li>
+          <li><code>0.5</code> → 50% transparent</li>
+          <li><code>1</code> → completely opaque</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code> background-color: rgba(255, 0, 0, 0.5); </code>
+
+        <p>This creates red with 50% transparency.</p>
+      </div>
+
+      <!-- 5. HSL -->
+      <div
+        style="
+          border: 3px solid #ff9800;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>5. HSL Color</h2>
+
+        <p>HSL stands for <strong>Hue, Saturation, Lightness</strong>.</p>
+
+        <h3>Syntax:</h3>
+
+        <code> hsl(hue, saturation, lightness) </code>
+
+        <h3>Components:</h3>
+
+        <ul>
+          <li><strong>Hue</strong> → color angle from 0° to 360°</li>
+
+          <li><strong>Saturation</strong> → intensity of the color</li>
+
+          <li><strong>Lightness</strong> → brightness of the color</li>
+        </ul>
+
+        <h3>Examples:</h3>
+
+        <code>
+          color: hsl(0, 100%, 50%); /* Red */<br />
+          color: hsl(120, 100%, 50%); /* Green */<br />
+          color: hsl(240, 100%, 50%); /* Blue */
+        </code>
+      </div>
+
+      <!-- 6. Background Color -->
+      <div
+        style="
+          border: 3px solid #00bcd4;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>6. Background Color</h2>
+
+        <p>
+          The <code>background-color</code> property sets the background color
+          of an element.
+        </p>
+
+        <h3>Syntax:</h3>
+
+        <code> background-color: color; </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          body {<br />
+          &nbsp;&nbsp;background-color: lightblue;<br />
+          }
+        </code>
+
+        <h3>Using HEX:</h3>
+
+        <code>
+          .box {<br />
+          &nbsp;&nbsp;background-color: #222;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 7. Background Image -->
+      <div
+        style="
+          border: 3px solid #673ab7;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>7. Background Image</h2>
+
+        <p>
+          The <code>background-image</code> property adds an image to the
+          background of an element.
+        </p>
+
+        <h3>Syntax:</h3>
+
+        <code> background-image: url("image.jpg"); </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          .hero {<br />
+          &nbsp;&nbsp;background-image: url("background.jpg");<br />
+          }
+        </code>
+
+        <h3>Multiple Backgrounds:</h3>
+
+        <code>
+          background-image:<br />
+          &nbsp;&nbsp;url("image.png"),<br />
+          &nbsp;&nbsp;url("background.jpg");
+        </code>
+
+        <p>
+          Multiple background images can be placed using comma-separated values.
+        </p>
+      </div>
+
+      <!-- 8. Background Size -->
+      <div
+        style="
+          border: 3px solid #795548;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>8. Background Size</h2>
+
+        <p>
+          The <code>background-size</code> property controls the size of a
+          background image.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>auto</code> → default image size</li>
+
+          <li><code>cover</code> → covers the entire element</li>
+
+          <li><code>contain</code> → displays the complete image</li>
+
+          <li>
+            <code>100% 100%</code> → stretches image to element dimensions
+          </li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          .hero {<br />
+          &nbsp;&nbsp;background-image: url("hero.jpg");<br />
+          &nbsp;&nbsp;background-size: cover;<br />
+          }
+        </code>
+
+        <p>
+          <code>cover</code> is commonly used for hero sections and landing
+          pages.
+        </p>
+      </div>
+
+      <!-- 9. Background Position -->
+      <div
+        style="
+          border: 3px solid #009688;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>9. Background Position</h2>
+
+        <p>
+          The <code>background-position</code> property controls where the
+          background image is placed.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>center</code></li>
+          <li><code>top</code></li>
+          <li><code>bottom</code></li>
+          <li><code>left</code></li>
+          <li><code>right</code></li>
+          <li><code>center center</code></li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          .hero {<br />
+          &nbsp;&nbsp;background-image: url("hero.jpg");<br />
+          &nbsp;&nbsp;background-position: center;<br />
+          }
+        </code>
+
+        <h3>Custom Position:</h3>
+
+        <code> background-position: 50% 50%; </code>
+      </div>
+
+      <!-- 10. Background Repeat -->
+      <div
+        style="
+          border: 3px solid #3f51b5;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>10. Background Repeat</h2>
+
+        <p>
+          The <code>background-repeat</code> property controls whether a
+          background image repeats.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>repeat</code> → repeats horizontally and vertically</li>
+
+          <li><code>repeat-x</code> → repeats horizontally</li>
+
+          <li><code>repeat-y</code> → repeats vertically</li>
+
+          <li><code>no-repeat</code> → does not repeat</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          .hero {<br />
+          &nbsp;&nbsp;background-image: url("pattern.png");<br />
+          &nbsp;&nbsp;background-repeat: no-repeat;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 11. Gradients -->
+      <div
+        style="
+          border: 3px solid #e91e63;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>11. CSS Gradients</h2>
+
+        <p>
+          A gradient creates a smooth transition between two or more colors.
+        </p>
+
+        <h3>1. Linear Gradient</h3>
+
+        <p>A linear gradient changes colors along a straight line.</p>
+
+        <code> background: linear-gradient(red, blue); </code>
+
+        <h3>Direction:</h3>
+
+        <code> background: linear-gradient(to right, red, blue); </code>
+
+        <h3>Multiple Colors:</h3>
+
+        <code>
+          background: linear-gradient( to right, red, yellow, blue );
+        </code>
+
+        <h3>2. Radial Gradient</h3>
+
+        <p>A radial gradient spreads outward from a central point.</p>
+
+        <code> background: radial-gradient(circle, red, blue); </code>
+
+        <h3>3. Conic Gradient</h3>
+
+        <p>A conic gradient rotates colors around a center point.</p>
+
+        <code>
+          background: conic-gradient( red, yellow, green, blue, red );
+        </code>
+      </div>
+
+      <!-- 12. Background Shorthand -->
+      <div
+        style="
+          border: 3px solid #607d8b;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>12. Background Shorthand</h2>
+
+        <p>
+          The <code>background</code> property can combine multiple background
+          properties into a single declaration.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          background: #222 url("hero.jpg") no-repeat center / cover;
+        </code>
+
+        <p>This can represent:</p>
+
+        <ul>
+          <li>Background color</li>
+          <li>Background image</li>
+          <li>Background repeat</li>
+          <li>Background position</li>
+          <li>Background size</li>
+        </ul>
+      </div>
+
+      <!-- Practice -->
+      <div
+        style="
+          border: 3px solid #4caf50;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>13. 🧪 Practice — Gradient Landing Page</h2>
+
+        <p>
+          Create a landing page using CSS gradients and background properties.
+        </p>
+
+        <h3>Requirements:</h3>
+
+        <ul>
+          <li>Create a full-screen hero section.</li>
+          <li>Use a linear gradient as the background.</li>
+          <li>Add a heading and paragraph.</li>
+          <li>Add a call-to-action button.</li>
+          <li>Use <code>background-size: cover</code>.</li>
+          <li>Center the content using CSS.</li>
+          <li>Add a hover effect to the button.</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          &lt;section class="hero"&gt;<br />
+          &nbsp;&nbsp;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;<br />
+          &nbsp;&nbsp;&lt;p&gt;Build something amazing.&lt;/p&gt;<br />
+          &nbsp;&nbsp;&lt;button&gt;Get Started&lt;/button&gt;<br />
+          &lt;/section&gt;
+        </code>
+
+        <h3>CSS:</h3>
+
+        <code>
+          .hero {<br />
+          &nbsp;&nbsp;min-height: 100vh;<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;flex-direction: column;<br />
+          &nbsp;&nbsp;justify-content: center;<br />
+          &nbsp;&nbsp;align-items: center;<br />
+          &nbsp;&nbsp;text-align: center;<br />
+          &nbsp;&nbsp;color: white;<br />
+          &nbsp;&nbsp;background: linear-gradient(<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;135deg,<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;#667eea,<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;#764ba2<br />
+          &nbsp;&nbsp;);<br />
+          }
+        </code>
+      </div>
+
+      <!-- Quick Reference -->
+      <div
+        style="
+          border: 3px solid #ff5722;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>14. Quick Reference</h2>
+
+        <ul>
+          <li><code>red</code> → Named color</li>
+
+          <li><code>#ff0000</code> → HEX</li>
+
+          <li><code>rgb(255, 0, 0)</code> → RGB</li>
+
+          <li><code>rgba(255, 0, 0, 0.5)</code> → RGBA</li>
+
+          <li><code>hsl(0, 100%, 50%)</code> → HSL</li>
+
+          <li><code>background-color</code> → background color</li>
+
+          <li><code>background-image</code> → background image</li>
+
+          <li><code>background-size</code> → image size</li>
+
+          <li><code>background-position</code> → image position</li>
+
+          <li><code>background-repeat</code> → image repetition</li>
+
+          <li><code>linear-gradient()</code> → linear gradient</li>
+
+          <li><code>radial-gradient()</code> → radial gradient</li>
+
+          <li><code>conic-gradient()</code> → conic gradient</li>
+        </ul>
+      </div>
+
+      <!-- Notes -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 20px;
+          border-radius: 10px;
+          padding: 15px;
+          border: 3px solid #212121;
+        "
+      >
+        <h2>Notes</h2>
+
+        <p>
+          <strong>Note:</strong> CSS supports named colors, HEX, RGB, RGBA, HSL,
+          and other color formats.
+        </p>
+
+        <p>
+          <strong>Note:</strong> RGBA allows you to control transparency using
+          the alpha value.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>background-size: cover</code> is commonly
+          used to make a background image cover the entire element.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>background-position: center</code> places
+          the background image in the center.
+        </p>
+
+        <p>
+          <strong>Note:</strong>
+          <code>background-repeat: no-repeat</code> prevents an image from
+          repeating.
+        </p>
+
+        <p>
+          <strong>Note:</strong> Gradients are created using CSS functions such
+          as <code>linear-gradient()</code>, <code>radial-gradient()</code>, and
+          <code>conic-gradient()</code>.
+        </p>
+      </div>
+    </section>
+    <!-- CSS Box Model Section -->
+    <section
+      class="css-box-model-section"
+      style="
+        border: 3px solid #ff9800;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 12px;
+        max-width: 1000px;
+      "
+    >
+      <h1
+        style="color: #ff9800; text-decoration: underline; text-align: center"
+      >
+        CSS Box Model
+      </h1>
+
+      <!-- 1. Content -->
+      <div
+        style="
+          border: 3px solid #f44336;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>1. Content</h2>
+
+        <p>
+          The <strong>content</strong> is the actual information inside an HTML
+          element.
+        </p>
+
+        <p>Content can be text, images, buttons, other elements, etc.</p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .box {<br />
+          &nbsp;&nbsp;width: 300px;<br />
+          &nbsp;&nbsp;height: 150px;<br />
+          }
+        </code>
+
+        <p>
+          Here, <code>width</code> and <code>height</code> define the size of
+          the content area when using the default
+          <code>box-sizing: content-box</code>.
+        </p>
+      </div>
+
+      <!-- 2. Padding -->
+      <div
+        style="
+          border: 3px solid #2196f3;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>2. Padding</h2>
+
+        <p>
+          <strong>Padding</strong> is the space between the content and the
+          border.
+        </p>
+
+        <h3>Syntax:</h3>
+
+        <code> padding: 20px; </code>
+
+        <h3>Individual Sides:</h3>
+
+        <code>
+          padding-top: 10px;<br />
+          padding-right: 20px;<br />
+          padding-bottom: 10px;<br />
+          padding-left: 20px;
+        </code>
+
+        <h3>Shorthand:</h3>
+
+        <code> padding: 10px 20px 30px 40px; </code>
+
+        <ul>
+          <li>10px → top</li>
+          <li>20px → right</li>
+          <li>30px → bottom</li>
+          <li>40px → left</li>
+        </ul>
+
+        <p>Padding increases the space inside the element.</p>
+      </div>
+
+      <!-- 3. Border -->
+      <div
+        style="
+          border: 3px solid #4caf50;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>3. Border</h2>
+
+        <p>The <strong>border</strong> surrounds the content and padding.</p>
+
+        <h3>Syntax:</h3>
+
+        <code> border: 2px solid black; </code>
+
+        <h3>Border Components:</h3>
+
+        <ul>
+          <li><code>2px</code> → border width</li>
+          <li><code>solid</code> → border style</li>
+          <li><code>black</code> → border color</li>
+        </ul>
+
+        <h3>Different Border Styles:</h3>
+
+        <code>
+          border: 2px solid red;<br />
+          border: 2px dashed blue;<br />
+          border: 2px dotted green;<br />
+          border: 2px double black;
+        </code>
+
+        <h3>Rounded Border:</h3>
+
+        <code> border-radius: 10px; </code>
+      </div>
+
+      <!-- 4. Margin -->
+      <div
+        style="
+          border: 3px solid #9c27b0;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>4. Margin</h2>
+
+        <p><strong>Margin</strong> is the space outside an element's border.</p>
+
+        <h3>Syntax:</h3>
+
+        <code> margin: 20px; </code>
+
+        <h3>Individual Sides:</h3>
+
+        <code>
+          margin-top: 10px;<br />
+          margin-right: 20px;<br />
+          margin-bottom: 30px;<br />
+          margin-left: 40px;
+        </code>
+
+        <h3>Auto Margin:</h3>
+
+        <code> margin: 0 auto; </code>
+
+        <p>
+          <code>margin: 0 auto</code> is commonly used to horizontally center a
+          block element when it has a defined width.
+        </p>
+
+        <h3>Important:</h3>
+
+        <p>
+          Margin creates space <strong>outside</strong> the element, while
+          padding creates space <strong>inside</strong> the element.
+        </p>
+      </div>
+
+      <!-- 5. Box Sizing -->
+      <div
+        style="
+          border: 3px solid #00bcd4;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>5. box-sizing</h2>
+
+        <p>
+          The <code>box-sizing</code> property controls how the total width and
+          height of an element are calculated.
+        </p>
+
+        <h3>1. content-box</h3>
+
+        <p>This is the default value.</p>
+
+        <code> box-sizing: content-box; </code>
+
+        <p>
+          With <code>content-box</code>, the declared width applies only to the
+          content.
+        </p>
+
+        <h3>2. border-box</h3>
+
+        <code> box-sizing: border-box; </code>
+
+        <p>
+          With <code>border-box</code>, the declared width includes the content,
+          padding, and border.
+        </p>
+
+        <h3>Common CSS Reset:</h3>
+
+        <code>
+          * {<br />
+          &nbsp;&nbsp;box-sizing: border-box;<br />
+          }
+        </code>
+
+        <p>
+          This makes width and height calculations easier and more predictable.
+        </p>
+      </div>
+
+      <!-- 6. Width -->
+      <div
+        style="
+          border: 3px solid #673ab7;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>6. width</h2>
+
+        <p>The <code>width</code> property sets the width of an element.</p>
+
+        <h3>Example:</h3>
+
+        <code> width: 300px; </code>
+
+        <h3>Percentage:</h3>
+
+        <code> width: 50%; </code>
+
+        <h3>Viewport:</h3>
+
+        <code> width: 50vw; </code>
+
+        <p>
+          Width can use different units such as
+          <code>px</code>, <code>%</code>, <code>rem</code>, and
+          <code>vw</code>.
+        </p>
+      </div>
+
+      <!-- 7. Height -->
+      <div
+        style="
+          border: 3px solid #e91e63;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>7. height</h2>
+
+        <p>The <code>height</code> property sets the height of an element.</p>
+
+        <h3>Example:</h3>
+
+        <code> height: 200px; </code>
+
+        <h3>Viewport Height:</h3>
+
+        <code> height: 100vh; </code>
+
+        <p><code>100vh</code> means 100% of the viewport height.</p>
+      </div>
+
+      <!-- 8. min-width -->
+      <div
+        style="
+          border: 3px solid #795548;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>8. min-width</h2>
+
+        <p>
+          The <code>min-width</code> property defines the minimum width an
+          element is allowed to have.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .box {<br />
+          &nbsp;&nbsp;min-width: 300px;<br />
+          }
+        </code>
+
+        <p>
+          The element will not become narrower than
+          <code>300px</code>.
+        </p>
+
+        <h3>Common Use:</h3>
+
+        <p>
+          Useful for preventing cards, inputs, buttons, and containers from
+          becoming too narrow.
+        </p>
+      </div>
+
+      <!-- 9. max-width -->
+      <div
+        style="
+          border: 3px solid #009688;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>9. max-width</h2>
+
+        <p>
+          The <code>max-width</code> property defines the maximum width an
+          element can reach.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;max-width: 1200px;<br />
+          &nbsp;&nbsp;margin: 0 auto;<br />
+          }
+        </code>
+
+        <p>This is commonly used for responsive website containers.</p>
+
+        <h3>Responsive Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;width: 100%;<br />
+          &nbsp;&nbsp;max-width: 1200px;<br />
+          &nbsp;&nbsp;margin: 0 auto;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 10. min-height -->
+      <div
+        style="
+          border: 3px solid #3f51b5;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>10. min-height</h2>
+
+        <p>
+          The <code>min-height</code> property defines the minimum height of an
+          element.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .card {<br />
+          &nbsp;&nbsp;min-height: 200px;<br />
+          }
+        </code>
+
+        <p>The element can grow larger if its content requires more space.</p>
+      </div>
+
+      <!-- 11. max-height -->
+      <div
+        style="
+          border: 3px solid #8bc34a;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>11. max-height</h2>
+
+        <p>
+          The <code>max-height</code> property defines the maximum height an
+          element can reach.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .box {<br />
+          &nbsp;&nbsp;max-height: 300px;<br />
+          }
+        </code>
+
+        <p>
+          If the content becomes larger than the allowed height, the
+          <code>overflow</code> property can control what happens.
+        </p>
+      </div>
+
+      <!-- 12. Overflow -->
+      <div
+        style="
+          border: 3px solid #ff5722;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>12. overflow</h2>
+
+        <p>
+          The <code>overflow</code> property controls what happens when content
+          exceeds the size of its container.
+        </p>
+
+        <h3>1. visible</h3>
+
+        <code> overflow: visible; </code>
+
+        <p>
+          Content is allowed to appear outside the element. This is the default.
+        </p>
+
+        <h3>2. hidden</h3>
+
+        <code> overflow: hidden; </code>
+
+        <p>Extra content is clipped and not displayed.</p>
+
+        <h3>3. scroll</h3>
+
+        <code> overflow: scroll; </code>
+
+        <p>Scrollbars are provided so the hidden content can be accessed.</p>
+
+        <h3>4. auto</h3>
+
+        <code> overflow: auto; </code>
+
+        <p>Scrollbars appear when they are needed.</p>
+
+        <h3>Axis-specific Overflow:</h3>
+
+        <code>
+          overflow-x: auto;<br />
+          overflow-y: hidden;
+        </code>
+      </div>
+
+      <!-- 13. Box Model Structure -->
+      <div
+        style="
+          border: 3px solid #607d8b;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>13. Complete Box Model</h2>
+
+        <p>
+          Every HTML element can be understood as a rectangular box consisting
+          of four main parts:
+        </p>
+
+        <div
+          style="
+            border: 8px solid #e91e63;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            background-color: #fce4ec;
+          "
+        >
+          <div
+            style="
+              border: 5px solid #ff9800;
+              padding: 20px;
+              background-color: #fff3e0;
+            "
+          >
+            <div
+              style="
+                border: 5px solid #4caf50;
+                padding: 25px;
+                background-color: #e8f5e9;
+              "
+            >
+              Content
+            </div>
+          </div>
+        </div>
+
+        <ul>
+          <li><strong>Content</strong> → actual content</li>
+          <li><strong>Padding</strong> → space around content</li>
+          <li><strong>Border</strong> → surrounds padding and content</li>
+          <li><strong>Margin</strong> → space outside the border</li>
+        </ul>
+
+        <h3>Order:</h3>
+
+        <code> Margin → Border → Padding → Content </code>
+      </div>
+
+      <!-- Practice 1 -->
+      <div
+        style="
+          border: 3px solid #4caf50;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>14. 🧪 Practice — Create Reusable Cards</h2>
+
+        <p>Create a reusable card component using the CSS Box Model.</p>
+
+        <h3>Requirements:</h3>
+
+        <ul>
+          <li>Create a reusable <code>.card</code> class.</li>
+          <li>Set a maximum width.</li>
+          <li>Add padding.</li>
+          <li>Add a border.</li>
+          <li>Add rounded corners.</li>
+          <li>Add margin between cards.</li>
+          <li>Use <code>box-sizing: border-box</code>.</li>
+          <li>Make the card responsive.</li>
+        </ul>
+
+        <h3>Example HTML:</h3>
+
+        <code>
+          &lt;div class="card"&gt;<br />
+          &nbsp;&nbsp;&lt;h2&gt;Web Development&lt;/h2&gt;<br />
+          &nbsp;&nbsp;&lt;p&gt;Learn HTML, CSS and JavaScript.&lt;/p&gt;<br />
+          &lt;/div&gt;
+        </code>
+
+        <h3>Example CSS:</h3>
+
+        <code>
+          .card {<br />
+          &nbsp;&nbsp;width: 100%;<br />
+          &nbsp;&nbsp;max-width: 350px;<br />
+          &nbsp;&nbsp;padding: 20px;<br />
+          &nbsp;&nbsp;border: 2px solid #ddd;<br />
+          &nbsp;&nbsp;border-radius: 12px;<br />
+          &nbsp;&nbsp;margin: 20px;<br />
+          &nbsp;&nbsp;box-sizing: border-box;<br />
+          }
+        </code>
+      </div>
+
+      <!-- Practice 2 -->
+      <div
+        style="
+          border: 3px solid #9c27b0;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>15. 🧪 Practice — Create a Pricing Card</h2>
+
+        <p>Create a professional pricing card using the CSS Box Model.</p>
+
+        <h3>Requirements:</h3>
+
+        <ul>
+          <li>Pricing plan name</li>
+          <li>Price</li>
+          <li>List of features</li>
+          <li>Call-to-action button</li>
+          <li>Padding and margin</li>
+          <li>Border and border-radius</li>
+          <li>Responsive width</li>
+          <li>Hover effect</li>
+        </ul>
+
+        <h3>Example HTML:</h3>
+
+        <code>
+          &lt;div class="pricing-card"&gt;<br />
+          &nbsp;&nbsp;&lt;h2&gt;Pro Plan&lt;/h2&gt;<br />
+          &nbsp;&nbsp;&lt;h3&gt;$19 / Month&lt;/h3&gt;<br />
+          &nbsp;&nbsp;&lt;ul&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;10 Projects&lt;/li&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;100GB Storage&lt;/li&gt;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Priority Support&lt;/li&gt;<br />
+          &nbsp;&nbsp;&lt;/ul&gt;<br />
+          &nbsp;&nbsp;&lt;button&gt;Choose Plan&lt;/button&gt;<br />
+          &lt;/div&gt;
+        </code>
+
+        <h3>Example CSS:</h3>
+
+        <code>
+          .pricing-card {<br />
+          &nbsp;&nbsp;width: 100%;<br />
+          &nbsp;&nbsp;max-width: 350px;<br />
+          &nbsp;&nbsp;min-height: 400px;<br />
+          &nbsp;&nbsp;padding: 30px;<br />
+          &nbsp;&nbsp;margin: 20px auto;<br />
+          &nbsp;&nbsp;border: 2px solid #ddd;<br />
+          &nbsp;&nbsp;border-radius: 16px;<br />
+          &nbsp;&nbsp;box-sizing: border-box;<br />
+          }
+        </code>
+      </div>
+
+      <!-- Quick Reference -->
+      <div
+        style="
+          border: 3px solid #2196f3;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>16. Quick Reference</h2>
+
+        <ul>
+          <li><code>content</code> → actual content</li>
+          <li><code>padding</code> → space inside the border</li>
+          <li><code>border</code> → surrounds content and padding</li>
+          <li><code>margin</code> → space outside the border</li>
+          <li><code>box-sizing</code> → controls box size calculation</li>
+          <li><code>width</code> → element width</li>
+          <li><code>height</code> → element height</li>
+          <li><code>min-width</code> → minimum width</li>
+          <li><code>max-width</code> → maximum width</li>
+          <li><code>min-height</code> → minimum height</li>
+          <li><code>max-height</code> → maximum height</li>
+          <li><code>overflow</code> → controls overflowing content</li>
+        </ul>
+      </div>
+
+      <!-- Notes -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 20px;
+          border-radius: 10px;
+          padding: 15px;
+          border: 3px solid #212121;
+        "
+      >
+        <h2>Notes</h2>
+
+        <p>
+          <strong>Note:</strong> The CSS Box Model consists of Content, Padding,
+          Border, and Margin.
+        </p>
+
+        <p><strong>Note:</strong> Padding creates space inside an element.</p>
+
+        <p><strong>Note:</strong> Margin creates space outside an element.</p>
+
+        <p>
+          <strong>Note:</strong> <code>box-sizing: border-box</code> makes the
+          declared width and height include padding and border.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>max-width</code> is extremely useful for
+          responsive containers and cards.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>overflow: auto</code> is useful when
+          content may exceed a fixed or constrained container.
+        </p>
+
+        <p>
+          <strong>Note:</strong> A reusable card should use consistent padding,
+          border, radius, width constraints, and box sizing.
+        </p>
+      </div>
+    </section>
+    <!-- CSS Typography Section -->
+    <section
+      class="css-typography-section"
+      style="
+        border: 3px solid #673ab7;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 12px;
+        max-width: 1000px;
+      "
+    >
+      <h1
+        style="color: #673ab7; text-decoration: underline; text-align: center"
+      >
+        CSS Typography
+      </h1>
+
+      <!-- 1. font-family -->
+      <div
+        style="
+          border: 3px solid #f44336;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>1. font-family</h2>
+
+        <p>
+          The <code>font-family</code> property specifies the font used to
+          display text.
+        </p>
+
+        <h3>Syntax:</h3>
+
+        <code> font-family: Arial, sans-serif; </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;font-family: Arial, sans-serif;<br />
+          }
+        </code>
+
+        <h3>Font Fallback:</h3>
+
+        <p>
+          Multiple fonts can be provided. If the first font is unavailable, the
+          browser tries the next one.
+        </p>
+
+        <code> font-family: "Helvetica Neue", Arial, sans-serif; </code>
+
+        <h3>Common Font Families:</h3>
+
+        <ul>
+          <li><code>Arial</code></li>
+          <li><code>Verdana</code></li>
+          <li><code>Georgia</code></li>
+          <li><code>Times New Roman</code></li>
+          <li><code>Courier New</code></li>
+          <li><code>sans-serif</code></li>
+          <li><code>serif</code></li>
+          <li><code>monospace</code></li>
+        </ul>
+      </div>
+
+      <!-- 2. font-size -->
+      <div
+        style="
+          border: 3px solid #2196f3;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>2. font-size</h2>
+
+        <p>The <code>font-size</code> property controls the size of text.</p>
+
+        <h3>Example:</h3>
+
+        <code>
+          h1 {<br />
+          &nbsp;&nbsp;font-size: 40px;<br />
+          }
+        </code>
+
+        <h3>Common Units:</h3>
+
+        <ul>
+          <li><code>px</code> → fixed pixel size</li>
+          <li><code>em</code> → relative to the parent font size</li>
+          <li><code>rem</code> → relative to the root font size</li>
+          <li><code>%</code> → percentage-based size</li>
+          <li><code>vw</code> → relative to viewport width</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          font-size: 20px;<br />
+          font-size: 1.5rem;<br />
+          font-size: 2em;
+        </code>
+      </div>
+
+      <!-- 3. font-weight -->
+      <div
+        style="
+          border: 3px solid #4caf50;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>3. font-weight</h2>
+
+        <p>
+          The <code>font-weight</code> property controls how thick or bold the
+          text appears.
+        </p>
+
+        <h3>Keyword Values:</h3>
+
+        <code>
+          font-weight: normal;<br />
+          font-weight: bold;
+        </code>
+
+        <h3>Numeric Values:</h3>
+
+        <code>
+          font-weight: 100;<br />
+          font-weight: 300;<br />
+          font-weight: 400;<br />
+          font-weight: 500;<br />
+          font-weight: 600;<br />
+          font-weight: 700;<br />
+          font-weight: 900;
+        </code>
+
+        <ul>
+          <li><code>400</code> → commonly normal</li>
+          <li><code>700</code> → commonly bold</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          h1 {<br />
+          &nbsp;&nbsp;font-weight: 700;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 4. font-style -->
+      <div
+        style="
+          border: 3px solid #ff9800;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>4. font-style</h2>
+
+        <p>
+          The <code>font-style</code> property controls whether text is normal,
+          italic, or oblique.
+        </p>
+
+        <h3>Values:</h3>
+
+        <ul>
+          <li><code>normal</code> → normal text</li>
+          <li><code>italic</code> → italic text</li>
+          <li><code>oblique</code> → slanted text</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;font-style: italic;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 5. line-height -->
+      <div
+        style="
+          border: 3px solid #9c27b0;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>5. line-height</h2>
+
+        <p>
+          The <code>line-height</code> property controls the vertical space
+          between lines of text.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;line-height: 1.6;<br />
+          }
+        </code>
+
+        <h3>Using a Unit:</h3>
+
+        <code> line-height: 30px; </code>
+
+        <h3>Recommended:</h3>
+
+        <p>
+          Unitless values such as <code>1.5</code> or <code>1.6</code> are often
+          convenient for responsive typography.
+        </p>
+      </div>
+
+      <!-- 6. letter-spacing -->
+      <div
+        style="
+          border: 3px solid #00bcd4;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>6. letter-spacing</h2>
+
+        <p>
+          The <code>letter-spacing</code> property controls the horizontal space
+          between individual characters.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          h1 {<br />
+          &nbsp;&nbsp;letter-spacing: 2px;<br />
+          }
+        </code>
+
+        <h3>Negative Value:</h3>
+
+        <code> letter-spacing: -1px; </code>
+
+        <p>
+          Positive values increase spacing, while negative values decrease it.
+        </p>
+      </div>
+
+      <!-- 7. word-spacing -->
+      <div
+        style="
+          border: 3px solid #795548;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>7. word-spacing</h2>
+
+        <p>
+          The <code>word-spacing</code> property controls the space between
+          words.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          p {<br />
+          &nbsp;&nbsp;word-spacing: 10px;<br />
+          }
+        </code>
+
+        <p>Positive values increase the space between words.</p>
+
+        <h3>Negative Value:</h3>
+
+        <code> word-spacing: -2px; </code>
+      </div>
+
+      <!-- 8. text-align -->
+      <div
+        style="
+          border: 3px solid #3f51b5;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>8. text-align</h2>
+
+        <p>
+          The <code>text-align</code> property controls the horizontal alignment
+          of inline content inside an element.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>left</code></li>
+          <li><code>center</code></li>
+          <li><code>right</code></li>
+          <li><code>justify</code></li>
+          <li><code>start</code></li>
+          <li><code>end</code></li>
+        </ul>
+
+        <h3>Examples:</h3>
+
+        <code>
+          text-align: left;<br />
+          text-align: center;<br />
+          text-align: right;<br />
+          text-align: justify;
+        </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          h1 {<br />
+          &nbsp;&nbsp;text-align: center;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 9. text-decoration -->
+      <div
+        style="
+          border: 3px solid #e91e63;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>9. text-decoration</h2>
+
+        <p>
+          The <code>text-decoration</code> property adds or removes decorations
+          such as underlines and line-through effects.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>underline</code> → underline text</li>
+          <li><code>overline</code> → line above text</li>
+          <li><code>line-through</code> → line through text</li>
+          <li><code>none</code> → removes decoration</li>
+        </ul>
+
+        <h3>Examples:</h3>
+
+        <code>
+          text-decoration: underline;<br />
+          text-decoration: overline;<br />
+          text-decoration: line-through;<br />
+          text-decoration: none;
+        </code>
+
+        <h3>Common Link Example:</h3>
+
+        <code>
+          a {<br />
+          &nbsp;&nbsp;text-decoration: none;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 10. text-transform -->
+      <div
+        style="
+          border: 3px solid #009688;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>10. text-transform</h2>
+
+        <p>
+          The <code>text-transform</code> property controls the capitalization
+          of text.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>uppercase</code> → ALL CAPITAL LETTERS</li>
+          <li><code>lowercase</code> → all lowercase letters</li>
+          <li><code>capitalize</code> → Capitalizes Each Word</li>
+          <li><code>none</code> → normal text</li>
+        </ul>
+
+        <h3>Examples:</h3>
+
+        <code>
+          text-transform: uppercase;<br />
+          text-transform: lowercase;<br />
+          text-transform: capitalize;
+        </code>
+
+        <h3>Example:</h3>
+
+        <code>
+          .title {<br />
+          &nbsp;&nbsp;text-transform: uppercase;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 11. Web Fonts -->
+      <div
+        style="
+          border: 3px solid #8bc34a;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>11. Web Fonts</h2>
+
+        <p>
+          <strong>Web fonts</strong> allow websites to use fonts that may not be
+          installed on the user's computer.
+        </p>
+
+        <p>
+          CSS can load fonts from external services or from your own server.
+        </p>
+
+        <h3>Using @font-face:</h3>
+
+        <code>
+          @font-face {<br />
+          &nbsp;&nbsp;font-family: "MyFont";<br />
+          &nbsp;&nbsp;src: url("fonts/myfont.woff2") format("woff2");<br />
+          }<br /><br />
+
+          body {<br />
+          &nbsp;&nbsp;font-family: "MyFont", sans-serif;<br />
+          }
+        </code>
+
+        <h3>Common Web Font Formats:</h3>
+
+        <ul>
+          <li><code>WOFF2</code> → modern and commonly preferred</li>
+          <li><code>WOFF</code> → widely supported web font format</li>
+          <li><code>TTF</code> → TrueType Font</li>
+          <li><code>OTF</code> → OpenType Font</li>
+        </ul>
+      </div>
+
+      <!-- 12. Google Fonts -->
+      <div
+        style="
+          border: 3px solid #ff5722;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>12. Google Fonts</h2>
+
+        <p>
+          <strong>Google Fonts</strong> is a collection of web fonts that can be
+          used in websites.
+        </p>
+
+        <h3>Step 1: Import the Font</h3>
+
+        <p>
+          You can import a Google Font into your CSS using
+          <code>@import</code>.
+        </p>
+
+        <code>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap');
+        </code>
+
+        <h3>Step 2: Use the Font</h3>
+
+        <code>
+          body {<br />
+          &nbsp;&nbsp;font-family: "Poppins", sans-serif;<br />
+          }
+        </code>
+
+        <h3>Alternative: HTML link</h3>
+
+        <p>
+          Google Fonts can also be loaded using a
+          <code>&lt;link&gt;</code> element in the HTML
+          <code>&lt;head&gt;</code>.
+        </p>
+
+        <code>
+          &lt;link<br />
+          &nbsp;&nbsp;href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap"<br />
+          &nbsp;&nbsp;rel="stylesheet"<br />
+          /&gt;
+        </code>
+
+        <h3>CSS:</h3>
+
+        <code>
+          body {<br />
+          &nbsp;&nbsp;font-family: "Poppins", sans-serif;<br />
+          }
+        </code>
+
+        <h3>Important:</h3>
+
+        <ul>
+          <li>Always provide a fallback font.</li>
+          <li>Use readable fonts for body text.</li>
+          <li>Limit the number of font families used on a page.</li>
+          <li>Choose font weights that the selected font actually provides.</li>
+        </ul>
+      </div>
+
+      <!-- 13. Typography Example -->
+      <div
+        style="
+          border: 3px solid #673ab7;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>13. Complete Typography Example</h2>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;h1 class="title"&gt;Web Development&lt;/h1&gt;<br />
+          &lt;p class="description"&gt;<br />
+          &nbsp;&nbsp;Learn HTML, CSS and JavaScript.<br />
+          &lt;/p&gt;
+        </code>
+
+        <h3>CSS:</h3>
+
+        <code>
+          .title {<br />
+          &nbsp;&nbsp;font-family: Arial, sans-serif;<br />
+          &nbsp;&nbsp;font-size: 40px;<br />
+          &nbsp;&nbsp;font-weight: 700;<br />
+          &nbsp;&nbsp;letter-spacing: 2px;<br />
+          &nbsp;&nbsp;text-align: center;<br />
+          &nbsp;&nbsp;text-transform: uppercase;<br />
+          }<br /><br />
+
+          .description {<br />
+          &nbsp;&nbsp;font-family: Georgia, serif;<br />
+          &nbsp;&nbsp;font-size: 18px;<br />
+          &nbsp;&nbsp;font-weight: 400;<br />
+          &nbsp;&nbsp;line-height: 1.6;<br />
+          &nbsp;&nbsp;word-spacing: 4px;<br />
+          &nbsp;&nbsp;text-align: justify;<br />
+          }
+        </code>
+      </div>
+
+      <!-- Quick Reference -->
+      <div
+        style="
+          border: 3px solid #2196f3;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>14. Quick Reference</h2>
+
+        <ul>
+          <li><code>font-family</code> → font type</li>
+          <li><code>font-size</code> → text size</li>
+          <li><code>font-weight</code> → text thickness</li>
+          <li><code>font-style</code> → normal/italic/oblique</li>
+          <li><code>line-height</code> → vertical line spacing</li>
+          <li><code>letter-spacing</code> → spacing between characters</li>
+          <li><code>word-spacing</code> → spacing between words</li>
+          <li><code>text-align</code> → horizontal text alignment</li>
+          <li>
+            <code>text-decoration</code> → underline/overline/line-through
+          </li>
+          <li><code>text-transform</code> → uppercase/lowercase/capitalize</li>
+          <li><code>@font-face</code> → load custom web fonts</li>
+          <li><code>Google Fonts</code> → use hosted web fonts</li>
+        </ul>
+      </div>
+
+      <!-- Notes -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 20px;
+          border-radius: 10px;
+          padding: 15px;
+          border: 3px solid #212121;
+        "
+      >
+        <h2>Notes</h2>
+
+        <p>
+          <strong>Note:</strong> Typography controls how text looks and reads on
+          a webpage.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>font-family</code> controls the typeface,
+          while <code>font-size</code> controls its size.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>font-weight</code> controls the thickness
+          of text.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>line-height</code> is important for
+          readable paragraphs.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>letter-spacing</code> controls character
+          spacing, while <code>word-spacing</code> controls word spacing.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>text-transform</code> changes the visual
+          capitalization without changing the original HTML text.
+        </p>
+
+        <p>
+          <strong>Note:</strong> Web fonts allow websites to use fonts that are
+          not installed locally on the user's device.
+        </p>
+
+        <p>
+          <strong>Note:</strong> Always use a fallback font such as
+          <code>sans-serif</code> or <code>serif</code>.
+        </p>
+      </div>
+    </section>
+    <!-- CSS Layout - Flexbox Section -->
+    <section
+      class="css-flexbox-section"
+      style="
+        border: 3px solid #1565c0;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 12px;
+        max-width: 1000px;
+      "
+    >
+      <h1
+        style="color: #1565c0; text-decoration: underline; text-align: center"
+      >
+        CSS Layout — Flexbox
+      </h1>
+
+      <!-- 1. What is Flexbox -->
+      <div
+        style="
+          border: 3px solid #f44336;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>1. What is Flexbox?</h2>
+
+        <p>
+          <strong>Flexbox</strong>, short for
+          <strong>Flexible Box Layout</strong>, is a CSS layout system used to
+          arrange elements in a row or column.
+        </p>
+
+        <p>
+          Flexbox makes it easier to align, distribute, resize, and position
+          elements inside a container.
+        </p>
+
+        <h3>Important Terms:</h3>
+
+        <ul>
+          <li><strong>Flex container</strong> → parent element</li>
+          <li>
+            <strong>Flex items</strong> → direct children of the container
+          </li>
+          <li>
+            <strong>Main axis</strong> → primary direction of the flex layout
+          </li>
+          <li>
+            <strong>Cross axis</strong> → direction perpendicular to the main
+            axis
+          </li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          }
+        </code>
+
+        <p>The direct children of <code>.container</code> become flex items.</p>
+      </div>
+
+      <!-- 2. display flex -->
+      <div
+        style="
+          border: 3px solid #2196f3;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>2. display: flex</h2>
+
+        <p>
+          The <code>display: flex</code> property turns an element into a
+          <strong>flex container</strong>.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          }
+        </code>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;div class="container"&gt;<br />
+          &nbsp;&nbsp;&lt;div&gt;Item 1&lt;/div&gt;<br />
+          &nbsp;&nbsp;&lt;div&gt;Item 2&lt;/div&gt;<br />
+          &nbsp;&nbsp;&lt;div&gt;Item 3&lt;/div&gt;<br />
+          &lt;/div&gt;
+        </code>
+
+        <p>By default, flex items are arranged horizontally.</p>
+      </div>
+
+      <!-- 3. flex-direction -->
+      <div
+        style="
+          border: 3px solid #4caf50;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>3. flex-direction</h2>
+
+        <p>
+          The <code>flex-direction</code> property defines the direction of the
+          main axis.
+        </p>
+
+        <h3>Values:</h3>
+
+        <ul>
+          <li><code>row</code> → left to right (default)</li>
+          <li><code>row-reverse</code> → right to left</li>
+          <li><code>column</code> → top to bottom</li>
+          <li><code>column-reverse</code> → bottom to top</li>
+        </ul>
+
+        <h3>Examples:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;flex-direction: row;<br />
+          }
+        </code>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;flex-direction: column;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 4. justify-content -->
+      <div
+        style="
+          border: 3px solid #ff9800;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>4. justify-content</h2>
+
+        <p>
+          The <code>justify-content</code> property controls how flex items are
+          distributed along the <strong>main axis</strong>.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>flex-start</code> → items at the start</li>
+          <li><code>flex-end</code> → items at the end</li>
+          <li><code>center</code> → items in the center</li>
+          <li><code>space-between</code> → equal space between items</li>
+          <li><code>space-around</code> → space around items</li>
+          <li><code>space-evenly</code> → equal space everywhere</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;justify-content: center;<br />
+          }
+        </code>
+
+        <p>
+          If <code>flex-direction: row</code>, the main axis is horizontal.
+          Therefore, <code>justify-content</code> controls horizontal
+          distribution.
+        </p>
+      </div>
+
+      <!-- 5. align-items -->
+      <div
+        style="
+          border: 3px solid #9c27b0;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>5. align-items</h2>
+
+        <p>
+          The <code>align-items</code> property aligns flex items along the
+          <strong>cross axis</strong>.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li>
+            <code>stretch</code> → stretches items (default in many row layouts)
+          </li>
+          <li><code>flex-start</code> → cross-axis start</li>
+          <li><code>flex-end</code> → cross-axis end</li>
+          <li><code>center</code> → center</li>
+          <li><code>baseline</code> → aligns text baselines</li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;align-items: center;<br />
+          }
+        </code>
+
+        <p>
+          With <code>flex-direction: row</code>, this generally controls
+          vertical alignment.
+        </p>
+      </div>
+
+      <!-- 6. align-content -->
+      <div
+        style="
+          border: 3px solid #00bcd4;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>6. align-content</h2>
+
+        <p>
+          The <code>align-content</code> property controls the spacing and
+          alignment of <strong>multiple flex lines</strong> along the cross
+          axis.
+        </p>
+
+        <p>
+          It generally has an effect only when flex items wrap onto multiple
+          lines and there is extra space in the container.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>flex-start</code></li>
+          <li><code>flex-end</code></li>
+          <li><code>center</code></li>
+          <li><code>space-between</code></li>
+          <li><code>space-around</code></li>
+          <li><code>space-evenly</code></li>
+          <li><code>stretch</code></li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;flex-wrap: wrap;<br />
+          &nbsp;&nbsp;align-content: space-between;<br />
+          }
+        </code>
+
+        <h3>Important Difference:</h3>
+
+        <ul>
+          <li><code>align-items</code> → aligns items within a flex line</li>
+
+          <li><code>align-content</code> → aligns multiple flex lines</li>
+        </ul>
+      </div>
+
+      <!-- 7. flex-wrap -->
+      <div
+        style="
+          border: 3px solid #795548;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>7. flex-wrap</h2>
+
+        <p>
+          The <code>flex-wrap</code> property determines whether flex items
+          should stay on one line or move onto multiple lines.
+        </p>
+
+        <h3>Values:</h3>
+
+        <ul>
+          <li><code>nowrap</code> → all items remain on one line</li>
+          <li><code>wrap</code> → items move to new lines</li>
+          <li>
+            <code>wrap-reverse</code> → lines wrap in the reverse cross-axis
+            direction
+          </li>
+        </ul>
+
+        <h3>Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;flex-wrap: wrap;<br />
+          }
+        </code>
+
+        <p>
+          <code>flex-wrap: wrap</code> is very useful for responsive card
+          layouts.
+        </p>
+      </div>
+
+      <!-- 8. gap -->
+      <div
+        style="
+          border: 3px solid #3f51b5;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>8. gap</h2>
+
+        <p>The <code>gap</code> property creates space between flex items.</p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;gap: 20px;<br />
+          }
+        </code>
+
+        <h3>Separate Row and Column Gaps:</h3>
+
+        <code> gap: 10px 20px; </code>
+
+        <ul>
+          <li><code>10px</code> → row gap</li>
+          <li><code>20px</code> → column gap</li>
+        </ul>
+
+        <p>
+          <code>gap</code> is often cleaner than adding margins to individual
+          flex items.
+        </p>
+      </div>
+
+      <!-- 9. flex-grow -->
+      <div
+        style="
+          border: 3px solid #e91e63;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>9. flex-grow</h2>
+
+        <p>
+          The <code>flex-grow</code> property determines how much a flex item
+          can grow relative to other flex items when extra space is available.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .item {<br />
+          &nbsp;&nbsp;flex-grow: 1;<br />
+          }
+        </code>
+
+        <h3>Example with Different Values:</h3>
+
+        <code>
+          .item1 { flex-grow: 1; }<br />
+          .item2 { flex-grow: 2; }
+        </code>
+
+        <p>
+          If extra space is available, the second item gets twice the growth
+          share of the first item, assuming comparable starting conditions.
+        </p>
+
+        <h3>Common Pattern:</h3>
+
+        <code>
+          .item {<br />
+          &nbsp;&nbsp;flex-grow: 1;<br />
+          }
+        </code>
+
+        <p>This can make multiple items share available space.</p>
+      </div>
+
+      <!-- 10. flex-shrink -->
+      <div
+        style="
+          border: 3px solid #009688;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>10. flex-shrink</h2>
+
+        <p>
+          The <code>flex-shrink</code> property determines how much a flex item
+          can shrink when there is not enough space.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .item {<br />
+          &nbsp;&nbsp;flex-shrink: 1;<br />
+          }
+        </code>
+
+        <h3>Prevent Shrinking:</h3>
+
+        <code>
+          .item {<br />
+          &nbsp;&nbsp;flex-shrink: 0;<br />
+          }
+        </code>
+
+        <p>
+          A value of <code>0</code> prevents the item from shrinking due to flex
+          sizing.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .logo {<br />
+          &nbsp;&nbsp;flex-shrink: 0;<br />
+          }
+        </code>
+      </div>
+
+      <!-- 11. flex-basis -->
+      <div
+        style="
+          border: 3px solid #8bc34a;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>11. flex-basis</h2>
+
+        <p>
+          The <code>flex-basis</code> property defines the initial main-axis
+          size of a flex item before available space is distributed.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .item {<br />
+          &nbsp;&nbsp;flex-basis: 200px;<br />
+          }
+        </code>
+
+        <p>
+          In a row layout, this generally represents the item's initial width.
+          In a column layout, it generally represents the initial height.
+        </p>
+
+        <h3>Common Values:</h3>
+
+        <code>
+          flex-basis: 200px;<br />
+          flex-basis: 30%;<br />
+          flex-basis: auto;
+        </code>
+      </div>
+
+      <!-- 12. align-self -->
+      <div
+        style="
+          border: 3px solid #ff5722;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>12. align-self</h2>
+
+        <p>
+          The <code>align-self</code> property allows one flex item to override
+          the container's <code>align-items</code> value.
+        </p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .item {<br />
+          &nbsp;&nbsp;align-self: flex-end;<br />
+          }
+        </code>
+
+        <h3>Common Values:</h3>
+
+        <ul>
+          <li><code>auto</code></li>
+          <li><code>flex-start</code></li>
+          <li><code>flex-end</code></li>
+          <li><code>center</code></li>
+          <li><code>stretch</code></li>
+          <li><code>baseline</code></li>
+        </ul>
+
+        <p>
+          Unlike <code>align-items</code>, which affects all flex items,
+          <code>align-self</code> affects an individual item.
+        </p>
+      </div>
+
+      <!-- 13. order -->
+      <div
+        style="
+          border: 3px solid #673ab7;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>13. order</h2>
+
+        <p>
+          The <code>order</code> property controls the visual order of flex
+          items.
+        </p>
+
+        <p>The default value is <code>0</code>.</p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .item1 {<br />
+          &nbsp;&nbsp;order: 2;<br />
+          }<br /><br />
+
+          .item2 {<br />
+          &nbsp;&nbsp;order: 1;<br />
+          }
+        </code>
+
+        <p>The item with the smaller <code>order</code> value appears first.</p>
+
+        <h3>Example:</h3>
+
+        <code>
+          .first { order: 3; }<br />
+          .second { order: 1; }<br />
+          .third { order: 2; }
+        </code>
+
+        <p>
+          Visual order becomes:
+          <strong>second → third → first</strong>.
+        </p>
+
+        <p>
+          <strong>Important:</strong> Changing visual order does not necessarily
+          change the underlying DOM order. Be careful with accessibility and
+          keyboard navigation.
+        </p>
+      </div>
+
+      <!-- 14. Main Axis and Cross Axis -->
+      <div
+        style="
+          border: 3px solid #607d8b;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>14. Main Axis &amp; Cross Axis</h2>
+
+        <p>
+          Understanding the axes is one of the most important concepts in
+          Flexbox.
+        </p>
+
+        <h3>When flex-direction is row:</h3>
+
+        <ul>
+          <li>Main axis → horizontal</li>
+          <li>Cross axis → vertical</li>
+          <li><code>justify-content</code> → main axis</li>
+          <li><code>align-items</code> → cross axis</li>
+        </ul>
+
+        <h3>When flex-direction is column:</h3>
+
+        <ul>
+          <li>Main axis → vertical</li>
+          <li>Cross axis → horizontal</li>
+          <li><code>justify-content</code> → vertical direction</li>
+          <li><code>align-items</code> → horizontal direction</li>
+        </ul>
+
+        <h3>Easy Rule:</h3>
+
+        <code>
+          justify-content → Main Axis<br />
+          align-items → Cross Axis
+        </code>
+      </div>
+
+      <!-- 15. Complete Flexbox Example -->
+      <div
+        style="
+          border: 3px solid #2196f3;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>15. Complete Flexbox Example</h2>
+
+        <h3>HTML:</h3>
+
+        <code>
+          &lt;div class="container"&gt;<br />
+          &nbsp;&nbsp;&lt;div class="item"&gt;Item 1&lt;/div&gt;<br />
+          &nbsp;&nbsp;&lt;div class="item"&gt;Item 2&lt;/div&gt;<br />
+          &nbsp;&nbsp;&lt;div class="item"&gt;Item 3&lt;/div&gt;<br />
+          &lt;/div&gt;
+        </code>
+
+        <h3>CSS:</h3>
+
+        <code>
+          .container {<br />
+          &nbsp;&nbsp;display: flex;<br />
+          &nbsp;&nbsp;flex-direction: row;<br />
+          &nbsp;&nbsp;justify-content: space-between;<br />
+          &nbsp;&nbsp;align-items: center;<br />
+          &nbsp;&nbsp;flex-wrap: wrap;<br />
+          &nbsp;&nbsp;gap: 20px;<br />
+          }<br /><br />
+
+          .item {<br />
+          &nbsp;&nbsp;flex-grow: 1;<br />
+          &nbsp;&nbsp;flex-basis: 200px;<br />
+          }
+        </code>
+      </div>
+
+      <!-- Quick Reference -->
+      <div
+        style="
+          border: 3px solid #ff9800;
+          padding: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+        "
+      >
+        <h2>16. Flexbox Quick Reference</h2>
+
+        <ul>
+          <li><code>display: flex</code> → creates flex container</li>
+          <li><code>flex-direction</code> → sets main-axis direction</li>
+          <li><code>justify-content</code> → aligns items on main axis</li>
+          <li><code>align-items</code> → aligns items on cross axis</li>
+          <li><code>align-content</code> → aligns multiple flex lines</li>
+          <li><code>flex-wrap</code> → controls wrapping</li>
+          <li><code>gap</code> → creates space between items</li>
+          <li><code>flex-grow</code> → controls growth</li>
+          <li><code>flex-shrink</code> → controls shrinking</li>
+          <li><code>flex-basis</code> → initial main-axis size</li>
+          <li><code>align-self</code> → individually aligns an item</li>
+          <li><code>order</code> → changes visual item order</li>
+        </ul>
+      </div>
+
+      <!-- Notes -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 20px;
+          border-radius: 10px;
+          padding: 15px;
+          border: 3px solid #212121;
+        "
+      >
+        <h2>Notes</h2>
+
+        <p>
+          <strong>Note:</strong> Flexbox is primarily designed for
+          one-dimensional layouts: a row or a column.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>display: flex</code> turns an element
+          into a flex container and its direct children into flex items.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>justify-content</code> works on the main
+          axis.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>align-items</code> works on the cross
+          axis.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>align-content</code> matters when there
+          are multiple flex lines.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>flex-grow</code>,
+          <code>flex-shrink</code>, and <code>flex-basis</code> control how flex
+          items use available space.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>gap</code> is useful for consistent
+          spacing between flex items.
+        </p>
+
+        <p>
+          <strong>Note:</strong> <code>align-self</code> can override
+          <code>align-items</code> for an individual item.
+        </p>
+
+        <p>
+          <strong>Note:</strong> Flexbox is commonly used for navbars, cards,
+          buttons, headers, forms, and responsive layouts.
+        </p>
+      </div>
+    </section>
+    <!-- CSS Layout - Grid Section -->
+<section
+  class="css-grid-section"
+  style="
+    border: 3px solid #8e24aa;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+  "
+>
+  <h1
+    style="
+      color: #8e24aa;
+      text-decoration: underline;
+      text-align: center;
+    "
+  >
+    CSS Grid
+  </h1>
+
+  <!-- 1. What is CSS Grid -->
+  <div
+    style="
+      border: 3px solid #f44336;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>1. What is CSS Grid?</h2>
+
+    <p>
+      <strong>CSS Grid</strong> is a two-dimensional CSS layout system used to
+      arrange elements into <strong>rows and columns</strong>.
+    </p>
+
+    <p>
+      Grid is especially useful for complex page layouts such as dashboards,
+      galleries, admin panels, and responsive card layouts.
+    </p>
+
+    <h3>Flexbox vs Grid:</h3>
+
+    <ul>
+      <li>
+        <strong>Flexbox</strong> → primarily one-dimensional layout
+        (row or column)
+      </li>
+
+      <li>
+        <strong>Grid</strong> → two-dimensional layout
+        (rows and columns)
+      </li>
+    </ul>
+
+    <h3>Basic Example:</h3>
+
+    <code>
+      .container {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      }
+    </code>
+  </div>
+
+  <!-- 2. display grid -->
+  <div
+    style="
+      border: 3px solid #2196f3;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>2. display: grid</h2>
+
+    <p>
+      The <code>display: grid</code> property turns an element into a
+      <strong>grid container</strong>.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      .container {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      }
+    </code>
+
+    <h3>HTML:</h3>
+
+    <code>
+      &lt;div class="container"&gt;<br />
+      &nbsp;&nbsp;&lt;div&gt;Item 1&lt;/div&gt;<br />
+      &nbsp;&nbsp;&lt;div&gt;Item 2&lt;/div&gt;<br />
+      &nbsp;&nbsp;&lt;div&gt;Item 3&lt;/div&gt;<br />
+      &lt;/div&gt;
+    </code>
+
+    <p>
+      Grid items are the direct children of the grid container.
+    </p>
+  </div>
+
+  <!-- 3. grid-template-columns -->
+  <div
+    style="
+      border: 3px solid #4caf50;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>3. grid-template-columns</h2>
+
+    <p>
+      The <code>grid-template-columns</code> property defines the number and
+      size of columns in a grid.
+    </p>
+
+    <h3>Two Equal Columns:</h3>
+
+    <code>
+      .container {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-columns: 1fr 1fr;<br />
+      }
+    </code>
+
+    <p>
+      <code>1fr 1fr</code> creates two equal columns.
+    </p>
+
+    <h3>Three Equal Columns:</h3>
+
+    <code>
+      grid-template-columns: 1fr 1fr 1fr;
+    </code>
+
+    <h3>Different Sizes:</h3>
+
+    <code>
+      grid-template-columns: 200px 1fr 2fr;
+    </code>
+
+    <p>
+      The <code>fr</code> unit represents a fraction of the available grid
+      space.
+    </p>
+  </div>
+
+  <!-- 4. grid-template-rows -->
+  <div
+    style="
+      border: 3px solid #ff9800;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>4. grid-template-rows</h2>
+
+    <p>
+      The <code>grid-template-rows</code> property defines the size of grid
+      rows.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      .container {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-rows: 100px 200px 100px;<br />
+      }
+    </code>
+
+    <p>
+      This creates three rows with heights of 100px, 200px, and 100px.
+    </p>
+
+    <h3>Using fr:</h3>
+
+    <code>
+      grid-template-rows: 1fr 2fr 1fr;
+    </code>
+  </div>
+
+  <!-- 5. gap -->
+  <div
+    style="
+      border: 3px solid #9c27b0;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>5. gap</h2>
+
+    <p>
+      The <code>gap</code> property creates space between grid rows and
+      columns.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      .container {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;gap: 20px;<br />
+      }
+    </code>
+
+    <h3>Different Row and Column Gaps:</h3>
+
+    <code>
+      row-gap: 10px;<br />
+      column-gap: 20px;
+    </code>
+
+    <p>
+      Or use the shorthand:
+    </p>
+
+    <code>
+      gap: 10px 20px;
+    </code>
+
+    <ul>
+      <li><code>10px</code> → row gap</li>
+      <li><code>20px</code> → column gap</li>
+    </ul>
+  </div>
+
+  <!-- 6. grid-column -->
+  <div
+    style="
+      border: 3px solid #00bcd4;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>6. grid-column</h2>
+
+    <p>
+      The <code>grid-column</code> property controls where a grid item starts
+      and ends across columns.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      .item {<br />
+      &nbsp;&nbsp;grid-column: 1 / 3;<br />
+      }
+    </code>
+
+    <p>
+      The item starts at column line 1 and ends at column line 3, spanning two
+      column tracks.
+    </p>
+
+    <h3>Using span:</h3>
+
+    <code>
+      grid-column: span 2;
+    </code>
+
+    <p>
+      This makes the item span two columns from its automatic starting
+      position.
+    </p>
+
+    <h3>Full Width:</h3>
+
+    <code>
+      grid-column: 1 / -1;
+    </code>
+
+    <p>
+      This commonly makes an item span from the first grid line to the last.
+    </p>
+  </div>
+
+  <!-- 7. grid-row -->
+  <div
+    style="
+      border: 3px solid #673ab7;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>7. grid-row</h2>
+
+    <p>
+      The <code>grid-row</code> property controls where an item starts and ends
+      across rows.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      .item {<br />
+      &nbsp;&nbsp;grid-row: 1 / 3;<br />
+      }
+    </code>
+
+    <p>
+      The item spans from row line 1 to row line 3.
+    </p>
+
+    <h3>Using span:</h3>
+
+    <code>
+      grid-row: span 2;
+    </code>
+
+    <p>
+      This makes the item span two rows.
+    </p>
+  </div>
+
+  <!-- 8. grid-area -->
+  <div
+    style="
+      border: 3px solid #e91e63;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>8. grid-area</h2>
+
+    <p>
+      The <code>grid-area</code> property can specify the row and column
+      position of a grid item.
+    </p>
+
+    <h3>Using Line Numbers:</h3>
+
+    <code>
+      grid-area: 1 / 1 / 3 / 3;
+    </code>
+
+    <p>
+      The four values represent:
+    </p>
+
+    <ul>
+      <li>Row start</li>
+      <li>Column start</li>
+      <li>Row end</li>
+      <li>Column end</li>
+    </ul>
+
+    <h3>Named Grid Areas:</h3>
+
+    <code>
+      .layout {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-areas:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;"header header"<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;"sidebar main"<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;"footer footer";<br />
+      }<br /><br />
+
+      .header {<br />
+      &nbsp;&nbsp;grid-area: header;<br />
+      }<br /><br />
+
+      .sidebar {<br />
+      &nbsp;&nbsp;grid-area: sidebar;<br />
+      }<br /><br />
+
+      .main {<br />
+      &nbsp;&nbsp;grid-area: main;<br />
+      }<br /><br />
+
+      .footer {<br />
+      &nbsp;&nbsp;grid-area: footer;<br />
+      }
+    </code>
+  </div>
+
+  <!-- 9. repeat -->
+  <div
+    style="
+      border: 3px solid #795548;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>9. repeat()</h2>
+
+    <p>
+      The <code>repeat()</code> function makes repeated grid tracks easier to
+      write.
+    </p>
+
+    <h3>Without repeat():</h3>
+
+    <code>
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    </code>
+
+    <h3>With repeat():</h3>
+
+    <code>
+      grid-template-columns: repeat(4, 1fr);
+    </code>
+
+    <p>
+      Both create four equal columns.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      grid-template-columns: repeat(3, 200px);
+    </code>
+
+    <p>
+      This creates three columns, each 200px wide.
+    </p>
+  </div>
+
+  <!-- 10. minmax -->
+  <div
+    style="
+      border: 3px solid #009688;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>10. minmax()</h2>
+
+    <p>
+      The <code>minmax()</code> function defines a minimum and maximum size for
+      a grid track.
+    </p>
+
+    <h3>Syntax:</h3>
+
+    <code>
+      minmax(minimum, maximum)
+    </code>
+
+    <h3>Example:</h3>
+
+    <code>
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+    </code>
+
+    <p>
+      Each column can be at least 200px and can grow up to one fraction of the
+      available space.
+    </p>
+
+    <h3>Responsive Example:</h3>
+
+    <code>
+      grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+      );
+    </code>
+  </div>
+
+  <!-- 11. auto-fit -->
+  <div
+    style="
+      border: 3px solid #4caf50;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>11. auto-fit</h2>
+
+    <p>
+      <code>auto-fit</code> automatically fits as many columns as possible
+      into the available space and can collapse empty tracks.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      .container {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-columns:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;repeat(auto-fit, minmax(250px, 1fr));<br />
+      &nbsp;&nbsp;gap: 20px;<br />
+      }
+    </code>
+
+    <p>
+      This is a very common pattern for responsive card grids.
+    </p>
+
+    <h3>Use Cases:</h3>
+
+    <ul>
+      <li>Product cards</li>
+      <li>Portfolio cards</li>
+      <li>Photo galleries</li>
+      <li>Dashboard widgets</li>
+    </ul>
+  </div>
+
+  <!-- 12. auto-fill -->
+  <div
+    style="
+      border: 3px solid #ff5722;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>12. auto-fill</h2>
+
+    <p>
+      <code>auto-fill</code> creates as many grid tracks as can fit within the
+      available space, including empty tracks when applicable.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      .container {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-columns:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;repeat(auto-fill, minmax(250px, 1fr));<br />
+      &nbsp;&nbsp;gap: 20px;<br />
+      }
+    </code>
+
+    <h3>auto-fit vs auto-fill:</h3>
+
+    <ul>
+      <li>
+        <code>auto-fit</code> → fits available items and collapses empty
+        tracks
+      </li>
+
+      <li>
+        <code>auto-fill</code> → keeps as many possible tracks, including
+        empty tracks when space allows
+      </li>
+    </ul>
+
+    <p>
+      With flexible tracks such as <code>minmax()</code>, the difference is
+      most noticeable when there are fewer items than the number of possible
+      columns.
+    </p>
+  </div>
+
+  <!-- 13. Responsive Grid -->
+  <div
+    style="
+      border: 3px solid #3f51b5;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>13. Responsive Grid</h2>
+
+    <p>
+      CSS Grid can create responsive layouts without manually specifying a
+      different number of columns for every screen size.
+    </p>
+
+    <h3>Example:</h3>
+
+    <code>
+      .cards {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-columns:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;repeat(auto-fit, minmax(250px, 1fr));<br />
+      &nbsp;&nbsp;gap: 20px;<br />
+      }
+    </code>
+
+    <p>
+      As the available width changes, the number of columns can automatically
+      adjust.
+    </p>
+  </div>
+
+  <!-- Practice 1 -->
+  <div
+    style="
+      border: 3px solid #4caf50;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>14. 🧪 Practice — Photo Gallery</h2>
+
+    <p>
+      Create a responsive photo gallery using CSS Grid.
+    </p>
+
+    <h3>Requirements:</h3>
+
+    <ul>
+      <li>Create a grid container.</li>
+      <li>Use <code>repeat()</code>.</li>
+      <li>Use <code>minmax()</code>.</li>
+      <li>Use <code>auto-fit</code>.</li>
+      <li>Add consistent gaps.</li>
+      <li>Make the gallery responsive.</li>
+    </ul>
+
+    <h3>Example:</h3>
+
+    <code>
+      .gallery {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-columns:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;repeat(auto-fit, minmax(200px, 1fr));<br />
+      &nbsp;&nbsp;gap: 15px;<br />
+      }<br /><br />
+
+      .gallery img {<br />
+      &nbsp;&nbsp;width: 100%;<br />
+      &nbsp;&nbsp;height: 200px;<br />
+      &nbsp;&nbsp;object-fit: cover;<br />
+      &nbsp;&nbsp;border-radius: 10px;<br />
+      }
+    </code>
+  </div>
+
+  <!-- Practice 2 -->
+  <div
+    style="
+      border: 3px solid #9c27b0;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>15. 🧪 Practice — Dashboard Layout</h2>
+
+    <p>
+      Create a dashboard containing a sidebar, header, main content area, and
+      widgets.
+    </p>
+
+    <h3>Suggested Layout:</h3>
+
+    <code>
+      .dashboard {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-columns: 250px 1fr;<br />
+      &nbsp;&nbsp;grid-template-rows: 80px 1fr;<br />
+      &nbsp;&nbsp;grid-template-areas:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;"sidebar header"<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;"sidebar main";<br />
+      &nbsp;&nbsp;min-height: 100vh;<br />
+      }<br /><br />
+
+      .sidebar {<br />
+      &nbsp;&nbsp;grid-area: sidebar;<br />
+      }<br /><br />
+
+      .header {<br />
+      &nbsp;&nbsp;grid-area: header;<br />
+      }<br /><br />
+
+      .main {<br />
+      &nbsp;&nbsp;grid-area: main;<br />
+      }
+    </code>
+  </div>
+
+  <!-- Practice 3 -->
+  <div
+    style="
+      border: 3px solid #e91e63;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>16. 🧪 Practice — Admin Panel Layout</h2>
+
+    <p>
+      Create an admin panel using CSS Grid.
+    </p>
+
+    <h3>Requirements:</h3>
+
+    <ul>
+      <li>Sidebar navigation</li>
+      <li>Top header</li>
+      <li>Main dashboard</li>
+      <li>Statistics cards</li>
+      <li>Table section</li>
+      <li>Responsive layout</li>
+    </ul>
+
+    <h3>Example:</h3>
+
+    <code>
+      .admin-panel {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-columns: 240px 1fr;<br />
+      &nbsp;&nbsp;grid-template-rows: auto 1fr;<br />
+      &nbsp;&nbsp;grid-template-areas:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;"sidebar header"<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;"sidebar content";<br />
+      &nbsp;&nbsp;min-height: 100vh;<br />
+      }<br /><br />
+
+      .stats {<br />
+      &nbsp;&nbsp;display: grid;<br />
+      &nbsp;&nbsp;grid-template-columns:<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;repeat(auto-fit, minmax(200px, 1fr));<br />
+      &nbsp;&nbsp;gap: 20px;<br />
+      }
+    </code>
+  </div>
+
+  <!-- Quick Reference -->
+  <div
+    style="
+      border: 3px solid #ff9800;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    "
+  >
+    <h2>17. Grid Quick Reference</h2>
+
+    <ul>
+      <li><code>display: grid</code> → creates a grid container</li>
+      <li><code>grid-template-columns</code> → defines columns</li>
+      <li><code>grid-template-rows</code> → defines rows</li>
+      <li><code>gap</code> → creates space between grid items</li>
+      <li><code>grid-column</code> → controls column placement</li>
+      <li><code>grid-row</code> → controls row placement</li>
+      <li><code>grid-area</code> → controls area placement</li>
+      <li><code>repeat()</code> → repeats grid tracks</li>
+      <li><code>minmax()</code> → defines minimum and maximum track size</li>
+      <li><code>auto-fit</code> → fits available tracks and collapses empty ones</li>
+      <li><code>auto-fill</code> → fills as many possible tracks as space allows</li>
+    </ul>
+
+    <h3>Most Useful Responsive Pattern:</h3>
+
+    <code>
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    </code>
+  </div>
+
+  <!-- Notes -->
+  <div
+    style="
+      text-align: center;
+      margin-top: 20px;
+      border-radius: 10px;
+      padding: 15px;
+      border: 3px solid #212121;
+    "
+  >
+    <h2>Notes</h2>
+
+    <p>
+      <strong>Note:</strong> CSS Grid is a two-dimensional layout system based
+      on rows and columns.
+    </p>
+
+    <p>
+      <strong>Note:</strong> <code>display: grid</code> turns an element into
+      a grid container.
+    </p>
+
+    <p>
+      <strong>Note:</strong> The <code>fr</code> unit represents a fraction of
+      the available grid space.
+    </p>
+
+    <p>
+      <strong>Note:</strong> <code>grid-column</code> and
+      <code>grid-row</code> control where individual items are placed.
+    </p>
+
+    <p>
+      <strong>Note:</strong> <code>repeat()</code> reduces repeated grid
+      definitions.
+    </p>
+
+    <p>
+      <strong>Note:</strong> <code>minmax()</code> is very useful for
+      responsive layouts.
+    </p>
+
+    <p>
+      <strong>Note:</strong>
+      <code>repeat(auto-fit, minmax(250px, 1fr))</code> is a common responsive
+      grid pattern for cards and galleries.
+    </p>
+
+    <p>
+      <strong>Note:</strong> Grid is commonly used for dashboards, admin
+      panels, galleries, product layouts, and complex page structures.
+    </p>
+  </div>
+</section>
   </body>
 </html>
