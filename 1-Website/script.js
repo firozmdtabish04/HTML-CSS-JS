@@ -5,9 +5,6 @@
 
 // const { use } = require("react");
 
-
-
-
 // Variables
 // 1. Declaration let x
 // 2. Assignment x =100
@@ -30,19 +27,16 @@
 // console.log(typeof cgpa)
 // console.log(typeof pass)
 
-
 // Taking user input
 // let username1;
 // username1 = window.prompt("What is your username?")
 // console.log(username1)
-
 
 // let username;
 // document.getElementById("mySubmit").onclick = function () {
 //     username = document.getElementById("myText").value;
 //     document.getElementById("myH1").textContent = `Hello ${username}`;
 // }
-
 
 // Type conversion2323
 // let age = window.prompt("How old are you");
@@ -62,7 +56,6 @@
 // console.log(y, typeof y)
 // console.log(z, typeof z)
 
-
 // Const
 // const PI = 3.1459
 // let radius;
@@ -80,8 +73,6 @@
 //     circumference = 2 * PI * radius;
 //     document.getElementById("myH3").textContent = circumference;
 // }
-
-
 
 // MATH
 // window.alert("hii")
@@ -113,8 +104,6 @@
 // let res = Math.min(23, 45,89, -0,67, 787,-9);
 // console.log(res)
 
-
-
 // Random Num
 // let randomNum = Math.random();
 // console.log(randomNum)
@@ -138,7 +127,6 @@
 //     myLabel.textContent = randomNum;
 // }
 
-
 // ForLoop
 // for (let i = 1; i < 11; i++)
 // {
@@ -160,4 +148,16 @@
 // }
 // console.log("Happy New Year :)")
 
+// alert("Check error");
+console.log("Hii Tabish");
+name = "Tabish Firoz";
+console.log(name);
 
+age = 21;
+console.log(age);
+
+price = 123.43;
+console.log(price);
+
+x = null;
+console.log(x);
